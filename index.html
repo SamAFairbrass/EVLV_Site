@@ -1,18 +1,420 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EVLV </title>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <?php echo date('l, F jS, Y'); ?>
-  </body>
+body {
+    font-family: arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.header {
+	font-size: 1.2rem;
+	height: 50px;
+	background: #12121255;
+  opacity: 0.5;
+	padding: 0 20px;
+	color: #fff;
+}
+.logo {
+	position: absolute;
+	left: 90px;
+	font-family: 'Manjari', sans-serif;
+	line-height: 60px;
+	float: left;
+}
+.menu {
+	float: right;
+	line-height: 50px;
+}
+.menu a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 10px;
+	transition: .4s;
+}
+.show-menu-btn, .hide-menu-btn {
+	transition: .4s;
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+}
+.show-menu-btn  {
+	float: right;
+}
+.show-menu-btn i {
+	line-height: 50px;
+}
+.menu a:hover {
+  text-decoration: none;
+	padding: 17px;
+	background: #fff;
+	color: #000;
+}
+.show-menu-btn:hover {
+	transform: rotate(90deg);
+}
+.hide-menu-btn:hover {
+	font-size: 2rem;
+}
+#check_box {
+	position: absolute;
+	right: 50px;
+	visibility: hidden;
+	z-index: -1111;
+}
+
+/* UNCOMMENT for styling your content
+.content {
+	padding: 0 20px;
+}
+
+.content img {
+	width: 100%;
+	max-width: 700px;
+	margin: 20px 0;
+}
+
+.content p {
+	text-align: justify;
+}
+
+*/
+
+
+/*
+	IMPORTANT: The max-width here, depends on how many <a> objects you have, in my case
+			  6(HOME, SERVICES, PORTAFOLIO, ABOUT ME, CONTACT & DONATE), or the lenght
+			  of each text on <a> objects, if you have less or shorter text, set it according
+			  to your screen.
+*/
+10
+@media screen and (max-width: 1000px){
+	.show-menu-btn, .hide-menu-btn {
+		display: block;
+		line-height: 50px;
+	}
+
+	.logo {
+		left: 10px;
+	}
+
+	.menu {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		background: #000;
+		right: -100%;
+		top: 0;
+		text-align: center;
+		padding: 80px 0;
+		line-height: normal;
+		transition: .8s;
+	}
+
+	.menu a {
+		display: block;
+		padding: 20px;
+	}
+
+	.hide-menu-btn {
+		position: absolute;
+		top: 40px;
+		right: 40px;10
+	}
+
+	#check_box:checked ~ .menu {
+		right: 0;
+	}
+}
+@media screen and (max-width: 360px){
+
+	.header {
+		width: 100%;
+		height:
+	}
+
+	.show-menu-btn, .hide-centermenu-btn {
+		display: block;
+	}
+
+	.menu {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #000;
+		top: 0;
+		font-size: 1.5rem;
+    text-decoration: none;
+		text-align: center;
+		padding: 20px 0;
+		line-height: normal;
+		transition: .8s;
+	}
+
+	.menu a {
+		display: block;
+		padding: 20px;
+	}
+center
+	.hide-menu-btn {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+    height: 100%;
+	}
+
+	#check_box:checked ~ .menu {
+		right: 0;
+	}
+
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+ width: 100%;
+}
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.neon{
+    position: absolute;
+    display: inline-block;
+    padding: 1.5%;
+    margin: 1px ;
+    color: #fbfebd;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4.2px;
+    overflow: hidden;
+    width: 27%;
+    left: 37%;
+    top: 45%;
+
+}
+.neon:hover{
+    background: #fbfebd;
+    color: #000000;
+    box-shadow: 0 0 5px #fbfebd,
+                0 0 25px #fbfebd,
+                0 0 50px #fbfebd,
+                0 0 200px #fbfebd;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+.neon:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+.neon:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.neon span{
+    position: absolute;
+    display: block;
+}
+.neon span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#fbfebd);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.neon span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#fbfebd);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.neon span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#fbfebd);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+.neon span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#fbfebd);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+.mainText{
+  color: white;
+  z-index: 100;
+  opacity: 1;
+}
+
+.vidSpacer{
+  position: relative;
+  top: 900px;
+  height: 800px;
+  background-color: #777;
+  z-index: 100;
+  opacity: 1;
+}
+
+.mainTextBlock{
+  z-index: 200;
+  opacity: 1;
+}
+
+</style>
+
+<!-- div id="header">
+    <div id="header-content">
+      <div id="logo-nav">
+        <a href="/home" style="color=white ; font-size : 200%">EVLV</a>
+      </div>
+      <span style="width= 50%">
+        <p>Here is some more content of the header...</p>
+    </div>
+</div> -->
+
+<div class="header" background-color="white">
+		<h1 class="logo">EVLV</h1>
+		<input type="checkbox" id="check_box" name="">
+		<label for="check_box" class="show-menu-btn">
+			<i class="fas fa-ellipsis-h"></i>
+		</label>
+
+
+		<ul class="menu">
+			<a href="#">Home</a>
+			<a href="#">Services</a>
+			<a href="#">Portofolio</a>
+			<a href="#">About EVLV</a>
+			<a href="#">Contact</a>
+			<label for="check_box" class="hide-menu-btn">
+				<i class="fas fa-times"></i>
+			</label>
+		</ul>
+	</div>
+
+	<div class="content">
+
+		<!-- YOUR WEBPAGE CONTENT GOES HERE -->
+
+<div style="opacity: 0.5; z-index: -20 !important; background-color: black;">
+  <div class="bg-vid">
+    <video autoplay muted loop id="myVideo" style="z-index: -3">
+      <source src="flir.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+</div>
+<a id="neon" class="neon" style="opacity: 1 !important; position: absolute; margin-top=50% !important" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+         SUPERCHARGE YOUR REVENUE
+</a>
+<body>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<div class="mainText">
+  <div class="vidSpacer">
+  </div>
+  <div class="mainTextBlock">
+    <h2>Services</h2>
+    <h2>Why EVLV</h2>
+    <h1 style="margin-top: 20%">SO</h1>
+    <h2>Services</h2>
+    <h2>Why EVLV</h2>
+    <h2>Why EVLV</h2>
+    <h1 style="margin-top: 20%">SO</h1>
+    <h2>Services</h2>
+    <h2>Why EVLV</h2>
+  </div>
+</div>
+
+</div>
+</body>
 </html>
-
-
-
-<php?
-
-    echo: wazzup;
-
-?>
