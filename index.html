@@ -319,20 +319,23 @@ center
   color: white;
   z-index: 100;
   opacity: 1;
+  top: 50px !important;
+
 }
 
 .vidSpacer{
   position: relative;
-  top: 900px;
+  margin-top: 25%;
   height: 800px;
-  background-color: #777;
+  background-color: #444;
   z-index: 100;
   opacity: 1;
 }
 
 .mainTextBlock{
-  z-index: 200;
   opacity: 1;
+  top: 500px;
+  margin-top: 22%; position: relative; z-index: 100 !important;
 }
 
 .bg-vid{
@@ -357,11 +360,12 @@ center
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #33300;
+  height: 100px;
 }
 
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -371,13 +375,17 @@ center
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #c1ffff;
   color: black;
-}
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+      background: #c1ffff;
+      color: #000000;
+      box-shadow: 0 0 5px #c1ffff,
+                  0 0 25px #c1ffff,
+                  0 0 50px #c1ffff,
+                  0 0 50px #c1ffff;
+       -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+
 }
 
 .topnav .icon {
@@ -410,10 +418,11 @@ center
 
 <div style=" z-index: -20; background-color: black;">
   <div class="bg-vid">
-    <ul style="color: white; opacity: 1 !important; z-index: 20; position: absolute;">
+    <ul style="color: white; opacity: 1 !important; z-index: 20; position: relatve; height: 0px; ">
       <div class="topnav" id="myTopnav">
       <a href="#home" class="active">Home</a>
-      <a href="#news">News</a>
+      <a href="#news">Services</a>
+      <a href="#news">Articles</a>
       <a href="#contact">Contact</a>
       <a href="#about">About</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -440,7 +449,7 @@ function myFunction() {
   </div>
 
 </div>
-<a id="neon" class="neon" style="opacity: 1 !important; position: absolute; margin-top=50% !important" href="#">
+<a id="neon" class="neon" style="opacity: 1 !important; position: relative; margin-top: 20% !important" href="#">
         <span></span>
         <span></span>
         <span></span>
@@ -468,13 +477,11 @@ function myFunction() {
   <div class="vidSpacer">
   </div>
   <div class="mainTextBlock">
+    <h1 >Supercharge your sales</h1>
     <h2>Services</h2>
     <h2>Why EVLV</h2>
-    <h1 style="margin-top: 20%">SO</h1>
-    <h2>Services</h2>
     <h2>Why EVLV</h2>
-    <h2>Why EVLV</h2>
-    <h1 style="margin-top: 20%">SO</h1>
+    <h1 style="margin-top: 20%">sds</h1>
     <h2>Services</h2>
     <h2>Why EVLV</h2>
   </div>
