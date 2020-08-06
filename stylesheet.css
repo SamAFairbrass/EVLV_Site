@@ -2,11 +2,16 @@
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
 body {
     font-family: arial, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: #16161d;
   margin: 0;
   font-family: Arial;
   font-size: 17px;
@@ -21,9 +26,12 @@ body {
 	color: #fff;
 }
 .logo {
+    width:77px; /*width of your image*/
+    height:35px; /*height of your image*/
+    content:url("EVLV_Logo.png");
 	position: absolute;
-	left: 90px;
-	font-family: 'Manjari', sans-serif;
+    left: 10px;
+    top: 10px;
 	line-height: 60px;
 	float: left;
 }
@@ -331,12 +339,20 @@ center
 }
 
 .bg-vid{
-    /*height: 1px !important;*/
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -3;
 }
 
 .evlvHeader{
 
 }
+
+
 
 
 
@@ -366,32 +382,13 @@ center
   font-size: 17px;
 }
 
-.topnav logo {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
 
-  div.logo {
-    
-    width:100px; /*width of your image*/
-    height:60px; /*height of your image*/
-    content:url("EVLV_Logo.png");
-    margin:0; /* If you want no margin */
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
- }​
+
+  
 
 .topnav a:hover {
   background-color: #c1ffff;
-  color: black;
+  color: #16161d;
 
       background: #c1ffff;
       color: #000000;
@@ -426,4 +423,41 @@ center
     display: block;
     text-align: left;
   }
+}
+
+
+.arrow{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
 }
