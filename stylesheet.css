@@ -150,7 +150,7 @@ body {
 
 @media screen and (max-width: 1000px){
   #myVideo{
-    width: 220% !important;
+    width: 270% !important;
   }
 }
 
@@ -201,6 +201,8 @@ body {
 
 @media screen and (max-width: 1000px){
   .neon{
+    top: 200px !important;
+
     width: 65% !important;
   }
 }
@@ -300,6 +302,15 @@ body {
 
 }
 
+
+@media screen and (max-width: 1000px){
+  .mainText{
+    margin-top: 120% !important;
+    height: 80px !important;
+
+  }
+}
+
 .vidSpacer{
   position: relative;
   margin-top: 25%;
@@ -308,6 +319,8 @@ body {
   z-index: 100;
   opacity: 1;
 }
+
+
 
 .mainTextBlock{
   padding: 7%;
