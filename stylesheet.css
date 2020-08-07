@@ -1,344 +1,337 @@
 * {
-    box-sizing: border-box;
-  }
-
-  html {
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: arial, sans-serif;
-    padding: 0;
-    margin: 0;
-    background-color: #16161d;
+  font-family: arial, sans-serif;
+  padding: 0;
   margin: 0;
-  font-family: Arial;
-  font-size: 17px;
+  background-color: #16161d;
+margin: 0;
+font-family: Arial;
+font-size: 17px;
 }
 
 .header {
-	font-size: 1.2rem;
-	height: 50px;
-	background: #12121255;
-  opacity: 0.5;
-	padding: 0 20px;
-	color: #fff;
+font-size: 1.2rem;
+height: 50px;
+background: #12121255;
+opacity: 0.5;
+padding: 0 20px;
+color: #fff;
 }
 .logo {
-    width:77px; /*width of your image*/
-    height:35px; /*height of your image*/
-    content:url("EVLV_Logo.png");
-	position: absolute;
-    left: 10px;
-    top: 10px;
-	line-height: 60px;
-	float: left;
+  width:77px; 
+  height:35px; 
+  content:url("EVLV_Logo.png");
+position: absolute;
+  left: 10px;
+  top: 10px;
+line-height: 60px;
+float: left;
 }
 .menu {
-	float: right;
-	line-height: 50px;
+float: right;
+line-height: 50px;
 }
 .menu a {
-	color: #fff;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 0 10px;
-	transition: .4s;
+color: #fff;
+text-transform: uppercase;
+text-decoration: none;
+padding: 0 10px;
+transition: .4s;
 }
 .show-menu-btn, .hide-menu-btn {
-	transition: .4s;
-	font-size: 30px;
-	cursor: pointer;
-	display: none;
+transition: .4s;
+font-size: 30px;
+cursor: pointer;
+display: none;
 }
 .show-menu-btn  {
-	float: right;
+float: right;
 }
 .show-menu-btn i {
-	line-height: 50px;
+line-height: 50px;
 }
 .menu a:hover {
-  text-decoration: none;
-	padding: 17px;
-	background: #fff;
-	color: #000;
+text-decoration: none;
+padding: 17px;
+background: #fff;
+color: #000;
 }
 .show-menu-btn:hover {
-	transform: rotate(90deg);
+transform: rotate(90deg);
 }
 .hide-menu-btn:hover {
-	font-size: 2rem;
+font-size: 2rem;
 }
 #check_box {
-	position: absolute;
-	right: 50px;
-	visibility: hidden;
-	z-index: -1111;
+position: absolute;
+right: 50px;
+visibility: hidden;
+z-index: -1111;
 }
 
 /* UNCOMMENT for styling your content
 .content {
-	padding: 0 20px;
+padding: 0 20px;
 }
 
 .content img {
-	width: 100%;
-	max-width: 700px;
-	margin: 20px 0;
+width: 100%;
+max-width: 700px;
+margin: 20px 0;
 }
 
 .content p {
-	text-align: justify;
+text-align: justify;
 }
 
 */
 
 
 /*
-	IMPORTANT: The max-width here, depends on how many <a> objects you have, in my case
-			  6(HOME, SERVICES, PORTAFOLIO, ABOUT ME, CONTACT & DONATE), or the lenght
-			  of each text on <a> objects, if you have less or shorter text, set it according
-			  to your screen.
+IMPORTANT: The max-width here, depends on how many <a> objects you have, in my case
+      6(HOME, SERVICES, PORTAFOLIO, ABOUT ME, CONTACT & DONATE), or the lenght
+      of each text on <a> objects, if you have less or shorter text, set it according
+      to your screen.
 */
 
 @media screen and (max-width: 1000px){
-	.show-menu-btn, .hide-menu-btn {
-		display: block;
-		line-height: 50px;
-	}
+.show-menu-btn, .hide-menu-btn {
+  display: block;
+  line-height: 50px;
+}
 
-	.logo {
-		left: 10px;
-	}
+.logo {
+  left: 10px;
+}
 
-	.menu {
-		position: absolute;
-		width: 100%;
-		height: 100vh;
-		background: #000;
-		right: -100%;
-		top: 0;
-		text-align: center;
-		padding: 80px 0;
-		line-height: normal;
-		transition: .8s;
-	}
+.menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  right: -100%;
+  top: 0;
+  text-align: center;
+  padding: 80px 0;
+  line-height: normal;
+  transition: .8s;
+}
 
-	.menu a {
-		display: block;
-		padding: 20px;
-	}
+.menu a {
+  display: block;
+  padding: 20px;
+}
 
-	.hide-menu-btn {
-		position: absolute;
-		top: 40px;
-		right: 40px;10
-	}
+.hide-menu-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
 
-	#check_box:checked ~ .menu {
-		right: 0;
-	}
+#check_box:checked ~ .menu {
+  right: 0;
+}
 }
 
 #myVideo {
-  position: absolute;
-  right: 0;
-  width: 103.5%;
+position: absolute;
+right: 0;
+width: 103.5%;
 
 }
 
 @media screen and (max-width: 1000px){
-  #myVideo{
-    width: 360% !important;
-  }
+#myVideo{
+  width: 360% !important;
 }
-
-
+}
 
 
 #myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
+width: 200px;
+font-size: 18px;
+padding: 10px;
+border: none;
+background: #000;
+color: #fff;
+cursor: pointer;
 }
 #myBtn:hover {
-  background: #ddd;
-  color: black;
+background: #ddd;
+color: black;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .neon{
-    
-    display: inline-block;
-    padding: 1.5%;
-    margin: 1px ;
-    color: #c1ffff;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.5s;
-    letter-spacing: 4.2px;
-    overflow: hidden;
-    width: 30%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  
+  display: inline-block;
+  padding: 1.5%;
+  margin: 1px ;
+  color: #c1ffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4.2px;
+  overflow: hidden;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 
-    
+  
 
 }
 
 
 @media screen and (max-width: 1000px){
-  .neon{
-    top: 200px !important;
+.neon{
+  top: 200px !important;
 
-    width: 65% !important;
-  }
+  width: 65% !important;
+}
 }
 
 .neon:hover{
-    background: #c1ffff;
-    color: #000000;
-    box-shadow: 0 0 5px #c1ffff,
-                0 0 25px #c1ffff,
-                0 0 50px #c1ffff,
-                0 0 200px #c1ffff;
+  background: #c1ffff;
+  color: #000000;
+  box-shadow: 0 0 5px #c1ffff,
+              0 0 25px #c1ffff,
+              0 0 50px #c1ffff,
+              0 0 200px #c1ffff;
 }
 .neon:nth-child(1){
-    filter: hue-rotate(270deg);
+  filter: hue-rotate(270deg);
 }
 .neon:nth-child(2){
-    filter: hue-rotate(110deg);
+  filter: hue-rotate(110deg);
 }
 .neon span{
-    position: absolute;
-    display: block;
+  position: absolute;
+  display: block;
 }
 .neon span:nth-child(1){
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#c1ffff);
-    animation: animate1 1s linear infinite;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#c1ffff);
+  animation: animate1 1s linear infinite;
 }
 @keyframes animate1{
-    0%{
-        left: -100%;
-    }
-    50%,100%{
-        left: 100%;
-    }
+  0%{
+      left: -100%;
+  }
+  50%,100%{
+      left: 100%;
+  }
 }
 .neon span:nth-child(2){
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg,transparent,#c1ffff);
-    animation: animate2 1s linear infinite;
-    animation-delay: 0.25s;
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#c1ffff);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
 }
 @keyframes animate2{
-    0%{
-        top: -100%;
-    }
-    50%,100%{
-        top: 100%;
-    }
+  0%{
+      top: -100%;
+  }
+  50%,100%{
+      top: 100%;
+  }
 }
 .neon span:nth-child(3){
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg,transparent,#c1ffff);
-    animation: animate3 1s linear infinite;
-    animation-delay: 0.50s;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#c1ffff);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.50s;
 }
 @keyframes animate3{
-    0%{
-        right: -100%;
-    }
-    50%,100%{
-        right: 100%;
-    }
+  0%{
+      right: -100%;
+  }
+  50%,100%{
+      right: 100%;
+  }
 }
 .neon span:nth-child(4){
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg,transparent,#c1ffff);
-    animation: animate4 1s linear infinite;
-    animation-delay: 0.75s;
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#c1ffff);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
 }
 @keyframes animate4{
-    0%{
-        bottom: -100%;
-    }
-    50%,100%{
-        bottom: 100%;
-    }
+  0%{
+      bottom: -100%;
+  }
+  50%,100%{
+      bottom: 100%;
+  }
 }
 
 
 .mainText{
-  color: white;
-  z-index: 100;
-  opacity: 1;
+color: white;
+z-index: 100;
+opacity: 1;
 
 
 }
 
 
 @media screen and (max-width: 1000px){
-  .mainText{
-    margin-top: 150% !important;
-    height: 80px !important;
+.mainText{
+  margin-top: 150% !important;
+  height: 80px !important;
 
-  }
+}
 }
 
 .vidSpacer{
-  position: relative;
-  margin-top: 25%;
-  height: 800px;
-  background-color: #444;
-  z-index: 100;
-  opacity: 1;
+position: relative;
+margin-top: 25%;
+height: 800px;
+background-color: #444;
+z-index: 100;
+opacity: 1;
 }
 
 
 
 .mainTextBlock{
-  padding: 7%;
-  opacity: 1;
-  top: 000px;
-  margin-top: 22%; 
-  position: relative; 
-  z-index: 100 !important;
+padding: 7%;
+opacity: 1;
+top: 500px;
+margin-top: -2%; 
+position: relative; 
+z-index: 100 !important;
 }
 
 .bg-vid{
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -3;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -3;
 }
 
 
@@ -357,104 +350,100 @@ body {
 
 
 .topnav {
-  overflow: hidden;
-  background-color: #33300;
-  height: 100px;
-  @media screen and (max-width: 768px){
-    font-size: 10px;
-  }
+overflow: hidden;
+background-color: #00000000;
+height: 150px;
+@media screen and (max-width: 768px){
+  font-size: 10px;
+}
 }
 
 .topnav a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+float: right;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
 }
 
 
 
-  
+
 
 .topnav a:hover {
-  background-color: #c1ffff;
-  color: #16161d;
+background-color: #c1ffff;
+color: #16161d;
 
-      background: #c1ffff;
-      color: #000000;
-      box-shadow: 0 0 5px #c1ffff,
-                  0 0 25px #c1ffff,
-                  0 0 50px #c1ffff,
-                  0 0 50px #c1ffff;
+    background: #c1ffff;
+    color: #000000;
+    box-shadow: 0 0 5px #c1ffff,
+                0 0 25px #c1ffff,
+                0 0 50px #c1ffff,
+                0 0 50px #c1ffff;
 
 }
 
 .topnav .icon {
-  display: none;
+display: none;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
 }
 
 
 .arrow{
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .arrow span{
-    display: block;
-    width: 25px;
-    height: 25px;
-    border-bottom: 5px solid white;
-    border-right: 5px solid white;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
 }
 .arrow span:nth-child(2){
-    animation-delay: -0.2s;
+  animation-delay: -0.2s;
 }
 .arrow span:nth-child(3){
-    animation-delay: -0.4s;
+  animation-delay: -0.4s;
 }
 @keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
 }
-
-
-
-
