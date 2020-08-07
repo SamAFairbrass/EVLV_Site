@@ -150,7 +150,7 @@ body {
 
 @media screen and (max-width: 1000px){
   #myVideo{
-    width: 270% !important;
+    width: 300% !important;
   }
 }
 
@@ -305,7 +305,7 @@ body {
 
 @media screen and (max-width: 1000px){
   .mainText{
-    margin-top: 120% !important;
+    margin-top: 150% !important;
     height: 80px !important;
 
   }
