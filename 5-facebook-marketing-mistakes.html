@@ -37,32 +37,55 @@
 
 
   <style>
+  #fb_share{
+    color: #09f;
+  }
+
+  .articleDate{
+    width: 90%; color:white; margin: 0 auto; display:flex; align: center; justify-content: center; margin-top: 10px
+  }
+
+  .linkRow{
+    width: 30%;
+  }
 
   .columnSplit{
-    display:flex; padding: 4%; justify-content: center; height: 100% ;
+    display:flex; padding: 3%; padding-top: 0%; justify-content: center; height: 100% ; line-height: 1.3;
   }
-  <head>
-  <link rel="import" href="/path/to/template.html">
-  </head>
-  .articleContainer{ padding: 5%; width: 70%; color: white !important;}
-  .articleContainer *{ color: white !important; text-align: justify;
+
+
+
+  .articleContainer{ padding: 3%; width: 75%; color: white !important;}
+  @media only screen and (max-width: 600px) {
+    .articleContainer{width: 90%}
+  }
+
+
+  .articleContainer *{ color: #fb0; text-align: justify;
     text-justify: inter-word}
+
+  .articleContainer p { color: white}
 
 
     .articleHistory{ width: 100% !important ; color: red; margin-left: 2%; flex-wrap: nowrap;}
 
     .articleImageContainer{height: 100px;
       width: 80px;
-      overflow: hidden; background-size: cover; background-image: url('5-facebook-marketing-mistakes.jpg'); z-index: 10;}
+      overflow: hidden; background-size: cover; background-image: url('images/article-images/5-facebook-marketing-mistakes.jpg'); z-index: 10;}
 
       .imgimg{
         margin-top: 2.5%;
-        background-image: url('5-facebook-marketing-mistakes.png');
+        background-image: url('images/article-images/5-facebook-marketing-mistakes.png');
         height: 400px;
         background-size: cover;
       }
 
-      .checkOtherPosts{ margin-left: 4%}
+      .checkOtherPosts{ display: flex; justify-content: center; }
+
+
+      .socialLinks{
+        width: 90%; color:white; margin: 0 auto; display:flex; align: center; justify-content: center; margin-top: 1%
+      }
     </style>
 
 
@@ -85,7 +108,29 @@
 
   <div class="imgimg"></div>
 
-  <h1 style="width: 90%; color:white; margin: 0 auto; display:flex; align: center; justify-content: center; margin-top: 2%">5 Facebook Marketing Mistakes You Need To Avoid</h1>
+    <!-- Article Title -->
+    <h1 style="width: 65%; color:white; margin: 0 auto; display:flex; align: center; justify-content: center; margin-top: 2%">5 Facebook Marketing Mistakes You Need To Avoid</h1>
+
+  <div class="articleDate">
+    29th January 2020
+  </div>
+
+  <div class="articleDate">
+    SHARE THIS ARTICLE
+  </div>
+
+
+  <div class="socialLinks">
+      <a href="" id="facebook_share">
+        <img style="height: 25px;" src="images/facebook-share.png">
+      </a>
+      <a href="" id="linkedin_share">
+        <img style="height: 25px;" src="images/linkedin-share.png">
+      </a>
+      <a href="" id="twitter_share">
+        <img style="height: 25px;" src="images/twitter-share.png">
+      </a>
+  </div>
 
   <section>
     <div class="columnSplit">
@@ -143,129 +188,19 @@
 
       </div>
       <div class="checkOtherPosts" >
-        <a style="color: white; font-size: 20px !important"  href="articles.html"> CHECK OUT OUR OTHER POSTS </a>
+        <a style="color: #11eeff; font-size: 20px !important"  href="articles.html"> CHECK OUT OUR OTHER POSTS </a>
         <br>
       </div>
     </section>
 
 
-    <!-- Share Links -->
 
-    <style>
-    a {
-text-decoration: none;
-}
-
-ul {
-margin: 0;
-padding: 0;
-}
-
-li {
-list-style: none;
-display: inline;
-}
-
-li:not(:last-of-type){
-margin-right:20px;
-}
-
-.btn {
-position: relative;
-display: inline-block;
-padding: 5px;
-border-radius: 4px;
-width: 32px;
-height: 32px;
-overflow: hidden;
-transition: background-color 1s;
-font-size: 0;
-}
-
-.btn::before {
-font-family: "FontAwesome";
-font-size: 29px;
-font-weight:100;
-color: #FFEB79;
-}
-
-.btn:hover {
-color:#D9CC3C;
-text-shadow:2px 2px 2px rgba(0,0,0,.3);
-}
-
-.tw {
-background: url(http://heyvian.com/misc/32/Twitter.png) no-repeat top left;
-}
-
-.fb {
-background: url(http://heyvian.com/misc/32/Facebook.png) no-repeat top left;
-}
-
-.gp {
-background: url(http://heyvian.com/misc/32/Google%20+.png) no-repeat top left;
-}
-
-.pin {
-background: url(http://heyvian.com/misc/32/Pinterest.png) no-repeat top left;
-}
-
-.credit {
-width: 100%;
-font-size: 32px;
-font-weight: 700;
-text-transform: uppercase;
-text-align: center;
-vertical-align: middle;
-line-height: 12px;
-margin: 25px 0 0 0;
-color: #fff;
-}
-
-.credit a {
-font-size: 12px;
-font-weight: 400;
-color: #fff;
-padding: 0 4px;
-vertical-align: middle;
-}
-
-.credit a:hover {
-border-bottom: 1px solid #ddd;
-}
-
-    </style>
-
-    <script>
-    document.write('<a href="https://facebook.com/sharer.php?u='+window.location.href+'">'+desiredText+'</a>');
-
-      shareToFB(){
-
-        document.write('<a href="https://facebook.com/sharer.php?u='+window.location.href+'">'+desiredText+'</a>');
-      }
-    </script>
-
-    <ul>
-    <li><a class="btn tw fa-twitter" href="https://twitter.com/intent/tweet?url=https://codepen.io/heyvian/full/gFCqc&text=No%20JS%20Social%20Media%20Share%20Buttons&via=heyvian" target="_blank">Twitter</a></li>
-
-    <li><a class="btn fb fa-facebook" href="https://facebook.com/sharer.php?u=https://codepen.io/heyvian/full/gFCqc" target="_blank">Facebook</a></li>
-
-    <li><a class="btn gp fa-google-plus" href="https://plus.google.com/share?url=https://codepen.io/heyvian/full/gFCqc" target="_blank">Google+</a></li>
-
-    <li><a class="btn pin fa-pinterest" href="https://pinterest.com/pin/create/button/?url=https://codepen.io/heyvian/full/gFCqc&media=http://heyvian.com/images/monitor.jpg" target="_blank">Pinterest</a></li>
-  </ul>
-
-  <div class="credit">
-    <a href="http://www.hanselman.com/blog/AddSocialSharingLinksToYourBlogWithoutWidgetJavaScript.aspx" target="_blank">Inspiration</a>
-  </div>
-
-  <a style="color: white;" onclick="shareToFB()">Share on Facebook</a>
-
-  <a href="" id="fb_share">Share this page</a>
 
   <script>
       window.onload = function() {
-          fb_share.href ='http://www.facebook.com/share.php?u=' + encodeURIComponent(location.href);
+          facebook_share.href ='http://www.facebook.com/share.php?u=' + encodeURIComponent(location.href);
+          facebook_share.href ='http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(location.href);
+          facebook_share.href ='https://twitter.com/intent/tweet?text=An interesting read from EVLV &url=' + encodeURIComponent(location.href);
       }
   </script>
 
