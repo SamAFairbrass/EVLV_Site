@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
   </head>
@@ -7,30 +8,133 @@
 <title>Services - How EVLV Provides Growth</title>
 
 
+<style>
 
-<ul style="color: white; opacity: 1 !important; z-index: 20; position: relatve; height: 0px; ">
-  <a href="index.html"><div class="logo"></div></a>
-  <div class="topnav" id="myTopnav">
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" float: right; top: 0; right: 0; font-size:50px;">&times;</a>
+  <div class="overlay-content">
     <a href="contact.html">Contact</a>
     <a href="articles.html">Articles</a>
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
     <a href="index.html" class="active">Home</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
+
+  </div>
+</div>
+
+
+<script>
+
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<ul style="color: white; opacity: 1 !important; z-index: 20; position: relatve; height: 0px;  ">
+  <a href="index.html"><div class="logo"></div></a>
+  <div class="topnav" id="myTopnav">
+
+    <span style="padding: 2%; padding-top: 2%; float: right; font-size:40px; cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <a href="contact.html">Contact</a>
+    <a href="articles.html">Articles</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="index.html" class="active">Home</a>
+
   </div>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
+
+
+
+
+
+
+
+
+
+
+  <style>
+
+  /*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+body
+{
+  margin: 0;
+  padding: 0;
+  /* make it look decent enough */
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}  </style>
+
 </ul>
 
 <body>
@@ -129,7 +233,8 @@ in: #ffffff; margin-left: 2%; margin-right: 2%; width: 25%; height: 300px; }
 <h1 style="color:white; margin: 0 auto; display:flex; align: center; justify-content: center; margin-top: 4%">ARTICLES</h1>
 
 <section>
-  <div class="cardGrid">
+
+  <div class="cardGrid" z-index="-1;">
 
     <div class="gridElement">
       <div class="one">
