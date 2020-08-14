@@ -41,10 +41,85 @@ function smoothScroll(target,duration){
     console.log(targetPosition + " " + startPosition);    
     requestAnimationFrame(animation);
 }
-    
-    //top to bottom
-    var section1 = document.querySelector(".section1");
-    section1.addEventListener('click',()=> {
-        smoothScroll(".mainTextBlock",750);
-    });
 
+
+
+/* Accordion */
+
+function accordionTrigger(id, content){
+    var el = document.querySelector(id);
+    var contentEl = document.querySelector(content)
+    if(el.classList.contains("accordionUp")){
+        accordionDown(el, contentEl);
+    }
+    else{
+        accordionUp(el, contentEl)
+    }
+}
+
+
+function accordionUp(element, contentElement){
+    element.classList.remove("accordionDown");
+    element.classList.add("accordionUp");
+    contentElement.classList.remove("accordionContentDown");
+    contentElement.classList.add("accordionContentUp");
+    
+
+}
+
+function accordionDown(element, contentElement){
+    element.classList.remove("accordionUp");
+    element.classList.add("accordionDown");
+    contentElement.classList.remove("accordionContentUp");
+    contentElement.classList.add("accordionContentDown");
+    
+}
+
+/* Accordion End */
+
+/* Index Highlight 
+
+window.addEventListener('scroll', function() {
+	var element = document.querySelector('.indexChange');
+    var position = element.getBoundingClientRect();
+    var id = element.id;
+    var indexElement = document.getElementById(id)
+    var currentIndex = document.getElementsByClassName("w--current")
+    console.log('indexElement: ' + indexElement);
+    console.log('currentElement: ' + currentIndex);
+
+
+    
+
+	// checking whether fully visible
+	if(position.top >= 0 && position.bottom <= window.innerHeight) {
+        currentIndex.classList.remove("w--current")
+		indexElement.classList.add("w--current");
+	}
+
+	// checking for partial visibility
+	if(position.top < window.innerHeight && position.bottom >= 0) {
+		
+	}
+});
+
+Index Highlight End */
+
+/*
+window.onscroll = function() {onScroll()};
+
+function onScroll(){
+    var scrollPos = window.top;
+    document.querySelectorAll(".services-list a").forEach(function () {
+        var currLink = this;
+        var refElement = currLink.getAttribute('href');
+        if (refElement.offsetTop <= scrollPos && refElement.offsetTop + refElement.height > scrollPos) {
+            document.querySelectorAll(".services-list a").classList.remove("w--current");
+            currLink.classList.remove("w--current");
+        }
+        else{
+            currLink.classList.remove("w--current");
+        }
+    });
+}
+*/

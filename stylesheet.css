@@ -1,5 +1,11 @@
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  }
+
+html{
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -7,9 +13,24 @@ body {
   padding: 0;
   margin: 0;
   background-color: #16161d;
-margin: 0;
-font-family: Arial;
-font-size: 17px;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.section{
+    height: 100vh;
+    box-sizing: border-box;
+    z-index: -3;
+    font-family: arial, sans-serif;
+    font-family: Arial;
+    font-size: 17px;  
+}
+
+
+.grad {
+  background-color: #08abb0;
+  background-image: -webkit-linear-gradient(#16161d, rgba(22, 22, 29, 0.8));
+  background-image: linear-gradient(360deg, #16161d, rgba(22, 22, 29, 0.8));
 }
 
 .header {
@@ -319,10 +340,16 @@ opacity: 1;
 padding: 7%;
 opacity: 1;
 top: 500px;
-margin-top: -2%; 
+margin-top: 0%; 
 position: relative; 
 z-index: 100 !important;
 }
+
+.mainTextBlock2{
+  opacity: 1;
+  position: relative; 
+  z-index: 100 !important;
+  }
 
 .bg-vid{
   bottom: 0;
