@@ -191,8 +191,8 @@ color: black;
   padding: 0;
   box-sizing: border-box;
 }
-.neon{
-  
+
+#neon{
   display: inline-block;
   padding: 1.5%;
   margin: 1px ;
@@ -207,21 +207,19 @@ color: black;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-
-  
-
 }
 
 
 @media screen and (max-width: 1000px){
-.neon{
+#neon{
+
   top: 200px !important;
 
   width: 65% !important;
 }
 }
 
-.neon:hover{
+#neon:hover{
   background: #c1ffff;
   color: #000000;
   box-shadow: 0 0 5px #c1ffff,
@@ -229,17 +227,19 @@ color: black;
               0 0 50px #c1ffff,
               0 0 200px #c1ffff;
 }
-.neon:nth-child(1){
+
+#neon:nth-child(1){
   filter: hue-rotate(270deg);
 }
-.neon:nth-child(2){
+#neon:nth-child(2){
   filter: hue-rotate(110deg);
 }
-.neon span{
+#neon span{
   position: absolute;
   display: block;
 }
-.neon span:nth-child(1){
+#neon span:nth-child(1){
+
   top: 0;
   left: 0;
   width: 100%;
@@ -255,7 +255,9 @@ color: black;
       left: 100%;
   }
 }
-.neon span:nth-child(2){
+  
+  
+#neon span:nth-child(2){
   top: -100%;
   right: 0;
   width: 2px;
@@ -272,7 +274,7 @@ color: black;
       top: 100%;
   }
 }
-.neon span:nth-child(3){
+#neon span:nth-child(3){
   bottom: 0;
   right: 0;
   width: 100%;
@@ -289,7 +291,7 @@ color: black;
       right: 100%;
   }
 }
-.neon span:nth-child(4){
+#neon span:nth-child(4){
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -339,12 +341,11 @@ opacity: 1;
 .mainTextBlock{
 padding: 7%;
 opacity: 1;
-top: 500px;
-margin-top: 0%; 
-position: relative; 
+top: 000px;
+margin-top: 22%;
+position: relative;
 z-index: 100 !important;
 }
-
 .mainTextBlock2{
   opacity: 1;
   position: relative; 
@@ -422,6 +423,8 @@ display: none;
   float: right;
   display: block;
 }
+.mobileNavButton{display: block !important}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -474,3 +477,4 @@ display: none;
       transform: rotate(45deg) translate(20px,20px);
   }
 }
+
