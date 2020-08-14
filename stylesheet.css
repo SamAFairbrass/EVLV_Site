@@ -1,12 +1,5 @@
 * {
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  }
-
-html{
-  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -14,24 +7,9 @@ body {
   padding: 0;
   margin: 0;
   background-color: #16161d;
-  font-family: Arial;
-  font-size: 17px;
-}
-
-.section{
-    height: 100vh;
-    box-sizing: border-box;
-    z-index: -3;
-    font-family: arial, sans-serif;
-    font-family: Arial;
-    font-size: 17px;  
-}
-
-
-.grad {
-  background-color: #08abb0;
-  background-image: -webkit-linear-gradient(#16161d, rgba(22, 22, 29, 0.8));
-  background-image: linear-gradient(360deg, #16161d, rgba(22, 22, 29, 0.8));
+margin: 0;
+font-family: Arial;
+font-size: 17px;
 }
 
 .header {
@@ -43,8 +21,8 @@ padding: 0 20px;
 color: #fff;
 }
 .logo {
-  width:77px; 
-  height:35px; 
+  width:77px; /*width of your image*/
+  height:35px; /*height of your image*/
   content:url("EVLV_Logo.png");
 position: absolute;
   left: 10px;
@@ -119,11 +97,13 @@ IMPORTANT: The max-width here, depends on how many <a> objects you have, in my c
       to your screen.
 */
 
+
 @media screen and (max-width: 1000px){
 .show-menu-btn, .hide-menu-btn {
   display: block;
   line-height: 50px;
 }
+
 
 .logo {
   left: 10px;
@@ -150,7 +130,7 @@ IMPORTANT: The max-width here, depends on how many <a> objects you have, in my c
 .hide-menu-btn {
   position: absolute;
   top: 40px;
-  right: 40px;
+  right: 40px;10
 }
 
 #check_box:checked ~ .menu {
@@ -159,16 +139,24 @@ IMPORTANT: The max-width here, depends on how many <a> objects you have, in my c
 }
 
 #myVideo {
-position: absolute;
-right: 0;
-width: 103.5%;
-
+display: block;
+margin: auto;
 }
 
 @media screen and (max-width: 1000px){
-#myVideo{
-  width: 360% !important;
+  #myVideo{
+    width: 360% !important;
+  }
 }
+
+@media screen and (min-width: 1921px){
+  #myVideo{
+    width: 200% !important;
+  }
+
+  #neon{
+    margin-top: 15%  !important;
+  }
 }
 
 
@@ -192,8 +180,8 @@ color: black;
   padding: 0;
   box-sizing: border-box;
 }
-
 #neon{
+
   display: inline-block;
   padding: 1.5%;
   margin: 1px ;
@@ -208,12 +196,14 @@ color: black;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
+
+
 }
 
 
 @media screen and (max-width: 1000px){
 #neon{
-
   top: 200px !important;
 
   width: 65% !important;
@@ -228,7 +218,6 @@ color: black;
               0 0 50px #c1ffff,
               0 0 200px #c1ffff;
 }
-
 #neon:nth-child(1){
   filter: hue-rotate(270deg);
 }
@@ -240,7 +229,6 @@ color: black;
   display: block;
 }
 #neon span:nth-child(1){
-
   top: 0;
   left: 0;
   width: 100%;
@@ -256,8 +244,6 @@ color: black;
       left: 100%;
   }
 }
-  
-  
 #neon span:nth-child(2){
   top: -100%;
   right: 0;
@@ -342,17 +328,10 @@ opacity: 1;
 .mainTextBlock{
 padding: 7%;
 opacity: 1;
-top: 000px;
-margin-top: 22%;
-position: relative;
-z-index: 100 !important;
+top: 100%;
+position: absolute;
+z-index: -100 !important;
 }
-.mainTextBlock2{
-  opacity: 1;
-  position: relative; 
-  z-index: 100 !important;
-  }
-
 
 .bg-vid{
   bottom: 0;
@@ -381,7 +360,7 @@ z-index: 100 !important;
 
 .topnav {
 overflow: hidden;
-background-color: #00000000;
+background-color: #33300;
 height: 150px;
 @media screen and (max-width: 768px){
   font-size: 10px;
@@ -479,4 +458,3 @@ display: none;
       transform: rotate(45deg) translate(20px,20px);
   }
 }
-
