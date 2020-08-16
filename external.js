@@ -73,53 +73,50 @@ function accordionDown(element, contentElement){
   contentElement.classList.remove("accordionContentUp");
   contentElement.classList.add("accordionContentDown");
   
-}
+}var topRange = 100,  // measure from the top of the viewport to X pixels down
+edgeMargin = 50,   // margin above the top or margin from the end of the page
+animationTime = 1200, // time in milliseconds
+contentTop = [];
 
-/* Accordion End */
+$(document).ready(function(){ 
 
-/* Index Highlight 
+ // Stop animated scroll if the user does something
+ $('html,body').bind('scroll mousedown DOMMouseScroll mousewheel keyup', function(e){
+ if ( e.which > 0 || e.type == 'mousedown' || e.type == 'mousewheel' ){
+  $('html,body').stop();
+ }
+})
 
-window.addEventListener('scroll', function() {
-var element = document.querySelector('.indexChange');
-  var position = element.getBoundingClientRect();
-  var id = element.id;
-  var indexElement = document.getElementById(id)
-  var currentIndex = document.getElementsByClassName("w--current")
-  console.log('indexElement: ' + indexElement);
-  console.log('currentElement: ' + currentIndex);
+ // Set up content an array of locations
+ $('#sidemenu').find('a').each(function(){
+  contentTop.push( $( $(this).attr('href') ).offset().top );
+ })
 
-
+ // Animate menu scroll to content
+  $('#sidemenu').find('a').click(function(){
+   var sel = this,
+       newTop = Math.min( contentTop[ $('#sidemenu a').index( $(this) ) ], $(document).height() - $(window).height() ); // get content top or top position if at the document bottom
+   $('html,body').stop().animate({ 'scrollTop' : newTop }, animationTime, function(){
+    window.location.hash = $(sel).attr('href');
+   });
+   return false;
+ })
+ 
+ // adjust side menu
+ $(window).scroll(function(){
+  var winTop = $(window).scrollTop(),
+      bodyHt = $(document).height(),
+      vpHt = $(window).height() + edgeMargin;  // viewport height + margin
+  $.each( contentTop, function(i,loc){
+   if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
+    $('#sidemenu li')
+     .removeClass('selected')
+     .eq(i).addClass('selected');
+   }
+  })
+ })
   
+})
 
-// checking whether fully visible
-if(position.top >= 0 && position.bottom <= window.innerHeight) {
-      currentIndex.classList.remove("w--current")
-  indexElement.classList.add("w--current");
-}
 
-// checking for partial visibility
-if(position.top < window.innerHeight && position.bottom >= 0) {
-  
-}
-});
-
-Index Highlight End */
-
-/*
-window.onscroll = function() {onScroll()};
-
-function onScroll(){
-  var scrollPos = window.top;
-  document.querySelectorAll(".services-list a").forEach(function () {
-      var currLink = this;
-      var refElement = currLink.getAttribute('href');
-      if (refElement.offsetTop <= scrollPos && refElement.offsetTop + refElement.height > scrollPos) {
-          document.querySelectorAll(".services-list a").classList.remove("w--current");
-          currLink.classList.remove("w--current");
-      }
-      else{
-          currLink.classList.remove("w--current");
-      }
-  });
-}
-*/
+// Footer

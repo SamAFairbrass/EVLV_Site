@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="serviceStyles.css" media="screen"/>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
   </head>
 
   <ul style="color: white; opacity: 1 !important; z-index: 20; position: relatve; height: 0px; ">
-      <a href="#home"><div class="logo"></div></a>
+      <a href="index.html"><div class="logo"></div></a>
       <div class="topnav" id="myTopnav">
-        <a href="#contact">Contact</a>
-        <a href="#news">Articles</a>
+        <a href="contact.html">Contact</a>
+        <a href="articles.html">Articles</a>
         <a href="services.html">Services</a>
-        <a href="#about">About</a>
+        <a href="about.html">About</a>
         <a href="index.html" class="active">Home</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -45,7 +47,6 @@
 
 
 
-
       <section class="section grad">
           <div style ="width: 100%; position: absolute; bottom: 40%;">
               <h2 class = "fadeIn">A results driven approach <br> to making your business <br> more money</h2>
@@ -59,49 +60,15 @@
           <div id="w-node-a67d279c6adb-147077fa" class="content hidden-mobile">
             <div class="sticky-content">
               <div class="caption uppercase margin-paragraph">index</div>
-              <div class="services-list" id = "services-list">
-                <a href ="#service-0" class="subnavi-holder w-inline-block w--current">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 00</div>
-                  <div class="service-name">Overview</div>
-                </a>
-                <a href ="#service-1" class=" tech subnavi-holder w-inline-block">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 01</div>
-                  <div class="service-name">Tech Dev</div>
-                </a>
-                <a href="#service-2" class="subnavi-holder w-inline-block">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 02</div>
-                  <div class="service-name">Social Media</div>
-                </a>
-                <a href="#service-3" class="subnavi-holder w-inline-block">
-                  <div class="category-circle">
-                  </div>
-                  <div class="index-count">I - 03</div>
-                  <div class="service-name">Marketing</div>
-                </a>
-                <a href="#service-4" class="subnavi-holder w-inline-block">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 04</div>
-                  <div class="service-name">Design</div>
-                </a>
-                <a href="#service-5" class="subnavi-holder w-inline-block">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 05</div>
-                  <div class="service-name">Production</div>
-                </a>
-                <a href="#service-6" class="subnavi-holder w-inline-block">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 06</div>
-                  <div class="service-name">Consulting</div>
-                </a>
-                <a href="#service-7" class="subnavi-holder w-inline-block">
-                  <div class="category-circle">
-                  </div>
-                  <div class="index-count">I - 07</div>
-                  <div class="service-name">Partners</div>
-                </a>
+              <div class="services-list">
+                <nav id="sidemenu" class="toc">
+                  <ul>
+                    <li><a href="#service-0">Overview</a></li>
+                    <li><a href="#service-1">Social Media</a></li>
+                    <li><a href="#service-2">SEO</a></li>
+                    <li><a href="#service-3">Web Development</a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
@@ -109,7 +76,7 @@
             <div id="service-0" class="anchor service-0"></div>
             <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
               <div id="w-node-a67d279c6b13-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header overviewAnchor">
-                <h2 class="display-2 pad-right-mobile services">S - 00</h2>
+                
                 <h2 class="display-2 services">Overview</h2>
               </div>
               <div id="w-node-a67d279c6b18-147077fa" class="content">
@@ -176,14 +143,181 @@
               <div id="service-1" class="anchor"></div>
               <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
                 <div id="w-node-a67d279c6b60-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header">
-                  <h2 class="display-2 pad-right-mobile services">S - 01</h2>
-                  <h2 class="display-2 services">Tech Dev</h2>
+                  <h2 class="display-2 services">Social Media</h2>
                 </div>
                 <div id="w-node-a67d279c6b65-147077fa" class="content">
-                  <div class="caption uppercase margin-paragraph">we turn ideas into functionality</div>
+                  <div class="caption uppercase margin-paragraph">Bringing customers to you</div>
                 </div>
                 <div id="w-node-a67d279c6b68-147077fa" class="content margin-half-bottom">
-                  <h2 class="display-3 indexChange services" id = "tech">In technology development, we focus on functionality, user experience, and innovation. We are here to help develop your future.<br></h2>
+                  <h2 class="display-3 indexChange services" id = "tech">SOCIAL MEDIA TITLE<br></h2>
+                </div>
+                <div id="w-node-a67d279c6b6c-147077fa" class="content">
+                  <div class="width-100 w-dyn-list">
+                    <div role="list" class="w-dyn-items">
+                      <div role="listitem" class="post no-left-right w-dyn-item">
+                        <div class="post-wrapper portfolio">
+                          <a href="#" class="post-image-wrapper portfolio w-inline-block">
+                            <section class="circle-chart-container">
+                              <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                                  <circle stroke="#efefef" stroke-width=".5" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <circle class="circleAnimation " stroke="#08abb0" stroke-width="3" stroke-dasharray="54,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                </svg>
+                              <span class="circle-chart-percentage circle-chart-one-percentage">
+                                  29.1%
+                                </span>
+                              <svg class="circle-chart circle-chart-two" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                                  <circle stroke="#efefef" stroke-width="0" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <circle class="circleAnimation " stroke="#fb0" stroke-width="3" stroke-dasharray="29,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                </svg>
+                              <span class="circle-chart-percentage circle-chart-two-percentage">
+                                  54.9%
+                                </span>
+                            </section>
+                          </a>
+                          <div class="post-content portfolio">
+                            <div class="post-info">
+                              <a href="#" class="badge blog-badge w-inline-block">
+                                <div>Social Media</div>
+                              </a>
+                              <div class="caption uppercase"></div>
+                              </div>
+                              <a href="/projects/monte-ventoso" class="post-link w-inline-block">
+                                <div class="display-3 margin-paragraph services">Ads Tailored to Your Business</div>
+                              </a>
+                              <p class="post-summary services">Anyone can create an ad on Facebook, but not everyone can create an ad that will be successful, that's where we come in. Business owners have many things to manage, and creating and managing ads is not always high on their list of priorities. We can help you free up your time and help your business grow by setting up campaigns and individual ads, managing these as well as optimising, and finally reporting.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-layout-grid grid-6 no-gap margin-bottom">
+              <div id="w-node-a67d279c6b81-147077fa" class="content">
+                <div class="caption uppercase margin-paragraph">Our TECH DEVELOPMENT SERVICES</div>
+                <h2 class="display-3 services">We like to spend time to get to know how your business operates, the message you are trying to spread and the customers that you want to attract before we launch any ads. This is to make sure that the advertising process is efficient and gets you the best return on your investment. </h2>
+              </div>
+              <div id="w-node-a67d279c6b25-147077fa" class="accordion-wrapper">
+                <div class="accordion-item" onclick="accordionTrigger('.accordion11', '.accordion11Content')">
+                  <div class="accordion-item-trigger">
+                    <div class="plus-icon accordionUp accordion11">+</div>
+                    <div class="accordion-title w-clearfix">Learning<span class="sup">1/5</span></div>
+                  </div>
+                  <div class="accordion-item-content accordionContentUp accordion11Content">
+                    <div class="accordion-text">Our first step is to understand our clients on a personal level. Whether large or small, we want to know your vision so we can best do our job. We believe that understanding your culture and desired outcome will enable us to provide results that exceed expectations.</div>
+                  </div>
+                </div>
+                <div class="accordion-item" onclick="accordionTrigger('.accordion12', '.accordion12Content')">
+                  <div class="accordion-item-trigger">
+                    <div class="plus-icon accordionUp accordion12">+</div>
+                    <div class="accordion-title w-clearfix">Planning<span class="sup">2/5</span></div>
+                  </div>
+                  <div class="accordion-item-content accordionContentUp accordion12Content">
+                    <div class="accordion-text">Our next step is to identify and strategize according to our methodologies and results-oriented tactics. We work with you to make sure we are always aligned to the same shared goals.</div>
+                  </div>
+                </div>
+                <div class="accordion-item" onclick="accordionTrigger('.accordion13', '.accordion13Content')">
+                  <div class="accordion-item-trigger">
+                    <div class="plus-icon accordionUp accordion13">+</div>
+                    <div class="accordion-title w-clearfix">Building<span class="sup">3/5</span></div>
+                  </div>
+                  <div class="accordion-item-content accordionContentUp accordion13Content">
+                    <div class="accordion-text">We take our plan and knowledge of your desires and implement that combination to execute services that blend with your brand. Utilizing our unique structure and communication model, our departments work in tandem to create outstanding results.</div>
+                  </div>
+                </div>
+                <div class="accordion-item" onclick="accordionTrigger('.accordion14', '.accordion14Content')">
+                  <div class="accordion-item-trigger">
+                    <div class="plus-icon accordionUp accordion14">+</div>
+                    <div class="accordion-title w-clearfix">Testing<span class="sup">4/5</span></div>
+                  </div>
+                  <div class="accordion-item-content accordionContentUp accordion14Content">
+                    <div class="accordion-text">Before we implement any services to our client, we conduct heavy quality assurance, stress, and customized testing to ensure that top-quality is a consistent deliverable.</div>
+                  </div>
+                </div>
+                <div class="accordion-item" onclick="accordionTrigger('.accordion15', '.accordion15Content')">
+                  <div class="accordion-item-trigger">
+                    <div class="plus-icon accordionUp accordion15">+</div>
+                    <div class="accordion-title w-clearfix">Implementing<span class="sup">5/5</span></div>
+                  </div>
+                  <div class="accordion-item-content accordionContentUp accordion15Content">
+                    <div class="accordion-text">Jungle is Massive</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="w-node-a67d279c6b5d-147077fa" class="content">
+              <div id="service-2" class="anchor"></div>
+              <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
+                <div id="w-node-a67d279c6b60-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header">
+                  <h2 class="display-2 services">SEO</h2>
+                </div>
+                <div id="w-node-a67d279c6b65-147077fa" class="content">
+                  <div class="caption uppercase margin-paragraph">BE SEEN</div>
+                </div>
+                <div id="w-node-a67d279c6b68-147077fa" class="content margin-half-bottom">
+                  <h2 class="display-3 indexChange services" id = "tech">SEO TITLE<br></h2>
+                </div>
+                <div id="w-node-a67d279c6b6c-147077fa" class="content">
+                  <div class="width-100 w-dyn-list">
+                    <div role="list" class="w-dyn-items">
+                      <div role="listitem" class="post no-left-right w-dyn-item">
+                        <div class="post-wrapper portfolio">
+                          <a href="#" class="post-image-wrapper-bar-chart portfolio w-inline-block">
+                            <section class="barAnimation bar-graph bar-graph-horizontal">
+                              <div class="bar-one">
+                                <span class="year">2019</span>
+                                <div class="bar" data-percentage="59.6%"></div>
+                              </div>
+                              <div class="bar-two">
+                                <span class="year">2018</span>
+                                <div class="bar" data-percentage="71%"></div>
+                              </div>
+                              <div class="bar-three">
+                                <span class="year">2017</span>
+                                <div class="bar" data-percentage="74.7%"></div>
+                              </div>
+                              <div class="bar-four">
+                                <span class="year">2019</span>
+                                <div class="bar" data-percentage="86.8%"></div>
+                              </div>
+                            </section>
+                          </a>
+                          <div class="post-content portfolio">
+                            <div class="post-info">
+                              <a href="#" class="badge blog-badge w-inline-block">
+                                <div>SEO</div>
+                              </a>
+                              <div class="caption uppercase"></div>
+                              </div>
+                              <a href="/projects/monte-ventoso" class="post-link w-inline-block">
+                                <div class="display-3 margin-paragraph services">Comprehensive Services for a Picturesque Venue</div>
+                              </a>
+                              <p class="post-summary services">If you own a website, one of the most frustrating things you'll find is how difficult it is for your site to be discovered when it is drowned out by all the other sites in your market. With SEO, we can help you build a strategic approach to organising your site and the content you fill it with, ensuring that the website is sound from a technical standpoint, integrating partnerships and link-building. For optimal results, SEO should be implemented across other channels, as it is not really a channel in its own right.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-layout-grid grid-6 no-gap margin-bottom">
+              <div id="w-node-a67d279c6b81-147077fa" class="content">
+                <div class="caption uppercase margin-paragraph">Our SEO SERVICES</div>
+                <h2 class="display-3 services">We at EVLV have a team with great successes in this field and will provide honest feedback on what can be done and what we can do to help.</h2>
+              </div>
+            </div>
+            
+            <div id="w-node-a67d279c6b5d-147077fa" class="content">
+              <div id="service-3" class="anchor"></div>
+              <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
+                <div id="w-node-a67d279c6b60-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header">
+                  <h2 class="display-2 services">Web Development</h2>
+                </div>
+                <div id="w-node-a67d279c6b65-147077fa" class="content">
+                  <div class="caption uppercase margin-paragraph">we turn ideas into reality</div>
+                </div>
+                <div id="w-node-a67d279c6b68-147077fa" class="content margin-half-bottom">
+                  <h2 class="display-3 indexChange services" id = "tech">WEB DEV TITLE<br></h2>
                 </div>
                 <div id="w-node-a67d279c6b6c-147077fa" class="content">
                   <div class="width-100 w-dyn-list">
@@ -197,14 +331,14 @@
                           <div class="post-content portfolio">
                             <div class="post-info">
                               <a href="#" class="badge blog-badge w-inline-block">
-                                <div>Tech Dev</div>
+                                <div>Web Development</div>
                               </a>
-                              <div class="caption uppercase">Monte Ventoso</div>
+                              <div class="caption uppercase"></div>
                               </div>
                               <a href="/projects/monte-ventoso" class="post-link w-inline-block">
-                                <div class="display-3 margin-paragraph services">Comprehensive Services for a Picturesque Venue</div>
+                                <div class="display-3 margin-paragraph services">First Impressions Matter</div>
                               </a>
-                              <p class="post-summary services">Monte Ventoso (windy mountain in Italian), is a beautiful Italian villa in the foothills of the Blue Ridge Mountains in Central Virginia. Built as a family home, it was recently converted into a luxury AirBnB and events venue! </p>
+                              <p class="post-summary services">A pretty face is not always going to win the attention of a person, engagement and driving conversation plays a great role in this. The same applies to your website. It is not enough anymore just to have the best-looking website, but one users can interact with and understand.</p>
                             </div>
                           </div>
                         </div>
@@ -214,46 +348,8 @@
                 </div>
                 <div class="w-layout-grid grid-6 no-gap margin-bottom">
               <div id="w-node-a67d279c6b81-147077fa" class="content">
-                <div class="caption uppercase margin-paragraph">Our TECH DEVELOPMENT SERVICES</div>
-                <h2 class="display-3 services">With our team at your side, you can focus on the ideas while we handle the implementation.</h2>
-              </div>
-              <div id="w-node-a67d279c6b86-147077fa" class="accordion-wrapper">
-                <div class="accordion-item">
-                  <div class="accordion-item-trigger">
-                    <div class="plus-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">+</div>
-                    <div class="accordion-title w-clearfix">Website Development<span class="sup">1/4</span></div>
-                  </div>
-                  <div class="accordion-item-content" style="height: 0px;">
-                    <div class="accordion-text">With websites becoming increasingly more commonplace, it is also becoming harder to stand out from the crowd. Our website development and design services will help you do just that. From utilizing Webflow to building custom sites from scratch, we can provide any level of services you need. Your level of involvement is up to you, and when we're finished building it, we take care of the maintenance and SEO as well. </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <div class="accordion-item-trigger">
-                    <div class="plus-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">+</div>
-                    <div class="accordion-title w-clearfix">Full-Stack Custom Software<span class="sup">2/4</span></div>
-                  </div>
-                  <div class="accordion-item-content" style="height: 0px;">
-                    <div class="accordion-text">Sometimes there is not a pre-made solution for software you are looking for. We help turn visions into function by designing and developing custom software solutions to solve problems that you need fixed.</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <div class="accordion-item-trigger">
-                    <div class="plus-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">+</div>
-                    <div class="accordion-title w-clearfix">Mobile Applications<span class="sup">3/4</span></div>
-                  </div>
-                  <div class="accordion-item-content" style="height: 0px;">
-                    <div class="accordion-text">Mobile applications add native functionality and more power to your business. Apps can be anything from complicated social media platforms to simple informational databases like a dictionary. We are here to guide you through the process of design, key features, development, and launch.</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <div class="accordion-item-trigger">
-                    <div class="plus-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">+</div>
-                    <div class="accordion-title w-clearfix">UI/UX<span class="sup">4/4</span></div>
-                  </div>
-                  <div class="accordion-item-content" style="height: 0px;">
-                    <div class="accordion-text">No software looks good as 1's and 0's. Our UI/UX team is here to turn the functionality of an idea into a fluid experience that keeps customers coming back. </div>
-                  </div>
-                </div>
+                <div class="caption uppercase margin-paragraph">Our Web DEVELOPMENT SERVICES</div>
+                <h2 class="display-3 services">Our creative team will build a strong and consistent message and brand across all communications, from web design to email, display, and print. We align all of our work with your marketing strategy to ensure anything we create helps you achieve your business objectives (rather than just looking pretty)</h2>
               </div>
             </div>
           </div>
@@ -261,17 +357,9 @@
         </div>
       </div>
 
-
-
-
-
-
-
-
-
-
-
     <script src = "./external.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./query.js"></script>
 
   </body>
 </html>
