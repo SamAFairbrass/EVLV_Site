@@ -9,13 +9,12 @@
     font-family: Montserrat, sans-serif;
 }
 
-.footer .footer-content {
-    border: 1px solid red;
+.content {
     height: 350px;
 
 }
 
-.footer-bottom {
+.bottom {
     background: #343a40;
     color: #686868;
     height: 50px;
