@@ -1,8 +1,5 @@
-.grad {
-    background-color: #08abb0;
-    background-image: -webkit-linear-gradient(#16161d, rgba(22, 22, 29, 0.8));
-    background-image: linear-gradient(360deg, #16161d, rgba(22, 22, 29, 0.8));
-  }
+
+
 
   .fadeIn{
     color: white;
@@ -772,8 +769,308 @@
     }
 
 
-    /* Accordion */
+    /* Index Menu */
 
-
-
+    .toc {
+        
+        font-family: sans-serif;
+        font-size: 14px;
+        line-height: 14px;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        /* touch device overrides */
+      }
+      .toc ul {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .toc ul:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 7px;
+        background-color: transparent;
+        width: 1px;
+        height: 100%;
+      }
+      .toc li:not(:last-child) a {
+        margin-bottom: 14px;
+      }
+      .toc li a {
+        display: block;
+        position: relative;
+        left: 28px;
+        color: #fff;
+        opacity: 0.5;
+        text-decoration: none;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+      }
+      .toc li a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        opacity: 0.5;
+        left: -28px;
+        height: 14px;
+        width: 14px;
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 1px white;
+      }
+      .toc li a:hover {
+        color: white;
+        opacity: 1;
+      }
+      .toc li a:hover:before {
+        box-shadow: 0 0 0 2px white;
+        opacity: 1;
+      }
+      .toc li.selected a {
+        opacity: 1;
+      }
+      .toc li.selected a:before {
+        background-color: white;
+        opacity: 1;
+      }
+      .touch .toc li a {
+        color: white;
+        opacity: 1;
+      }
+      
+      /* content */
+      .main {
+        width: calc(100% - 275px);
+        margin-left: 280px;
+      }
+      .main h1, .main h2, .main h3, .main h4, .main h5, .main h6, .main p {
+        font-family: sans-serif;
+        color: white;
+      }
+      .main img.feature {
+        margin-left: -280px;
+        width: 880px;
+      }
+      
+      .content-block {
+        width: 600px;
+        margin-bottom: 50px;
+      }
+      
+      .comments,
+      footer {
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
     
+      /* Index Menu End */
+
+
+
+/* Circle Chart */
+.circle-chart-container {
+	position: relative;
+    width: 75%;
+    left: 25px;
+    top: 5px;
+}
+
+.circle-chart {
+	overflow: visible;
+}
+
+.circle-chart-circle {
+ 	animation: circle-chart-fill 1.35s reverse;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	transform-origin: center;
+}
+
+.circle-chart-circle-static {
+   -webkit-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -o-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   transform: rotate(-90deg);
+   transform-origin: center;
+}
+
+.circle-chart-two {
+	left: 6%;
+	max-width: 88%;
+	position: absolute;
+	top: 6%;
+}
+
+.circle-chart-percentage {
+	-webkit-animation: fade-in-text 2.2s 0.1s forwards;
+	-moz-animation: fade-in-text 2.2s 0.1s forwards;
+	animation: fade-in-text 2.2s 0.1s forwards;
+	font-size: 22px;
+	font-weight: 700;
+    position: absolute;
+}
+
+.circle-chart-one-percentage {
+	color: #fb0;
+	left: 100px;
+    top: 60px;
+}
+
+.circle-chart-two-percentage {
+	color: #08abb0;
+	left: 100px;
+    top: 140px;
+}
+
+@keyframes circle-chart-fill {
+	to { stroke-dasharray: 0 100; }
+}
+
+      /* Animated Circle End */
+
+
+/* Animated Bar Chart */
+
+
+  .bar-graph .year {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    opacity: 0;
+  }
+  
+  .bar-graph-horizontal {
+    max-width: 380px;
+  }
+  
+  .bar-graph-horizontal > div {
+    float: left;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  
+  .bar-graph-horizontal .year {
+    float: left;
+    margin-top: 18px;
+    width: 50px;
+  }
+  
+  .bar-graph-horizontal .bar {
+    border-radius: 3px;
+    height: 55px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+  }
+  
+  .bar-graph-one .bar::after {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    color: #fff;
+    content: attr(data-percentage);
+    font-weight: 700;
+    position: absolute;
+    right: 16px;
+    top: 17px;
+  }
+  
+  .bar-graph-one .bar-one .bar {
+    background-color: #64b2d1;
+    -webkit-animation: show-bar-one 1.2s 0.1s forwards;
+    -moz-animation: show-bar-one 1.2s 0.1s forwards;
+    animation: show-bar-one 1.2s 0.1s forwards;
+  }
+  
+  .bar-graph-one .bar-two .bar {
+    background-color: #5292ac;
+    -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+    -moz-animation: show-bar-two 1.2s 0.2s forwards;
+    animation: show-bar-two 1.2s 0.2s forwards;
+  }
+  
+  .bar-graph-one .bar-three .bar {
+    background-color: #407286;
+    -webkit-animation: show-bar-three 1.2s 0.3s forwards;
+    -moz-animation: show-bar-three 1.2s 0.3s forwards;
+    animation: show-bar-three 1.2s 0.3s forwards;
+  }
+  
+  .bar-graph-one .bar-four .bar {
+    background-color: #2e515f;
+    -webkit-animation: show-bar-four 1.2s 0.4s forwards;
+    -moz-animation: show-bar-four 1.2s 0.4s forwards;
+    animation: show-bar-four 1.2s 0.4s forwards;
+  }
+  
+  /* Bar Graph Horizontal Animations */
+  @-webkit-keyframes show-bar-one {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 59.6%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-two {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 71%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-three {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 74.7%;
+    }
+  }
+  
+  @-webkit-keyframes show-bar-four {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 86.8%;
+    }
+  }
+  
+  @-webkit-keyframes fade-in-text {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .post-image-wrapper-bar-chart {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 25rem;
+    height: 17.5rem;
+    min-height: 17.5rem;
+    min-width: 25rem;
+  }
+
+/* Animated Bar Chart End */
+
+
+.invisible{
+    opacity: 0;
+}

@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="serviceStyles.css" media="screen"/>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
   </head>
 
   <ul style="color: white; opacity: 1 !important; z-index: 20; position: relatve; height: 0px; ">
-      <a href="#home"><div class="logo"></div></a>
+      <a href="index.html"><div class="logo"></div></a>
       <div class="topnav" id="myTopnav">
-        <a href="#contact">Contact</a>
-        <a href="#news">Articles</a>
+        <a href="contact.html">Contact</a>
+        <a href="articles.html">Articles</a>
         <a href="services.html">Services</a>
-        <a href="#about">About</a>
+        <a href="about.html">About</a>
         <a href="index.html" class="active">Home</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
@@ -58,49 +60,16 @@
           <div id="w-node-a67d279c6adb-147077fa" class="content hidden-mobile">
             <div class="sticky-content">
               <div class="caption uppercase margin-paragraph">index</div>
-              <div class="services-list" id = "services-list">
-                <a href ="#service-0" class="subnavi-holder w-inline-block w--current">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 00</div>
-                  <div class="service-name">Overview</div>
-                </a>
-                <a href ="#service-1" class=" tech subnavi-holder w-inline-block">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 01</div>
-                  <div class="service-name">Tech Dev</div>
-                </a>
-                <a href="#service-2" class="subnavi-holder w-inline-block">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 02</div>
-                  <div class="service-name">Social Media</div>
-                </a>
-                <a href="#service-3" class="subnavi-holder w-inline-block">
-                  <div class="category-circle">
-                  </div>
-                  <div class="index-count">I - 03</div>
-                  <div class="service-name">Marketing</div>
-                </a>
-                <a href="#service-4" class="subnavi-holder w-inline-block">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 04</div>
-                  <div class="service-name">Design</div>
-                </a>
-                <a href="#service-5" class="subnavi-holder w-inline-block">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 05</div>
-                  <div class="service-name">Production</div>
-                </a>
-                <a href="#service-6" class="subnavi-holder w-inline-block">
-                  <div class="category-circle"></div>
-                  <div class="index-count">I - 06</div>
-                  <div class="service-name">Consulting</div>
-                </a>
-                <a href="#service-7" class="subnavi-holder w-inline-block">
-                  <div class="category-circle">
-                  </div>
-                  <div class="index-count">I - 07</div>
-                  <div class="service-name">Partners</div>
-                </a>
+              <div class="services-list">
+                <nav id="sidemenu" class="toc">
+                  <ul>
+                    <li><a href="#service-0">Overview</a></li>
+                    <li><a href="#service-1">Social Media</a></li>
+                    <li><a href="#service-2">Paid Traffic</a></li>
+                    <li><a href="#service-3">SEO</a></li>
+                    <li><a href="#service-4">Web Development</a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
@@ -108,7 +77,7 @@
             <div id="service-0" class="anchor service-0"></div>
             <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
               <div id="w-node-a67d279c6b13-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header overviewAnchor">
-                <h2 class="display-2 pad-right-mobile services">S - 00</h2>
+                
                 <h2 class="display-2 services">Overview</h2>
               </div>
               <div id="w-node-a67d279c6b18-147077fa" class="content">
@@ -175,14 +144,13 @@
               <div id="service-1" class="anchor"></div>
               <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
                 <div id="w-node-a67d279c6b60-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header">
-                  <h2 class="display-2 pad-right-mobile services">S - 01</h2>
-                  <h2 class="display-2 services">Tech Dev</h2>
+                  <h2 class="display-2 services">Social Media</h2>
                 </div>
                 <div id="w-node-a67d279c6b65-147077fa" class="content">
-                  <div class="caption uppercase margin-paragraph">we turn ideas into functionality</div>
+                  <div class="caption uppercase margin-paragraph">EVERYONE DESERVES TO BE SEEN</div>
                 </div>
                 <div id="w-node-a67d279c6b68-147077fa" class="content margin-half-bottom">
-                  <h2 class="display-3 indexChange services" id = "tech">In technology development, we focus on functionality, user experience, and innovation. We are here to help develop your future.<br></h2>
+                  <h2 class="display-3 indexChange services" id = "tech">The potential for growth on social media is higher than ever. With countless platforms for differing target markets, our team helps get you the visibility you need for success.<br></h2>
                 </div>
                 <div id="w-node-a67d279c6b6c-147077fa" class="content">
                   <div class="width-100 w-dyn-list">
@@ -190,13 +158,27 @@
                       <div role="listitem" class="post no-left-right w-dyn-item">
                         <div class="post-wrapper portfolio">
                           <a href="#" class="post-image-wrapper portfolio w-inline-block">
-                            <div style="background-color:#f1ddcf" class="post-gradient"></div>
-                            <div style="background-image:url(&quot;https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Ffinancial-growth-icon-vector-20994521&psig=AOvVaw3GvpR-ZeHq2uFwKuURA86V&ust=1597225380009000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCY7K3ukusCFQAAAAAdAAAAABAa&quot;)" class="post-image portfolio"></div>
+                            <section class="circle-chart-container">
+                              <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                                  <circle stroke="#efefef" stroke-width=".5" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <circle class="circleAnimation " stroke="#08abb0" stroke-width="3" stroke-dasharray="54,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                </svg>
+                              <span class="circle-chart-percentage circle-chart-one-percentage">
+                                  29.1%
+                                </span>
+                              <svg class="circle-chart circle-chart-two" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                                  <circle stroke="#efefef" stroke-width="0" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  <circle class="circleAnimation " stroke="#fb0" stroke-width="3" stroke-dasharray="29,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                </svg>
+                              <span class="circle-chart-percentage circle-chart-two-percentage">
+                                  54.9%
+                                </span>
+                            </section>
                           </a>
                           <div class="post-content portfolio">
                             <div class="post-info">
                               <a href="#" class="badge blog-badge w-inline-block">
-                                <div>Tech Dev</div>
+                                <div>Social Media</div>
                               </a>
                               <div class="caption uppercase">Monte Ventoso</div>
                               </div>
@@ -255,22 +237,165 @@
                 </div>
               </div>
             </div>
+            <div id="w-node-a67d279c6b5d-147077fa" class="content">
+              <div id="service-2" class="anchor"></div>
+              <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
+                <div id="w-node-a67d279c6b60-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header">
+                  <h2 class="display-2 services">Paid Traffic</h2>
+                </div>
+                <div id="w-node-a67d279c6b65-147077fa" class="content">
+                  <div class="caption uppercase margin-paragraph">we turn ideas into functionality</div>
+                </div>
+                <div id="w-node-a67d279c6b68-147077fa" class="content margin-half-bottom">
+                  <h2 class="display-3 indexChange services" id = "tech">In technology development, we focus on functionality, user experience, and innovation. We are here to help develop your future.<br></h2>
+                </div>
+                <div id="w-node-a67d279c6b6c-147077fa" class="content">
+                  <div class="width-100 w-dyn-list">
+                    <div role="list" class="w-dyn-items">
+                      <div role="listitem" class="post no-left-right w-dyn-item">
+                        <div class="post-wrapper portfolio">
+                          <a href="#" class="post-image-wrapper-bar-chart portfolio w-inline-block">
+                            <section class="barAnimation bar-graph bar-graph-horizontal">
+                              <div class="bar-one">
+                                <span class="year">2019</span>
+                                <div class="bar" data-percentage="59.6%"></div>
+                              </div>
+                              <div class="bar-two">
+                                <span class="year">2018</span>
+                                <div class="bar" data-percentage="71%"></div>
+                              </div>
+                              <div class="bar-three">
+                                <span class="year">2017</span>
+                                <div class="bar" data-percentage="74.7%"></div>
+                              </div>
+                              <div class="bar-four">
+                                <span class="year">2019</span>
+                                <div class="bar" data-percentage="86.8%"></div>
+                              </div>
+                            </section>
+                          </a>
+                          <div class="post-content portfolio">
+                            <div class="post-info">
+                              <a href="#" class="badge blog-badge w-inline-block">
+                                <div>Tech Dev</div>
+                              </a>
+                              <div class="caption uppercase">Monte Ventoso</div>
+                              </div>
+                              <a href="/projects/monte-ventoso" class="post-link w-inline-block">
+                                <div class="display-3 margin-paragraph services">Comprehensive Services for a Picturesque Venue</div>
+                              </a>
+                              <p class="post-summary services">Monte Ventoso (windy mountain in Italian), is a beautiful Italian villa in the foothills of the Blue Ridge Mountains in Central Virginia. Built as a family home, it was recently converted into a luxury AirBnB and events venue! </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-layout-grid grid-6 no-gap margin-bottom">
+              <div id="w-node-a67d279c6b81-147077fa" class="content">
+                <div class="caption uppercase margin-paragraph">Our TECH DEVELOPMENT SERVICES</div>
+                <h2 class="display-3 services">With our team at your side, you can focus on the ideas while we handle the implementation.</h2>
+              </div>
+            </div>
+            <div id="w-node-a67d279c6b5d-147077fa" class="content">
+              <div id="service-3" class="anchor"></div>
+              <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
+                <div id="w-node-a67d279c6b60-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header">
+                  <h2 class="display-2 services">SEO</h2>
+                </div>
+                <div id="w-node-a67d279c6b65-147077fa" class="content">
+                  <div class="caption uppercase margin-paragraph">we turn ideas into functionality</div>
+                </div>
+                <div id="w-node-a67d279c6b68-147077fa" class="content margin-half-bottom">
+                  <h2 class="display-3 indexChange services" id = "tech">In technology development, we focus on functionality, user experience, and innovation. We are here to help develop your future.<br></h2>
+                </div>
+                <div id="w-node-a67d279c6b6c-147077fa" class="content">
+                  <div class="width-100 w-dyn-list">
+                    <div role="list" class="w-dyn-items">
+                      <div role="listitem" class="post no-left-right w-dyn-item">
+                        <div class="post-wrapper portfolio">
+                          <a href="#" class="post-image-wrapper portfolio w-inline-block">
+                            <div style="background-color:#f1ddcf" class="post-gradient"></div>
+                            <div style="background-image:url(&quot;https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Ffinancial-growth-icon-vector-20994521&psig=AOvVaw3GvpR-ZeHq2uFwKuURA86V&ust=1597225380009000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCY7K3ukusCFQAAAAAdAAAAABAa&quot;)" class="post-image portfolio"></div>
+                          </a>
+                          <div class="post-content portfolio">
+                            <div class="post-info">
+                              <a href="#" class="badge blog-badge w-inline-block">
+                                <div>Tech Dev</div>
+                              </a>
+                              <div class="caption uppercase">Monte Ventoso</div>
+                              </div>
+                              <a href="/projects/monte-ventoso" class="post-link w-inline-block">
+                                <div class="display-3 margin-paragraph services">Comprehensive Services for a Picturesque Venue</div>
+                              </a>
+                              <p class="post-summary services">Monte Ventoso (windy mountain in Italian), is a beautiful Italian villa in the foothills of the Blue Ridge Mountains in Central Virginia. Built as a family home, it was recently converted into a luxury AirBnB and events venue! </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-layout-grid grid-6 no-gap margin-bottom">
+              <div id="w-node-a67d279c6b81-147077fa" class="content">
+                <div class="caption uppercase margin-paragraph">Our TECH DEVELOPMENT SERVICES</div>
+                <h2 class="display-3 services">With our team at your side, you can focus on the ideas while we handle the implementation.</h2>
+              </div>
+            </div>
+            <div id="w-node-a67d279c6b5d-147077fa" class="content">
+              <div id="service-4" class="anchor"></div>
+              <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
+                <div id="w-node-a67d279c6b60-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header">
+                  <h2 class="display-2 services">Web Development</h2>
+                </div>
+                <div id="w-node-a67d279c6b65-147077fa" class="content">
+                  <div class="caption uppercase margin-paragraph">we turn ideas into functionality</div>
+                </div>
+                <div id="w-node-a67d279c6b68-147077fa" class="content margin-half-bottom">
+                  <h2 class="display-3 indexChange services" id = "tech">In technology development, we focus on functionality, user experience, and innovation. We are here to help develop your future.<br></h2>
+                </div>
+                <div id="w-node-a67d279c6b6c-147077fa" class="content">
+                  <div class="width-100 w-dyn-list">
+                    <div role="list" class="w-dyn-items">
+                      <div role="listitem" class="post no-left-right w-dyn-item">
+                        <div class="post-wrapper portfolio">
+                          <a href="#" class="post-image-wrapper portfolio w-inline-block">
+                            <div style="background-color:#f1ddcf" class="post-gradient"></div>
+                            <div style="background-image:url(&quot;https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Ffinancial-growth-icon-vector-20994521&psig=AOvVaw3GvpR-ZeHq2uFwKuURA86V&ust=1597225380009000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCY7K3ukusCFQAAAAAdAAAAABAa&quot;)" class="post-image portfolio"></div>
+                          </a>
+                          <div class="post-content portfolio">
+                            <div class="post-info">
+                              <a href="#" class="badge blog-badge w-inline-block">
+                                <div>Tech Dev</div>
+                              </a>
+                              <div class="caption uppercase">Monte Ventoso</div>
+                              </div>
+                              <a href="/projects/monte-ventoso" class="post-link w-inline-block">
+                                <div class="display-3 margin-paragraph services">Comprehensive Services for a Picturesque Venue</div>
+                              </a>
+                              <p class="post-summary services">Monte Ventoso (windy mountain in Italian), is a beautiful Italian villa in the foothills of the Blue Ridge Mountains in Central Virginia. Built as a family home, it was recently converted into a luxury AirBnB and events venue! </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-layout-grid grid-6 no-gap margin-bottom">
+              <div id="w-node-a67d279c6b81-147077fa" class="content">
+                <div class="caption uppercase margin-paragraph">Our TECH DEVELOPMENT SERVICES</div>
+                <h2 class="display-3 services">With our team at your side, you can focus on the ideas while we handle the implementation.</h2>
+              </div>
+            </div>
           </div>
         </div>
         </div>
       </div>
 
-
-
-
-
-
-
-
-
-
-
     <script src = "./external.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./query.js"></script>
 
   </body>
 </html>

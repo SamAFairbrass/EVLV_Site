@@ -18,7 +18,7 @@ body {
 }
 
 .section{
-    height: 100vh;
+    height: 104vh;
     box-sizing: border-box;
     z-index: -3;
     font-family: arial, sans-serif;
@@ -312,7 +312,6 @@ color: black;
 
 .mainText{
 color: white;
-z-index: 100;
 opacity: 1;
 
 
@@ -341,15 +340,13 @@ opacity: 1;
 .mainTextBlock{
 padding: 7%;
 opacity: 1;
-top: 000px;
+top: 160px;
 margin-top: 22%;
 position: relative;
-z-index: 100 !important;
 }
 .mainTextBlock2{
   opacity: 1;
   position: relative; 
-  z-index: 100 !important;
   }
 
 .bg-vid{
