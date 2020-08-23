@@ -574,7 +574,7 @@
     .post-image-wrapper {
       position: relative;
       left: 0px;
-      top: 0px;
+      top: 30px;
       right: 0px;
       bottom: 0px;
       width: 17.5rem;
@@ -1059,7 +1059,7 @@
   .post-image-wrapper-bar-chart {
     position: relative;
     left: 0px;
-    top: 0px;
+    top: 80px;
     right: 0px;
     bottom: 0px;
     width: 25rem;
@@ -1074,3 +1074,4 @@
 .invisible{
     opacity: 0;
 }
+
