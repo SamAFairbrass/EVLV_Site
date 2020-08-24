@@ -1,0 +1,165 @@
+.pageContainer{
+
+  background-image:linear-gradient(180deg, transparent 0%, #00000066 15%, #00000088 25%, #000000aa 60%, #000d 100%);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,3f3f3f+35,000000+100 */
+  /*background: #feffff; /* Old browsers */
+  /*background-image: -moz-linear-gradient(top, #feffff 0%, #3f3f3f 35%, #000000 100%); /* FF3.6-15 */
+  /*background-image: -webkit-linear-gradient(top, #feffff 0%,#3f3f3f 35%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+  /*background-image: linear-gradient(to bottom, #feffff 0%,#3f3f3f 35%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  z-index: 100;
+}
+.bgImageContainer{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url('images/article-images/5-facebook-marketing-mistakes.png');
+  height: 400px;
+  background-size: cover;
+
+}
+.bgImageOverlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+}
+
+.darkOverlay{
+  background-color: #0006;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+}
+
+/*.pageContainer{*/
+/*background-image: linear-gradient(10deg, #47479b, rgba(21, 21, 21, 0.25)) !important;*/
+/*background-image: linear-gradient(0deg, #02021a, rgb(0, 228, 228)) !important;
+z-index: -3;
+linear-gradient(0deg, #16161d, rgba(22, 22, 29, 0.25)) !important
+}*/
+#fb_share{
+  color: #09f;
+}
+
+.articleDate{
+  width: 90%; color:black; margin: 0 auto; display:flex; align: center; justify-content: center; margin-top: 10px
+}
+
+.linkRow{
+  width: 30%;
+}
+
+.columnSplit{
+  display:flex; padding: 3%; padding-top: 0%; justify-content: center; height: 100% ; line-height: 1.3;
+}
+
+.articleContainerTop{
+  width: 70.5%; justify-content: center; margin: auto; background-color: #fff;  
+  text-align: center;
+
+  margin-top: 40% !important;
+}
+@media only screen and (max-width: 600px) {
+  .articleContainerTop{width: 84.6%; margin-top: 80% !important;}
+}
+
+
+
+.articleContainer{ padding: 3%; padding-top: 1%; width: 75%; color: white !important; background-color: #fff; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;}
+@media only screen and (max-width: 600px) {
+  .articleContainer{width: 90%}
+}
+
+
+.articleContainer *{ color: #000; text-align: justify;
+  text-justify: inter-word;  }
+
+  .articleContainer p { color: #444}
+
+  .articleHistory{ width: 100% !important ; color: red; margin-left: 2%; flex-wrap: nowrap;}
+  imageContainer
+  .articleImageContainer{height: 100px;
+    width: 80px;
+    overflow: hidden; background-size: cover; background-image: url('images/article-images/5-facebook-marketing-mistakes.jpg'); z-index: 10;}
+
+    .imgimg{
+      /*.pageContainer{*/
+      /*background-image: linear-gradient(10deg, #47479b, rgba(21, 21, 21, 0.25)) !important;*/
+      /*background-image: linear-gradient(0deg, #02021a, rgb(0, 228, 228)) !important;
+      z-index: -3;
+
+      }*/
+      /*margin-top: 2.5%;*/
+      background-image: url('images/article-images/5-facebook-marketing-mistakes.png');
+      height: 400px;
+      background-size: cover;
+    }
+
+    .checkOtherPosts{ display: flex; justify-content: center; text-decoration: none;}
+    .checkOtherPostsBtn{  background-color: #0000; color: white; padding: 3%; text-decoration: none; border: 3px solid white; border-radius: 10px}
+    .checkOtherPosts a{text-decoration: none;}
+    .checkOtherPostsBtn:hover{
+      background-color: white; color: black
+    }
+
+    .ex{
+      width: 100%; display: flex; margin: auto; justify-content: center
+    }
+    .socialLinks{
+      width: 90%; color:white; margin: 0 auto; display:flex; align: center; justify-content: center; margin-top: 1%
+    }
+
+
+
+    .bgHeader{
+      text-align: center; letter-spacing: -0.015em; text-shadow: black 1px 1px; font-weight: 900;
+                color: white; align-items: center; display: flex; justify-content: center; 
+                position: absolute; top: 30%;
+                font-size: 3rem; width: 75%
+    }
+
+    .bgAuthor{
+
+      font-variant: small-caps; text-align: center; letter-spacing: -0.015em;
+              text-shadow: black 1px 1px; color: white; align-items: center; 
+              display: flex; justify-content: center;
+              position: absolute; top: 50%; font-size: 1.5rem; width: 75%
+    }
+
+    @media only screen and (max-width: 400px) and (min-width: 101px){
+      .bgAuthor{top: 400% ; font-size: 1rem; }
+      .bgHeader{top: 800% ; font-size: 2rem;}
+    }
+
+    @media only screen and (max-width: 600px) and (min-width: 401px){
+      .bgAuthor{top: 55% ; font-size: 1.2rem; }
+      .bgHeader{top: 18% ; font-size: 2.7rem;}
+      .articleContainerTop{margin-top: 120% !important;}
+
+    }
+
+    @media only screen and (max-width: 800px) and (min-width: 601px){
+      .bgAuthor{top: 45% ; font-size: 1.2rem; }
+      .bgHeader{top: 20% ; font-size: 2.7rem;}
+      .articleContainerTop{margin-top: 80% !important;}
+    }
+
+    @media only screen and (max-width: 1100px) and (min-width: 801px){
+      .bgAuthor{top: 45% ; font-size: 1.4rem; }
+      .bgHeader{top: 20% ; font-size: 2.7rem;}
+      .articleContainerTop{margin-top: 60% !important;}
+    }
+
+    @media only screen and (max-width: 1300px) and (min-width: 1101px){
+      .bgAuthor{top: 50% ; font-size: 1.4rem; }
+      .bgHeader{top: 20% ; font-size: 2.9rem;}
+      .articleContainerTop{margin-top: 45% !important;}
+    }

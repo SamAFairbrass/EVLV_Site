@@ -20,16 +20,7 @@ opacity: 0.5;
 padding: 0 20px;
 color: #fff;
 }
-.logo {
-  width:77px; /*width of your image*/
-  height:35px; /*height of your image*/
-  content:url("EVLV_Logo.png");
-position: absolute;
-  left: 10px;
-  top: 10px;
-line-height: 60px;
-float: left;
-}
+
 .menu {
 float: right;
 line-height: 50px;
@@ -97,15 +88,13 @@ IMPORTANT: The max-width here, depends on how many <a> objects you have, in my c
       to your screen.
 */
 
+
 @media screen and (max-width: 1000px){
 .show-menu-btn, .hide-menu-btn {
   display: block;
   line-height: 50px;
 }
 
-.logo {
-  left: 10px;
-}
 
 .menu {
   position: absolute;
@@ -137,16 +126,24 @@ IMPORTANT: The max-width here, depends on how many <a> objects you have, in my c
 }
 
 #myVideo {
-position: absolute;
-right: 0;
-width: 103.5%;
-
+display: block;
+margin: auto;
 }
 
 @media screen and (max-width: 1000px){
-#myVideo{
-  width: 360% !important;
+  #myVideo{
+    width: 360% !important;
+  }
 }
+
+@media screen and (min-width: 1921px){
+  #myVideo{
+    width: 200% !important;
+  }
+
+  #neon{
+    margin-top: 15%  !important;
+  }
 }
 
 
@@ -171,7 +168,7 @@ color: black;
   box-sizing: border-box;
 }
 #neon{
-  
+
   display: inline-block;
   padding: 1.5%;
   margin: 1px ;
@@ -187,7 +184,7 @@ color: black;
   left: 50%;
   transform: translateX(-50%);
 
-  
+
 
 }
 
@@ -289,9 +286,9 @@ color: black;
 
 .mainText{
 color: white;
-z-index: 100;
+z-index: -100;
 opacity: 1;
-
+width: 100%;
 
 }
 
@@ -318,10 +315,11 @@ opacity: 1;
 .mainTextBlock{
 padding: 7%;
 opacity: 1;
-top: 000px;
-margin-top: 22%; 
-position: relative; 
-z-index: 100 !important;
+top: 100%;
+position: absolute;
+z-index: -100 !important;
+width: 100%;
+
 }
 
 .bg-vid{
@@ -337,53 +335,231 @@ z-index: 100 !important;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .topnav {
 overflow: hidden;
-background-color: #33300;
+background-color: #3330;
 height: 150px;
 @media screen and (max-width: 768px){
   font-size: 10px;
 }
 }
 
-.topnav a {
-float: right;
-display: block;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
+
+.nav-left a { 
+  float: left; 
+  color: #f2f2f2; 
+  text-align: center; 
+  display: inline-block; 
+}
+
+
+.nav-right a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  display: inline-block;
+  }
+
+.underline {
+  --line: white;
+  --color: white;
+  text-decoration: none;
+  color: var(--color);
+  position: relative;
+  margin-left: 10px;
+}
+.underline span {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(var(--line)), to(var(--line)));
+  background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: var(--background-size, 100%) 1px;
+  -webkit-transition: background-size 0.2s linear var(--background-delay, 0.15s);
+  transition: background-size 0.2s linear var(--background-delay, 0.15s);
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.underline svg {
+  vertical-align: top;
+  display: inline;
+  line-height: 1;
+  width: 13px;
+  height: 20px;
+  position: relative;
+  left: -2px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1px;
+  stroke: var(--line);
+  stroke-dasharray: 7.95 30;
+  stroke-dashoffset: var(--stroke-dashoffset, 46);
+  -webkit-transition: stroke-dashoffset var(--stroke-duration, 0.15s) var(--stroke-easing, linear) var(--stroke-delay, 0s);
+  transition: stroke-dashoffset var(--stroke-duration, 0.15s) var(--stroke-easing, linear) var(--stroke-delay, 0s);
+}
+.underline:hover {
+  --background-size: 0%;
+  --background-delay: 0s;
+  --stroke-dashoffset: 26;
+  --stroke-duration: .3s;
+  --stroke-easing: cubic-bezier(.3, 1.5, .5, 1);
+  --stroke-delay: .195s;
+}
+
+.logo {
+  width:77px; /*width of your image*/
+  height:35px; /*height of your image*/
+  content:url("EVLV_Logo.png");
+  line-height: 60px;
+  margin-left: 10px;
+}
+
+.logo-footer {
+  width:154px; /*width o}f your image*/
+  height:70px; /*height of your image*/
+  content:url("EVLV_Logo.png");
+}
+
+.fa {
+  padding: 4px 8px !important;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+}
+}
+
+
+.fa-footer {
+  padding: 4px 8px !important;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 
 
 
-
-.topnav a:hover {
-background-color: #c1ffff;
-color: #16161d;
-
-    background: #c1ffff;
-    color: #000000;
-    box-shadow: 0 0 5px #c1ffff,
-                0 0 25px #c1ffff,
-                0 0 50px #c1ffff,
-                0 0 50px #c1ffff;
-
+.fa-facebook {
+  color: white;
 }
+
+.fa-linkedin { 
+  color: white; 
+} 
+
+.fa-instagram { 
+  color: white; 
+}
+
+* target child with fa class on parent hover*/
+.icons:hover > .fa 
+{
+  opacity: 0.5;
+}
+}
+
+
+/* control child fa's opacity on both parent and self hover*/
+.icons:hover > .fa:hover 
+{
+  opacity: 1;
+}
+
+
+.pill-button {
+  background-color: transparent;
+  font-size: 17px;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 2px;
+  cursor: pointer;
+  border-radius: 500px;
+  line-height: 15px;
+}
+
+.pill-button:hover {
+  background-color: #08abb0;
+  border: 2px solid #08abb0;
+}
+
+
+/* Header */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-left{
+    display: none;
+  }
+  .nav-right{
+    display: none;
+  }
+}
+
+.mobileNavButton{
+  padding: 2%; padding-top: 2%; float: right; font-size:40px; cursor:pointer; display: none; z-index: 1000;
+}
+
+
+/*////////////////////////////*/
+
+
+
 
 .topnav .icon {
 display: none;
@@ -395,6 +571,8 @@ display: none;
   float: right;
   display: block;
 }
+.mobileNavButton{display: block !important}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -447,7 +625,3 @@ display: none;
       transform: rotate(45deg) translate(20px,20px);
   }
 }
-
-
-
-
