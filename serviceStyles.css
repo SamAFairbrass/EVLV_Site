@@ -255,7 +255,7 @@
 
     .smart-grid {
       grid-column-gap: 2rem;
-      grid-row-gap: 2rem;
+      grid-row-gap: 0rem;
       -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       -ms-grid-rows: auto auto auto auto auto auto auto auto auto;

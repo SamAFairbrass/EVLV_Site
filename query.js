@@ -2,6 +2,8 @@ var topRange = 100, // measure from the top of the viewport to X pixels down
   edgeMargin = 400, // margin above the top or margin from the end of the page
   animationTime = 1200, // time in milliseconds
   contentTop = [];
+  
+var graphToShow = document.querySelector(".graphAnimation")
 
 $(document).ready(function () {
   // Stop animated scroll if the user does something
@@ -52,6 +54,9 @@ $(document).ready(function () {
         
       }
     });
+
+    
+    
     
   });
 
@@ -61,6 +66,7 @@ $(document).ready(function () {
 
   var barToShow = document.querySelectorAll('.barAnimation');
   var circleToShow = document.querySelectorAll('.circleAnimation');
+  
 
   function loop() {
 
@@ -81,6 +87,7 @@ $(document).ready(function () {
             circle.classList.add('circle-chart-circle-static');
         }
       });
+      
   
     scroll(loop);
   }
@@ -124,5 +131,28 @@ function isBarInViewport(el) {
     );
   }
 
+  function isGraphInViewport(el) {
+    // special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+    }
+    var rect = el.getBoundingClientRect();
+    return (
+      (rect.top <= 0
+        && rect.bottom <= 0)
+      ||
+      (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+      ||
+      (rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+  }
+
 
 });
+
+
+
+
+
