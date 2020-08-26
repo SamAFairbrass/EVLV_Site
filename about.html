@@ -2,50 +2,421 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About EVLV - Our Mission</title>
 
 
+<div id="myNav" class="overlay">
 
-<ul style="color: white; opacity: 1 !important; z-index: 20; position: relatve; height: 0px; ">
-  <a href="index.html"><div class="logo"></div></a>
-  <div class="topnav" id="myTopnav">
-    <a href="contact.html">Contact</a>
-    <a href="articles.html">Articles</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" float: right; top: 0; right: 0; font-size:50px;">&times;</a>
+  <div class="overlay-content">
     <a href="index.html" class="active">Home</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="articles.html">Articles</a>
+    <a href="contact.html">Contact</a>
+    <div class = "icons" style = "margin-top: 10px; display: flex; justify-content: center;">
+      <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
+      <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin"></a>
+      <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
+    </div>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
-</ul>
+  </div>
+</div>
+
+
+<script>
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<ul style="color: white; opacity: 1 !important; z-index: 20; position: relatve; height: 0px;  ">
+  <a href="index.html"><div class="logo" style = "margin-top: 14px; margin-left: 16px; float: left;"></div></a>
+  <div class="topnav" id="myTopnav">
+
+    <div class="mobileNavButton">
+      <span onclick="openNav()">&#9776;</span>
+    </div>
+
+    <div class="nav-left" style = "padding: 14px 16px; width: 60%; float: left;">
+
+      <div style = "margin-top: 10px; ">
+        <a href="index.html" class="underline">
+          <span>Home</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+        <a href="about.html" class="underline">
+          <span>About</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+        <a href="services.html" class="underline">
+          <span>Services</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+        <a href="articles.html" class="underline">
+          <span>Articles</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="nav-right" style="float: left; width: 40%;">
+      <div class = "icons" style = "margin-top: 10px;">
+        <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin" style = "padding-right: 16px !important;"></a>
+        <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
+        <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
+      </div>
+      <a href="contact.html"style = "margin-top: 3px; padding-right: 10px;">
+        <button class="pill-button">Contact</button>
+      </a>
+    </div>
+  </ul>
+
+
+
+
+
 
 <body>
-  <h1 style="color:white; margin: 0 auto; display:flex; text-align-last: center; justify-content: center; margin-top: 7%"> ABOUT EVLV </h1>
+
+<style>
+
+  .about-rich-text.w-richtext p, h1, h2, h3{
+
+    color: black;
+
+  }
+
+
+  .contentsection {
+    margin-top: 30%;
+  	position: relative;
+  	z-index: 1;
+  	background-color: #ffffff;
+  	font-family: Montserrat, sans-serif;
+  	font-size: 1rem;
+  	line-height: 1.8;
+  	font-weight: 400;
+    color: #1d1d1d;
+  }
+  .smart-section {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin-top: 0rem;
+    padding: 6rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .smart-section.no-top {
+    padding-top: 0rem;
+  }
+
+  .smart-section.no-top.white.narrow {
+    padding-right: 20rem;
+    padding-left: 20rem;
+  }
+
+  .smart-section.no-top.white.overlay-bot {
+    margin-bottom: 6rem;
+    padding-bottom: 0rem;
+  }
+
+  .smart-section.no-top.no-bot.light {
+    background-color: #fff;
+  }
+
+  .smart-section.no-top.no-bot._12rem-sides {
+    padding-right: 12rem;
+    padding-left: 12rem;
+  }
+
+  .smart-section.no-top.no-bot.margin-half-bottom {
+    margin-bottom: 3rem;
+  }
+
+  .smart-section.no-top.no-bot.partners {
+    padding-right: 12rem;
+    padding-left: 12rem;
+  }
+
+  .smart-section.no-bot {
+    padding-bottom: 0rem;
+  }
+
+  .about-rich-text {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+  .about-rich-text figure {
+    width: 25vw;
+  }
+
+
+
+
+
+    /* Team stuff */
+
+
+  .about-profile-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 15rem;
+
+
+  }
+
+  .collection-list.executive {
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+
+
+  .avatar-holder {
+    overflow: hidden;
+    width: 8rem;
+    height: 8rem;
+    min-width: 8rem;
+    margin-right: 1rem;
+    padding: 4px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+  }
+
+  .avatar-holder.margin-paragraph.about {
+    width: 10rem;
+    height: 10rem;
+    min-width: 10rem;
+    margin-right: 0rem;
+  }
+
+  .avatar-holder.black-ring {
+    border-color: #000;
+  }
+
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+
+  .content.margin-half-bottom.about {
+    margin-bottom: 0rem;
+  }
+  .content.centered.about {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+
+
+/*//////////////////////*/
+
+
+.aviContainer{
+  width: 100%;
+  margin-top: 4%;
+}
+
+.aviBox{
+  display: flex; justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-left, padding-right: 10%;
+  text-align: center;
+
+}
+
+.aviCardContainer{
+
+  margin-left: 2%; margin-right: 2%;
+  width: 18%;
+  height: 400px;
+  border: solid 1px white;
+
+  /*border: solid 1px black;
+  background-color: #fff5;*/
+
+  border-radius: 9px;
+  display: flex; justify-content: center;
+}
+
+.aviCard{
+  width: 90%;
+  text-align-last: center;
+  margin-left: 2%; margin-right: 2%;
+
+}
+
+.aviDescription{
+  margin: auto;
+  height: 100px;
+  margin-top: 7%;
+  color: white;
+}
+.aviName{
+  text-transform: capitalize;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  margin-top: 3%;
+
+}
+.aviTitle{
+  margin: auto;
+  color: black;
+  font-variant: small-caps;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+  line-height: 1;
+  border-radius: 5px;
+  display:inline-block;
+  padding: 5px;
+}
+
+
+
+.splashText{
+  margin-bottom: 4%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.large-avatar {
+  margin: auto;
+  margin-top: 6%;
+  width: 200px;
+  height: 200px;
+  clip-path: circle(45.00%);
+  border-style: solid;
+  border-width: 4px;
+  background: #fff;
+  border-color: #454545;
+}
+.large-avatar img {
+  clip-path: circle(44.9%);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.cardImage{
+
+}
+
+</style>
+<h1 style="color:white; margin: 0 auto; display:flex; text-align-last: center; justify-content: center; margin-top: 5%"> ABOUT EVLV </h1>
 
 
 <section>
 
-<h2 style="color:white; margin: 0 auto; display:flex; text-align-last: center; justify-content: center; margin-top: 4%"> Who are we? </h2>
-<h3 style="color:white; margin: 0 auto; display:flex; text-align-last: center; justify-content: center; margin-top: 4%; width: 75% ">Since 2018, we have helped multiple businesses and eCommerce stores scale, providing them with sustainable monthly revenue as well as exponential growth. </h2>
-<p style="color:white; margin: 0 auto; display:flex; text-align-last: center; justify-content: center; margin-top: 4%; width: 75% ">We are a London based digital marketing agency. We work closely with our clients to develop solutions tailored to your needs, and to build upon a long-term relationship as strategic partners. At EVLV, we are dynamic, creative and innovative when it comes to building a solid marketing strategy that will transform your online presence and increase your brand awareness, engagement and lead generation.</p>
 
-  <p style="color:white; margin: 0 auto; display:flex; text-align-last: center; justify-content: center; margin-top: 1%; width: 75% ">Our team is knowledgeable in the world of digital marketing and passionate about what they do, and take pride in helping businesses to EVOLVE. We like to challenge our clients by asking questions to give us more insight into your current situation and where you would like to be. This is something we strongly believe in doing before beginning working together as it will help us to deliver the best results and ROI possible to your business. </p>
-  <h2 style="color:white; margin: 0 auto; display:flex; text-align-last: center;  justify-content: center; margin-top: 4%; width: 70% "> We want to take your sales and growth to where you want to be. And we can do that. </h2>
-  <h2 style="color:white; margin: 0 auto; margin-top: 4%; width: 55%; text-align-last: center"><a href="services.html" style="color: #a0ffff; align-content: center">Acheive Excellence and EVOLVE Your Business. Find out what we can do for you.</a></h2>
+  <div class="aviContainer">
+    <div class="splashText">Meet Our Expert Team!
+    </div>
+    <div class="aviBox">
+
+      <div class="aviCardContainer">
+        <div class="aviCard">
+          <div class="large-avatar">
+            <img src="./images/trey-collier.jpeg" alt="large example">
+          </div>
+          <div class="aviName">
+            Trey B. Collier
+          </div>
+          <div class="aviTitle">
+            chief executive officer
+          </div>
+          <div class="aviDescription">
+            "I like my clients like I like my women; big, loud and wanting to make some easy money"
+          </div>
+        </div>
+      </div>
+
+      <div class="aviCardContainer">
+        <div class="aviCard">
+          <div class="large-avatar">
+            <img src="./images/harry-spain.jpeg" alt="large example">
+          </div>
+          <div class="aviName">
+            Harry O. Spain
+          </div>
+          <div class="aviTitle">
+            chief financial officer
+          </div>
+          <div class="aviDescription">
+            "If the check is big enough I can make anything happen, try me."
+          </div>
+        </div>
+      </div>
+
+      <div class="aviCardContainer">
+        <div class="aviCard">
+          <div class="large-avatar">
+            <img src="./images/samuel-fairbrass.png" alt="large example">
+          </div>
+          <div class="aviName">
+            Samuel A. Fairbrass
+          </div>
+          <div class="aviTitle">
+            chief technology officer
+          </div>
+          <div class="aviDescription">
+            "My three favourite things in life are as follows: oats, money and big jubblies"
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</section>
+<section style="contentsection">
+
+  <div class="smart-section no-top no-bot light" style="margin-top: 5%; padding:2% ; padding-left: 8%; padding-right: 8%; border-bottom :solid 10px grey; border-top :solid 10px grey;">
+    <div class="about-rich-text w-richtext">
+      <h2>Our Mission</h2>
+    <p>To provide a frictionless environment for your personal and business endeavors so that you are able to focus and do what you love instead of getting caught up in the tasks that distract you.
+    </p><h2>Our Story</h2><p>
+      Chameleon started as an idea when the three of us got together and described how we each had always wanted to start a business. &nbsp;That is when we realized that the three of us together would make the perfect team. Together, we could create a business that played to each of our individual strengths and capitalized on our diversity to provide effective solutions for others. Cue, best friends for life. &nbsp;The only thing left to figure out was what kind of business to operate. &nbsp;Then it hit us - why not do for other people what we are doing for ourselves? Why not create a business to remove the friction from other businesses. This is our ultimate aim, for now we are sticking to three main categories: social media marketing/management, web development, and branding/design. Later, we hope to offer full services to take companies from 0-100 without any friction on the client's end.</p>
+    <blockquote>Our Brand is You - we blend in so you stand out.</blockquote>
+    <p>The three of us came up with this motto when we were talking about how we want to have clients that we believe in. We wanted to stand out as a service provider that prioritized our customers. We provide an atmosphere where our clients can thrive with our support. Thus, our brand is you.</p>
+  <h2>Why Chameleon?</h2>
+  <p>We went through a difficult phase when picking a business name. &nbsp;Countless possibilities, none of which are available for a domain name. &nbsp;Finding the balance between trying to sound cool yet have it still pertain to what we actually do. You should have heard some of the things we came up with. &nbsp;In the end we chose Chameleon because of what we wanted our company to stand for. The principal that we are here to help, but we want to be the unseen, solutions ninja that everyone desires. We want to blend in so you can stand out (and still hopefully get some of the credit).</p>
+</div>
+</div>
 
 </section>
 
