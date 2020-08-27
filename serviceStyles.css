@@ -2,6 +2,7 @@
 
 
   .fadeIn{
+    top:60%;
     color: white;
     text-align: center;
     font-family: Montserrat, sans-serif;
@@ -17,6 +18,25 @@
     -moz-animation: fadeIn ease 3s;
     -o-animation: fadeIn ease 3s;
     -ms-animation: fadeIn ease 3s;
+  }
+
+  .opacityGradTop {
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(#16161d, rgba(22, 22, 29, 0.01));
+    background-image: linear-gradient(3600deg, #16161d, rgba(22, 22, 29, 0.01));
+  }
+
+  .opacityGradBottom {
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(#16161d, rgba(22, 22, 29, 0.1));
+    background-image: linear-gradient(360deg, #16161d, rgba(22, 22, 29, 0.1));
+  }
+
+  .radialGrad {
+    
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(#16161d, rgba(22, 22, 29, 0.1));
   }
 
   @keyframes fadeIn {
@@ -255,7 +275,7 @@
 
     .smart-grid {
       grid-column-gap: 2rem;
-      grid-row-gap: 2rem;
+      grid-row-gap: 0rem;
       -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       -ms-grid-rows: auto auto auto auto auto auto auto auto auto;
@@ -574,7 +594,7 @@
     .post-image-wrapper {
       position: relative;
       left: 0px;
-      top: 0px;
+      top: 30px;
       right: 0px;
       bottom: 0px;
       width: 17.5rem;
@@ -1059,7 +1079,7 @@
   .post-image-wrapper-bar-chart {
     position: relative;
     left: 0px;
-    top: 0px;
+    top: 80px;
     right: 0px;
     bottom: 0px;
     width: 25rem;
@@ -1074,3 +1094,4 @@
 .invisible{
     opacity: 0;
 }
+
