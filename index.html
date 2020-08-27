@@ -1,230 +1,403 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="footerStyles.css" media="screen"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="import" href="autoload-footer.html">
+    <title>EVLV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EVLV </title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="serviceStyles.css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
   </head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EVLV </title>
 
-  
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" float: right; top: 0; right: 0; font-size:50px;">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="articles.html">Articles</a>
+      <a href="contact.html">Contact</a>
+      <div class = "icons" style = "margin-top: 10px; display: flex; justify-content: center;">
+        <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin"></a>
+        <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
+        <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
+      </div>
 
-
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" float: right; top: 0; right: 0; font-size:50px;">&times;</a>
-  <div class="overlay-content">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="articles.html">Articles</a>
-    <a href="contact.html">Contact</a>
-    <div class = "icons" style = "margin-top: 10px; display: flex; justify-content: center;">
-      <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
-      <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin"></a>
-      <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
     </div>
-
   </div>
-</div>
 
 
-<script>
+  <script>
 
 
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
 </script>
 
 <ul style="color: white; opacity: 1 !important; z-index: 20; position: relatve; height: 0px;  ">
-<a href="index.html"><div class="logo" style = "margin-top: 14px; margin-left: 16px; float: left;"></div></a>
-<div class="topnav" id="myTopnav">
+  <a href="index.html"><div class="logo" style = "margin-top: 14px; margin-left: 16px; float: left;"></div></a>
+  <div class="topnav" id="myTopnav">
 
-  <div class="mobileNavButton">
-    <span onclick="openNav()">&#9776;</span>
-  </div>
-
-  <div class="nav-left" style = "padding: 14px 16px; width: 60%; float: left;">
-      
-    <div style = "margin-top: 10px; ">
-      <a href="index.html" class="underline">
-        <span>Home</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
-      </a>
-      <a href="about.html" class="underline">
-        <span>About</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
-      </a>
-      <a href="services.html" class="underline">
-        <span>Services</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
-      </a>
-      <a href="articles.html" class="underline">
-        <span>Articles</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
-      </a>
+    <div class="mobileNavButton">
+      <span onclick="openNav()">&#9776;</span>
     </div>
-  </div>
 
-  <div class="nav-right" style="float: left; width: 40%;">
-    <div class = "icons" style = "margin-top: 10px;">
-      <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin" style = "padding-right: 16px !important;"></a>
+    <div class="nav-left" style = "padding: 14px 16px; width: 60%; float: left;">
+        
+      <div style = "margin-top: 10px; ">
+        <a href="index.html" class="underline">
+          <span>Home</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+        <a href="about.html" class="underline">
+          <span>About</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+        <a href="services.html" class="underline">
+          <span>Services</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+        <a href="articles.html" class="underline">
+          <span>Articles</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="nav-right" style="float: left; width: 40%;">
+      <div class = "icons" style = "margin-top: 10px;">
+        <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin" style = "padding-right: 16px !important;"></a>
         <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
         <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
+      </div>
+      <a href="contact.html"style = "margin-top: 3px; padding-right: 10px;"> 
+        <button class="pill-button">Contact</button>
+      </a>
     </div>
-    <a href="contact.html"style = "margin-top: 3px; padding-right: 10px;"> 
-      <button class="pill-button">Contact</button>
-    </a>
-  </div>
 
-</div>
+  </div>
 
 </ul>
 
-<section style="height: 104vh;
-box-sizing: border-box;
-z-index: -3;
-font-family: arial, sans-serif;
-font-family: Arial;
-font-size: 17px; ">
-  <div style=" z-index: -20; background-color: black;">
-    <div class="bg-vid">
 
+  <body>
 
-      <video autoplay muted loop id="myVideo" style="z-index: -3; opacity: 0.5;">
-        <source src="bg-evlv.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-    </div>
-
-  </div>  
-
-<a id="neon" class="neon" style="opacity: 1 !important; position: relative; margin-top: 20%; display: flex;" href="#">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-   SUPERCHARGE YOUR REVENUE
-</a>
-</section>
-
-
-<body>
-
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-
-</script>
-
-<a href = "#anchor">
-  <div class="arrow">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</a>
-
-
-<style>
-
-
-  h1{font-size: 4vh; width: 100%; display: flex; justify-content: center; color: #90ffff}
-
-  h2{font-size: 3vh; margin-top: 2% ; width: 100%; display: flex; justify-content: center;}
-
-  h3{margin-top: 2.5%; color: #90ffff; font-size: 2vh;}
-
-  h4{margin-top: 3%; font-size: 3vh;}
-
-  p{font-size: 2vh; margin-top: 1%; width: 100%; display: flex; justify-content: center;}
-
-  .shrinker{
-
-  }
-
-</style>
-<section style="box-sizing: border-box;">
-  <div class="section horizontal-flex no-bot mobile _12rem-sides home">
-    <div class="content flex-grow mobile-home margin-mobile">
-      <div class="caption uppercase margin-paragraph">What we do</div>
-      <p class="pad-right spacing home margin-half-bottom w-clearfix">
-        <span class="first-letter">C</span>
-        hameleon focuses on bringing together our services to provide a seamless omni-channel process for anything your business, brand, or venture may need. We brought together the three main agency models - software, marketing, and design - along with synergized services to provide a best-in-class experience.
-      </p>
-        <div class="caption uppercase margin-paragraph">our process</div>
-        <p class="pad-right spacing home w-clearfix">
-          <span class="first-letter">B</span>
-          usiness is personal, and we mean business. We get to know the client before starting on services.&nbsp;&nbsp;We strive to understand the mission, vision, and aspirations of our clients so we can anticipate their needs and top-of-mind priorities.
-        </p>
-      </div>
-      <div class="content non-flex child-grow">
-        <div class="accordion-wrapper">
-          <div class="accordion-item">
-            <div class="accordion-item-trigger">
-              <div class="plus-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">+</div>
-              <div class="accordion-title w-clearfix">Learning<span class="sup">1/5</span></div>
-            </div>
-            <div class="accordion-item-content" style="height: 0px;">
-              <div class="accordion-text">Our first step is to understand our clients on a personal level. Whether large or small, we want to know your vision so we can best do our job. We believe that understanding your culture and desired outcome will enable us to provide results that exceed expectations.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-item-trigger">
-              <div class="plus-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">+</div>
-              <div class="accordion-title w-clearfix">Planning<span class="sup">2/5</span></div>
-            </div>
-            <div class="accordion-item-content" style="height: 0px;">
-              <div class="accordion-text">Our next step is to identify and strategize according to our methodologies and results-oriented tactics. We work with you to make sure we are always aligned to the same shared goals.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-item-trigger">
-              <div class="plus-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">+</div>
-              <div class="accordion-title w-clearfix">Building<span class="sup">3/5</span></div>
-            </div>
-            <div class="accordion-item-content" style="height: 0px;">
-              <div class="accordion-text">We take our plan and knowledge of your desires and implement that combination to execute services that blend with your brand. Utilizing our unique structure and communication model, our departments work in tandem to create outstanding results.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-item-trigger">
-              <div class="plus-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">+</div>
-              <div class="accordion-title w-clearfix">Testing<span class="sup">4/5</span></div>
-            </div>
-            <div class="accordion-item-content" style="height: 0px;">
-              <div class="accordion-text">Before we implement any services to our client, we conduct heavy quality assurance, stress, and customized testing to ensure that top-quality is a consistent deliverable.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-item-trigger">
-              <div class="plus-icon" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">+</div>
-              <div class="accordion-title w-clearfix">Implementing<span class="sup">5/5</span></div>
-            </div>
-            <div class="accordion-item-content" style="height: 0px;">
-              <div class="accordion-text">Our favorite part of the process is providing you with a consistent stream of tangible value. Our structure enables us to grow with you and your needs – creating a mutual scaling of success.</div>
-            </div>
-          </div>
+      <a href ="#" onclick="smoothScroll('.servicesAnchor',750)">
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </div>
+      </a>
+
+
+
+      <section class="section" style="height: 66vh;
+      box-sizing: border-box;
+      z-index: -3;
+      font-family: arial, sans-serif;
+      font-family: Arial;
+      font-size: 17px; ">
+        <div style=" z-index: -20; background-color: black;">
+            <div class="bg-vid">
+        
+        
+              <video autoplay muted loop id="myVideo" style="z-index: -3; opacity: 0.5;">
+                <source src="bg-evlv.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+        
+          </div>  
+        
+        <a id="neon" class="neon" style="opacity: 1 !important; position: relative; margin-top: 20%; display: flex;" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+           SUPERCHARGE YOUR REVENUE
+        </a>
+      </section>
+
+
+        <div class = "smart-section no-top services servicesAnchor" style = "padding-top: 5%;">
+            <div class="w-layout-grid smart-grid">
+                <div id="column-left" class="content hidden-mobile">
+                    
+                    <div class="content flex-grow mobile-home margin-mobile"><div class="caption uppercase margin-paragraph">What we do</div><p class="pad-right spacing home margin-half-bottom w-clearfix"><span class="first-letter">C</span>hameleon focuses on bringing together our services to provide a seamless omni-channel process for anything your business, brand, or venture may need. We brought together the three main agency models - software, marketing, and design - along with synergized services to provide a best-in-class experience.</p><div class="caption uppercase margin-paragraph">our process</div><p class="pad-right spacing home w-clearfix"><span class="first-letter">B</span>usiness is personal, and we mean business. We get to know the client before starting on services.&nbsp;&nbsp;We strive to understand the mission, vision, and aspirations of our clients so we can anticipate their needs and top-of-mind priorities.</p></div>
+                    
+                </div>
+                <div id="column-right" class="content">
+                    <div id="w-node-a67d279c6b25-147077fa" class="accordion-wrapper">
+                        <div class="accordion-item" onclick="accordionTrigger('.accordion01', '.accordion01Content')">
+                            <div class="accordion-item-trigger">
+                                <div class="plus-icon accordionUp accordion01">+</div>
+                                <div class="accordion-title w-clearfix">Learning<span class="sup">1/5</span></div>
+                            </div>
+                            <div class="accordion-item-content accordionContentUp accordion01Content">
+                                <div class="accordion-text">Our first step is to understand our clients on a personal level. Whether large or small, we want to know your vision so we can best do our job. We believe that understanding your culture and desired outcome will enable us to provide results that exceed expectations.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" onclick="accordionTrigger('.accordion02', '.accordion02Content')">
+                            <div class="accordion-item-trigger">
+                                <div class="plus-icon accordionUp accordion02">+</div>
+                                <div class="accordion-title w-clearfix">Planning<span class="sup">2/5</span></div>
+                            </div>
+                            <div class="accordion-item-content accordionContentUp accordion02Content">
+                                <div class="accordion-text">Our next step is to identify and strategize according to our methodologies and results-oriented tactics. We work with you to make sure we are always aligned to the same shared goals.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" onclick="accordionTrigger('.accordion03', '.accordion03Content')">
+                            <div class="accordion-item-trigger">
+                                <div class="plus-icon accordionUp accordion03">+</div>
+                                <div class="accordion-title w-clearfix">Building<span class="sup">3/5</span></div>
+                            </div>
+                            <div class="accordion-item-content accordionContentUp accordion03Content">
+                                <div class="accordion-text">We take our plan and knowledge of your desires and implement that combination to execute services that blend with your brand. Utilizing our unique structure and communication model, our departments work in tandem to create outstanding results.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" onclick="accordionTrigger('.accordion04', '.accordion04Content')">
+                            <div class="accordion-item-trigger">
+                                <div class="plus-icon accordionUp accordion04">+</div>
+                                <div class="accordion-title w-clearfix">Testing<span class="sup">4/5</span></div>
+                            </div>
+                            <div class="accordion-item-content accordionContentUp accordion04Content">
+                                <div class="accordion-text">Before we implement any services to our client, we conduct heavy quality assurance, stress, and customized testing to ensure that top-quality is a consistent deliverable.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" onclick="accordionTrigger('.accordion05', '.accordion05Content')">
+                            <div class="accordion-item-trigger">
+                                <div class="plus-icon accordionUp accordion05">+</div>
+                                <div class="accordion-title w-clearfix">Implementing<span class="sup">5/5</span></div>
+                            </div>
+                            <div class="accordion-item-content accordionContentUp accordion05Content">
+                                <div class="accordion-text">Jungle is Massive</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+          <section style="margin-bottom: 200px;">
+
+
+            <div class="aviContainer">
+              <div class="splashText">Meet Our Expert Team!
+              </div>
+              <div class="aviBox">
+          
+                <div class="aviGridBox">
+                  <div class="aviCardContainer">
+                    <div class="aviCard">
+                      <div class="large-avatar">
+                        <img src="./images/trey-collier.jpeg" alt="large example">
+                      </div>
+                      <div class="aviName">
+                        Trey B. Collier
+                      </div>
+                      <div class="aviTitle">
+                        chief executive officer
+                      </div>
+                      <div class="aviDescription">
+                        At the steering wheel, Trey does more than just run EVLV, he also manages our Marketing Squad and ensures that the only way is up.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="aviGridBox">
+                  <div class="aviCardContainer">
+                    <div class="aviCard">
+                      <div class="large-avatar">
+                        <img src="./images/harry-spain.jpeg" alt="large example">
+                      </div>
+                      <div class="aviName">
+                        Harry O. Spain
+                      </div>
+                      <div class="aviTitle">
+                        chief financial officer
+                      </div>
+                      <div class="aviDescription">
+                        Aside from managing just the finances here at EVLV, Harry is our main Strategist who helps build our famous powerful client campaigns.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="aviGridBox">
+                  <div class="aviCardContainer">
+                    <div class="aviCard">
+                      <div class="large-avatar">
+                        <img src="./images/samuel-fairbrass.png" alt="large example">
+                      </div>
+                      <div class="aviName">
+                        Samuel A. Fairbrass
+                      </div>
+                      <div class="aviTitle">
+                        chief technology officer
+                      </div>
+                      <div class="aviDescription">
+                        Be it building an app or tidying up a website, Sam and his Development Team can do it, and more importantly, will make it look pretty!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+          
+          
+          </section>
+          
+
+
+        <style>
+          .aviContainer{
+      width: 100%;
+      margin-top: 4%;
+    }
+
+    .aviGridBox{
+      display: inline-block;
+      width: 300px;
+      margin: 10px 10px;
+
+    }
+
+
+    .aviBox{
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      padding: 0% 8%;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 999px) {
+      .aviBox {
+        margin: 0% 12%;
+      }
+      .aviGridBox{
+        margin: 2% 0%;
+      }
+    }
+    @media only screen and (min-width: 1000px) {
+      .aviBox{padding: 0% 1%;}
+    }
+
+    @media only screen and (min-width: 1500px) {
+      .aviBox{padding: 0% 13%;}
+    }
+
+
+    .aviCardContainer{
+
+      margin-left: 1%; margin-right: 2%;
+      width: 100%;
+      height: 410px;
+      border: solid 1px white;
+
+      /*border: solid 1px black;
+      background-color: #fff5;*/
+      border-radius: 9px;
+      display: flex; justify-content: center;
+    }
+
+    .aviCard{
+      width: 90%;
+      text-align-last: center;
+      margin-left: 2%; margin-right: 2%;
+
+    }
+
+    .aviDescription{
+      margin: auto;
+      height: 100px;
+      margin-top: 7%;
+      color: white;
+    }
+    .aviName{
+      text-transform: capitalize;
+      height: 40px;
+      font-size: 20px;
+      color: white;
+      margin-top: 3%;
+
+    }
+    .aviTitle{
+      margin: auto;
+      color: black;
+      font-variant: small-caps;
+      height: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: white;
+      line-height: 1;
+      border-radius: 5px;
+      display:inline-block;
+      padding: 5px;
+    }
+
+
+
+    .splashText{
+      margin-bottom: 4%;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    .large-avatar {
+      margin: auto;
+      margin-top: 6%;
+      width: 200px;
+      height: 200px;
+      clip-path: circle(45.00%);
+      border-style: solid;
+      border-width: 4px;
+      background: #fff;
+      border-color: #454545;
+    }
+    .large-avatar img {
+      clip-path: circle(44.9%);
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+        </style>
+
+
+  
+  
+  
+    
+      
+
+
+
+
+  <div style ="margin: 0; position: absolute; padding-bottom: 50px; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);">
+    <a href="index.html"><div class="logo-footer" style = "margin: auto;"></div></a>
+    <div class = "icons" style="margin-top: 5%; display: flex; justify-content: center;">
+      <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook" style = "font-size: 30px;"></a>
+      <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram" style = "font-size: 30px;"></a>
+      <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin" style = "font-size: 30px;"></a>
     </div>
-</section>
+    <p style="margin-top: 5%; font-family: Montserrat, sans-serif; color: #fff;">Copyright &#169; 2020 EVLV Ltd. All Rights Reserved.</p>
+  </div>
 
 
-</body>
+
+    <script src = "./external.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./query.js"></script>
+
+  </body>
 </html>

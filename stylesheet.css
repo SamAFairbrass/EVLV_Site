@@ -369,7 +369,7 @@ width: 100%;
 overflow: hidden;
 
 background-color: #00000000;
-height: 150px;
+height: 60px;
 @media screen and (max-width: 768px){
   font-size: 10px;
 }

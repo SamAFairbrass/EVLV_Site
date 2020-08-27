@@ -32,6 +32,13 @@
     background-image: linear-gradient(360deg, #16161d, rgba(22, 22, 29, 0.1));
   }
 
+  .radialGrad {
+    
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(#16161d, rgba(22, 22, 29, 0.1));
+  }
+
   @keyframes fadeIn {
     0% {
       opacity:0;
