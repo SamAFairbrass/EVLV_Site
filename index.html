@@ -5,81 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="serviceStyles.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="accordionSlider.css" media="screen"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
   </head>
 
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" float: right; top: 0; right: 0; font-size:50px;">&times;</a>
-    <div class="overlay-content">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="articles.html">Articles</a>
-      <a href="contact.html">Contact</a>
-      <div class = "icons" style = "margin-top: 10px; display: flex; justify-content: center;">
-        <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin"></a>
-        <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
-        <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
-      </div>
-
-    </div>
-  </div>
-
-
-  <script>
-
-
-  function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-  }
-
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-  }
-</script>
-
-<ul style="color: white; opacity: 1 !important; z-index: 20; position: relatve; height: 0px;  ">
-  <a href="index.html"><div class="logo" style = "margin-top: 14px; margin-left: 16px; float: left;"></div></a>
-  <div class="topnav" id="myTopnav">
-
-    <div class="mobileNavButton">
-      <span onclick="openNav()">&#9776;</span>
-    </div>
-
-    <div class="nav-left" style = "padding: 14px 16px; width: 60%; float: left;">
-        
-      <div style = "margin-top: 10px; ">
-        <a href="index.html" class="underline">
-          <span>Home</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
-        </a>
-        <a href="about.html" class="underline">
-          <span>About</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
-        </a>
-        <a href="services.html" class="underline">
-          <span>Services</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
-        </a>
-        <a href="articles.html" class="underline">
-          <span>Articles</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
-        </a>
+  <section>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" float: right; top: 0; right: 0; font-size:50px;">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html">Contact</a>
+        <div class = "icons" style = "margin-top: 10px; display: flex; justify-content: center;">
+          <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin"></a>
+          <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
+          <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
+        </div>
+  
       </div>
     </div>
-
-    <div class="nav-right" style="float: left; width: 40%;">
-      <div class = "icons" style = "margin-top: 10px;">
-        <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin" style = "padding-right: 16px !important;"></a>
-        <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
-        <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
+  
+  
+    <script>
+  
+  
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+  
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+  
+  <ul style="color: white; opacity: 1 !important; z-index: 20; position: relative; height: 0px;  ">
+    <a href="index.html"><div class="logo" style = "margin-top: 14px;  float: left;"></div></a>
+    <div class="topnav" id="myTopnav">
+  
+      <div class="mobileNavButton">
+        <span onclick="openNav()">&#9776;</span>
       </div>
-      <a href="contact.html"style = "margin-top: 3px; padding-right: 10px;"> 
-        <button class="pill-button">Contact</button>
-      </a>
+  
+      <div class="nav-left" style = "padding: 14px 16px; width: 60%; float: left;">
+          
+        <div style = "margin-top: 10px; ">
+          <a href="index.html" class="underline">
+            <span>Home</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+          </a>
+          <a href="about.html" class="underline">
+            <span>About</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+          </a>
+          <a href="services.html" class="underline">
+            <span>Services</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+          </a>
+          <a href="articles.html" class="underline">
+            <span>Articles</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+          </a>
+        </div>
+      </div>
+  
+      <div class="nav-right" style="float: left; width: 40%;">
+        <div class = "icons" style = "margin-top: 10px;">
+          <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin" style = "padding-right: 16px !important;"></a>
+          <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
+          <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
+        </div>
+        <a href="contact.html"style = "margin-top: 3px; padding-right: 10px;"> 
+          <button class="pill-button">Contact</button>
+        </a>
+      </div>
+  
     </div>
-
-  </div>
-
-</ul>
+  
+  </ul>
+  </section>
 
 
   <body>
@@ -102,31 +105,55 @@
       font-size: 17px; ">
         <div style=" z-index: -20; background-color: black;">
             <div class="bg-vid">
-        
-        
               <video autoplay muted loop id="myVideo" style="z-index: -3; opacity: 0.5;">
                 <source src="bg-evlv.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
               </video>
             </div>
+        </div>  
         
-          </div>  
         
-        <a id="neon" class="neon" style="opacity: 1 !important; position: relative; margin-top: 20%; display: flex;" href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-           SUPERCHARGE YOUR REVENUE
-        </a>
+
+        <div id = "indexTitle" class = "indexTitle">
+          <h4 style="font-size: 15px; padding-bottom: 1%; font-family: Montserrat, sans-serif;">ONE OF LONDON'S LEADING DIGITAL MARKETING AGENCIES</h4>
+          <h1 style="font-size: 65px; line-height: 1; padding-bottom: 1%; font-family: Montserrat, sans-serif;">SCALING BUSINESSES<br>SINCE 2018</h1>
+          <div class="postAboutFormatter">
+            <div class="bookNowButton"></div>
+              <a href="https://calendly.com/trey-evlv/30min" target="_blank">
+                <div class="pulsate">
+                  BOOK A CALL NOW
+                </div>
+              </a>
+            </div>
+          </div>
+          
+        </div>
       </section>
 
-
+      <section style="margin-top: 20%; padding-bottom: 13.5%;">
         <div class = "smart-section no-top services servicesAnchor" style = "padding-top: 5%;">
             <div class="w-layout-grid smart-grid">
                 <div id="column-left" class="content hidden-mobile">
                     
-                    <div class="content flex-grow mobile-home margin-mobile"><div class="caption uppercase margin-paragraph">What we do</div><p class="pad-right spacing home margin-half-bottom w-clearfix"><span class="first-letter">C</span>hameleon focuses on bringing together our services to provide a seamless omni-channel process for anything your business, brand, or venture may need. We brought together the three main agency models - software, marketing, and design - along with synergized services to provide a best-in-class experience.</p><div class="caption uppercase margin-paragraph">our process</div><p class="pad-right spacing home w-clearfix"><span class="first-letter">B</span>usiness is personal, and we mean business. We get to know the client before starting on services.&nbsp;&nbsp;We strive to understand the mission, vision, and aspirations of our clients so we can anticipate their needs and top-of-mind priorities.</p></div>
+                    <div class="content flex-grow mobile-home margin-mobile">
+                      <div class="caption uppercase margin-paragraph" style="color: #08abb0;">What we do</div>
+                      <p class="pad-right spacing home margin-half-bottom w-clearfix">EVLV is a digital marketing agency which aims to increase brand awareness and exposure in order for you to increase your sales. We are strong believers in performance and professional delivery.
+                        How do we achieve excellence?
+                        
+                      </p>
+                      <div class="caption uppercase margin-paragraph" style="color: #08abb0;">CLIENT CARE</div>
+                      <p class="pad-right spacing home margin-half-bottom w-clearfix"><!--<span class="first-letter">B</span>-->The first secret to our high performance lies within our consultation and real connections to our clients. EVLV proudly boasts a professional and highly talented design team, industry level strategists and an advertising team dedicated to our clients’ success. We will discuss the pros and cons of your current growth strategy and evaluate the next move to elevate your growth to the highest level.
+                        Whether you want to fix your site and increase your search ranking or if you want to grow your page and boost your sales, EVLV has an experienced specialist team who can work with you to perfectly execute your mission.
+                      </p>
+                      <div class="caption uppercase margin-paragraph" style="color: #08abb0;">CAMPAIGN SUCCESS</div>
+                      <p class="pad-right spacing home margin-half-bottom w-clearfix">EVLV will analyse your brand and competitors in depth to develop a powerful and captivating campaign for your business. A benefit to our experienced team is that we can continually review and evaluate the campaigns and methods which produce the greatest results, targeting your audience with greater precision to achieve real growth.
+                        
+                      </p>
+                      <div class="caption uppercase margin-paragraph" style="color: #08abb0;">HUGE GROWTH</div>
+                      <p class="pad-right spacing home margin-half-bottom w-clearfix">Expect huge growth at the minimum in all areas - due to our client relationship we will continually advise you on what the best methods to further increase customer base, brand awareness and loyalty, social media engagement and, of course, in a long lasting increase in sales. This will allow you to refine and build leading you to higher and exciting levels of success with your brand.
+                      </p>
+
+                    </div>
                     
                 </div>
                 <div id="column-right" class="content">
@@ -181,207 +208,70 @@
             </div>
         </div>
 
+      </section>
+
+      
+      <section style="padding-bottom: 13.5%;">
+        
+        <!-- ACCORDION ROW -->
+        <div class="row">
+            <ul class="accordion-group" id="accordion">
+              <li class = "out" style="background-image: url('https://cdn.pixabay.com/photo/2016/07/29/15/09/eye-1553789_1280.jpg'); background-position: 65% center;">
+                <div class="accordion-overlay"></div>
+                <h3>Social<br>Media</h3>
+                <section class="hidden-xs">
+                  <article>
+                    <div class="sliderDiv">
+
+                    </div>
+                  </article>
+                </section>
+              </li>
+              <li style="background-image: url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80');">
+                <div class="accordion-overlay"></div>
+                <h3>SEO</h3>
+                <section class="hidden-xs">
+                  <article>
+                    <div class="sliderDiv">
+
+                    </div>
+                  </article>
+                </section>
+              </li>
+              <li style="background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80'); background-position: 25% center;">
+                <div class="accordion-overlay"></div>
+                <h3>Web Development</h3>
+                <section class="hidden-xs">
+                  <article>
+                    <div class="sliderDiv">
+
+                    </div>
+                  </article>
+                </section>
+              </li>
+              <li style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'); background-position: 25% center;">
+                <div class="accordion-overlay"></div>
+                <h3>Consulting</h3>
+                <section class="hidden-xs">
+                  <article>
+                    <div class="sliderDiv">
+
+                    </div>
+                  </article>
+                </section>
+              </li>
+            </ul>
+        </div>
+      </section>
+
 
         
 
-          <section style="margin-bottom: 200px;">
-
-
-            <div class="aviContainer">
-              <div class="splashText">Meet Our Expert Team!
-              </div>
-              <div class="aviBox">
-          
-                <div class="aviGridBox">
-                  <div class="aviCardContainer">
-                    <div class="aviCard">
-                      <div class="large-avatar">
-                        <img src="./images/trey-collier.jpeg" alt="large example">
-                      </div>
-                      <div class="aviName">
-                        Trey B. Collier
-                      </div>
-                      <div class="aviTitle">
-                        chief executive officer
-                      </div>
-                      <div class="aviDescription">
-                        At the steering wheel, Trey does more than just run EVLV, he also manages our Marketing Squad and ensures that the only way is up.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          
-                <div class="aviGridBox">
-                  <div class="aviCardContainer">
-                    <div class="aviCard">
-                      <div class="large-avatar">
-                        <img src="./images/harry-spain.jpeg" alt="large example">
-                      </div>
-                      <div class="aviName">
-                        Harry O. Spain
-                      </div>
-                      <div class="aviTitle">
-                        chief financial officer
-                      </div>
-                      <div class="aviDescription">
-                        Aside from managing just the finances here at EVLV, Harry is our main Strategist who helps build our famous powerful client campaigns.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          
-                <div class="aviGridBox">
-                  <div class="aviCardContainer">
-                    <div class="aviCard">
-                      <div class="large-avatar">
-                        <img src="./images/samuel-fairbrass.png" alt="large example">
-                      </div>
-                      <div class="aviName">
-                        Samuel A. Fairbrass
-                      </div>
-                      <div class="aviTitle">
-                        chief technology officer
-                      </div>
-                      <div class="aviDescription">
-                        Be it building an app or tidying up a website, Sam and his Development Team can do it, and more importantly, will make it look pretty!
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          
-              </div>
-            </div>
           
           
-          </section>
-          
 
 
-        <style>
-          .aviContainer{
-      width: 100%;
-      margin-top: 4%;
-    }
-
-    .aviGridBox{
-      display: inline-block;
-      width: 300px;
-      margin: 10px 10px;
-
-    }
-
-
-    .aviBox{
-      display: flex;
-      flex-wrap: wrap;
-      margin: auto;
-      padding: 0% 8%;
-      justify-content: space-around;
-      text-align: center;
-    }
-
-    @media only screen and (max-width: 999px) {
-      .aviBox {
-        margin: 0% 12%;
-      }
-      .aviGridBox{
-        margin: 2% 0%;
-      }
-    }
-    @media only screen and (min-width: 1000px) {
-      .aviBox{padding: 0% 1%;}
-    }
-
-    @media only screen and (min-width: 1500px) {
-      .aviBox{padding: 0% 13%;}
-    }
-
-
-    .aviCardContainer{
-
-      margin-left: 1%; margin-right: 2%;
-      width: 100%;
-      height: 410px;
-      border: solid 1px white;
-
-      /*border: solid 1px black;
-      background-color: #fff5;*/
-      border-radius: 9px;
-      display: flex; justify-content: center;
-    }
-
-    .aviCard{
-      width: 90%;
-      text-align-last: center;
-      margin-left: 2%; margin-right: 2%;
-
-    }
-
-    .aviDescription{
-      margin: auto;
-      height: 100px;
-      margin-top: 7%;
-      color: white;
-    }
-    .aviName{
-      text-transform: capitalize;
-      height: 40px;
-      font-size: 20px;
-      color: white;
-      margin-top: 3%;
-
-    }
-    .aviTitle{
-      margin: auto;
-      color: black;
-      font-variant: small-caps;
-      height: 30px;
-      font-size: 18px;
-      font-weight: bold;
-      background-color: white;
-      line-height: 1;
-      border-radius: 5px;
-      display:inline-block;
-      padding: 5px;
-    }
-
-
-
-    .splashText{
-      margin-bottom: 4%;
-      color: white;
-      text-align: center;
-      font-size: 2rem;
-    }
-
-    .large-avatar {
-      margin: auto;
-      margin-top: 6%;
-      width: 200px;
-      height: 200px;
-      clip-path: circle(45.00%);
-      border-style: solid;
-      border-width: 4px;
-      background: #fff;
-      border-color: #454545;
-    }
-    .large-avatar img {
-      clip-path: circle(44.9%);
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-    }
-        </style>
-
-
-  
-  
-  
-    
       
-
-
-
 
   <div style ="margin: 0; position: absolute; padding-bottom: 50px; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);">
     <a href="index.html"><div class="logo-footer" style = "margin: auto;"></div></a>
@@ -404,6 +294,7 @@
     <script src = "./external.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="./query.js"></script>
+    <script src="./accordionSlider.js"></script>
 
   </body>
 </html>
