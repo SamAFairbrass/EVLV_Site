@@ -83,9 +83,89 @@
 
 </ul>
 
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: white;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 6vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid white;
+  top: 0;
+  width: 100%;
+  
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: white;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+  width: 100%;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+</style>
+
   <div style ="width: 100%; height: 100%; position: absolute;  pointer-events: none; z-index: 10000;">
-      <h2 class = "fadeIn radialGrad" style = "padding: 15% 0;font-size: 5rem; color: #FFF; font-family: teko; font-weight: 400; text-shadow: 5px 5px #5F6D72; text-transform: uppercase;">A results driven approach <br> to making your business <br> more money</h2>
-</div>
+    <!--<h2 class = "fadeIn radialGrad" style = "padding: 15% 0;font-size: 5rem; color: #FFF; font-family: teko; font-weight: 400; text-shadow: 5px 5px #5F6D72; text-transform: uppercase;">A results driven approach <br> to making your business <br> more money</h2>-->
+      <div class="radialGrad" >
+        <div class="animated-title" style="margin:auto; width: 50%;">
+        
+          <div class="text-top">
+            <div>
+              <span>A RESULTS DRIVEN APPROACH </span>
+              <span>TO MAKING YOUR BUSINESS,</span>
+            </div>
+          </div>
+          <div class="text-bottom">
+            <div>MORE MONEY.</div>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
 
 <a href ="#" onclick="smoothScroll('.servicesAnchor',750)">
     <div class="arrow" style="z-index: 10000;">
