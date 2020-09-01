@@ -304,6 +304,11 @@
   .accordion-group li.out section article {
     right: 0;
   }
+
+  .accordion-group li.out h3 {
+    color: transparent;
+  }
+
   .navigation {
     background-color: #fff;
     overflow: auto;
@@ -575,9 +580,9 @@
     height: 100%;
     background-color: none;
     z-index: 998;
-    -webkit-transition: all 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-    -moz-transition: all 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-    transition: all 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    -webkit-transition: all 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    -moz-transition: all 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transition: all 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
   }
   .sm-box-basket {
     display: table-cell;
@@ -586,9 +591,9 @@
     vertical-align: middle;
     line-height: 135px;
     z-index: 999;
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition: all 250ms ease-in-out;
-    transition: all 250ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
     -webkit-transform: translate3d(0, -100%, 0);
     -moz-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
@@ -605,9 +610,9 @@
     padding: 1rem 2rem;
     background-color: #fff;
     line-height: 1.5;
-    -webkit-transition: all 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-    -moz-transition: all 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
-    transition: all 250ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    -webkit-transition: all 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    -moz-transition: all 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transition: all 500ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
     -webkit-transform: translate3d(0, 100%, 0);
     -moz-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
@@ -639,9 +644,9 @@
     background-color: rgba(0, 0, 0, 0.6);
   }
   .product-box h2 {
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    transition: all 250ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
   }
   .product-box:hover h2 {
     color: #ca9964;
@@ -666,9 +671,9 @@
     color: #ca9964;
     background-color: #fff;
     border-radius: 2rem;
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    transition: all 250ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
     display: inline-block;
   }
   .button.active,
@@ -730,9 +735,9 @@
   .input-group-addon-holder .number-icon > i {
     display: none;
     color: #5aaed6;
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    transition: all 250ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
   }
   .input-group-addon-holder .cvv-icon {
     position: absolute;
@@ -742,9 +747,9 @@
   .input-group-addon-holder .cvv-icon > i {
     display: none;
     color: #5aaed6;
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    transition: all 250ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
   }
   .input-group-addon {
     color: #333;
@@ -779,9 +784,9 @@
     font-size: 16px;
     font-weight: 400;
     outline: none;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
   }
   .form-control::-webkit-input-placeholder {
     color: #333;
@@ -817,9 +822,9 @@
     font-size: 16px;
     font-weight: 400;
     outline: none;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
   }
   .select-styled:hover,
   .select-styled.active {
@@ -844,9 +849,9 @@
     margin: 0;
     height: 50px;
     padding: 1.3rem;
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    transition: all 250ms ease;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
   }
   .select-options li:first-child {
     display: none;

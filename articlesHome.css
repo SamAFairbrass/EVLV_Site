@@ -1,0 +1,124 @@
+.articleFilterLinks{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 2rem;
+    margin-left: 0px;
+    padding: 1rem 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: transparent;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+    
+    font-size: 1rem;
+    
+    }
+  
+  
+    .articleFilterLinks :hover {
+      
+      color: #08abb0 !important;
+      cursor: pointer !important;
+    }
+
+
+.preview-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 600px;
+}
+figure:hover {
+  cursor: pointer;
+}
+figure:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+figure:hover .img-overlay {
+  opacity: 0.7;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  padding-top: 150px;
+}
+figure:hover .overlay-txt {
+  bottom: 250px;
+  font-size: 2rem;
+}
+figure:hover figcaption {
+  left: 0px;
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+figure img {
+  margin-bottom: -2%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-overlay {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  position: absolute;
+  opacity: 0.4;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  padding-top: 225px;
+  background: black;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+figcaption {
+  opacity: 0;
+  width: 100%;
+  bottom: 80%;
+  left: 0;
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.overlay-txt {
+  position: absolute;
+  width: 100%;
+  bottom: 175px;
+  padding: 10px;
+  margin: -5px 0 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index: 1;
+}
+
+
+        

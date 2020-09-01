@@ -209,6 +209,7 @@
     .postAboutFormatter a:hover{
       color: black !important;
       background-color: white;
+      border: 2px solid white;
     }
     .postAboutSection a{
       border-radius: 10px;
