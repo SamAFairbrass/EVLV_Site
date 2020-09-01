@@ -217,7 +217,7 @@ color: black;
 
 .postAboutFormatter a:hover{
   background-color: #08abb0;
-  border: 2px solid #08abb0;
+  
 }
 
 .indexTitle a{
@@ -708,7 +708,7 @@ display: none;
 
 #column-left {
   -ms-grid-column-span: 2;
-  grid-column-end: 4;
+  grid-column-end: 6;
   -ms-grid-column: 1;
   grid-column-start: 1;
   -ms-grid-row-span: 9;
@@ -721,7 +721,7 @@ display: none;
 -ms-grid-column-span: 5;
 grid-column-end: 8;
 -ms-grid-column: 3;
-grid-column-start: 5;
+grid-column-start: 0;
 -ms-grid-row-span: 1;
 grid-row-end: 2;
 -ms-grid-row: 1;
@@ -1030,5 +1030,72 @@ figcaption {
   z-index: 1;
 }
 
+
+
+
+
+.formStyle { 
+  background-color: transparent;
+  padding: 20px; 
+  width: 100%; 
+  margin-bottom: 20px; 
+  border-bottom-width: 1px; 
+  border-bottom-style: solid; 
+  border-bottom-color: #08abb0; 
+  border-top-style: none; 
+  border-right-style: none; 
+  border-left-style: none; 
+  border: 1px solid #08abb0;
+  font-size: 1em;
+  font-weight: 100;
+  color: #08abb0;
+}
+
+.formButton {
+  font-family: Montserrat, sans-serif;
+  float: right;
+	background-color: transparent;
+	display:inline-block;
+	color:#08abb0;
+	font-size:20px;
+	font-weight: 900;
+	padding:6px 24px;
+  margin-top: 15px;
+  
+	text-decoration:none;
+  border: 1px solid #08abb0;
+}
+
+.formButton:hover {
+	background-color: #08abb0;
+  color:#ffffff;
+}
+
+.formButton:active {
+	position:relative;
+	top:3px;
+}
+
+/*To remove the outline that appears on clicking the input textbox*/
+input:focus {
+  outline: none;
+}
+
+/* To format the placeholder text color */
+::-webkit-input-placeholder {
+   color: #08abb0;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #08abb0;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #08abb0;  
+}
+
+:-ms-input-placeholder {  
+   color: #08abb0;  
+}
 
         
