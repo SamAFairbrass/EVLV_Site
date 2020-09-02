@@ -86,12 +86,33 @@
       text-align: center;
     }
 
+
+    @media only screen and (min-width: 400px) and (max-width: 600px){
+     
+      footer {
+        margin-top: 7225px;
+      }
+      .postAboutText{
+        margin: auto;
+        width: 80%;
+      }
+      .pulsate{
+        font-size: 1.5rem !important;
+      }
+    }
     @media only screen and (max-width: 999px) {
       .aviBox {
         margin: 0% 12%;
       }
       .aviGridBox{
         margin: 2% 0%;
+      }
+      footer {
+        margin-top: 75px;
+      }
+      .postAboutText{
+        margin: auto;
+        width: 80%;
       }
     }
     @media only screen and (min-width: 1000px) {
