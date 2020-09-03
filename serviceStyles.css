@@ -91,6 +91,8 @@
     line-height: 1.8;
   }
 
+  
+
   .caption {
     position: relative;
     z-index: 1;
@@ -983,7 +985,7 @@
   
   .bar-graph-horizontal .bar {
     border-radius: 3px;
-    height: 55px;
+    height: 90px;
     float: left;
     overflow: hidden;
     position: relative;
@@ -1079,7 +1081,7 @@
   .post-image-wrapper-bar-chart {
     position: relative;
     left: 0px;
-    top: 80px;
+    top: 0px;
     right: 0px;
     bottom: 0px;
     width: 25rem;
@@ -1095,3 +1097,244 @@
     opacity: 0;
 }
 
+
+
+.evlvFooter{
+  margin: 0; 
+  position: absolute; 
+  bottom: 0; 
+  left: 30%; 
+  -ms-transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%); 
+  z-index: 1000;
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 600px){
+  .sticky-content {
+    display: none;
+  }
+
+  #w-node-a67d279c6adb-147077fa {
+    display: none;
+  }
+
+  #w-node-a67d279c6b10-147077fa {
+    -ms-grid-column-span: 5;
+    grid-column-end: 8;
+    -ms-grid-column: 3;
+    grid-column-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 2;
+    -ms-grid-row: 1;
+    grid-row-start: 1;
+    }
+
+  .w-layout-grid {
+    display: -ms-grid;
+    
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+  }
+
+  .smart-section {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin-top: 0rem;
+    padding: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  #w-node-a67d279c6b6c-147077fa {
+    -ms-grid-column-span: 6;
+    grid-column-end: 7;
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: 7;
+    -ms-grid-row: 6;
+    grid-row-start: 6;
+  }
+
+  .width-100 {
+    width: 100%;
+  }
+
+  .post.no-left-right {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+
+  .post {
+    padding-right: 1rem;
+    padding-bottom: 2.5rem;
+    padding-left: 1rem;
+  }
+
+  .post-wrapper.portfolio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .post-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .post-image-wrapper.portfolio {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .post-image-wrapper {
+    max-width: none;
+  }
+
+  .post-image-wrapper {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 17.5rem;
+    height: 17.5rem;
+    min-height: 17.5rem;
+    min-width: 17.5rem;
+  }
+
+  .w-inline-block {
+    max-width: 100%;
+    display: inline-block;
+  }
+
+  .post-gradient {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#16161d), to(rgba(22, 22, 29, 0.25)));
+    background-image: linear-gradient(0deg, #16161d, rgba(22, 22, 29, 0.25));
+  }
+
+  .post-image.portfolio {
+    background-size: 80%;
+  }
+
+  .post-image.portfolio {
+    background-size: auto 60%;
+  }
+
+  .post-image.portfolio {
+    background-size: 80%;
+    background-repeat: no-repeat;
+  }
+
+  .post-image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png");
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  .post-content.portfolio {
+    padding-left: 0%;
+  }
+
+  .post-content {
+    padding-left: 0rem;
+  }
+
+  .post-content {
+    width: 100%;
+    padding-left: 3rem;
+  }
+
+  .circle-chart-circle {
+    animation: circle-chart-fill 1.35s reverse;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+    
+  .circle-chart {
+    overflow: visible;
+  }
+
+  .badge.blog-badge {
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+    padding-top: 0px;
+    padding-right: 7px;
+    padding-bottom: 0px;
+    letter-spacing: 2px;
+    margin-top: 20%;
+  }
+
+  .post-image-wrapper-bar-chart {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+  }
+
+  .evlvFooter{
+    margin-top: 50%; 
+    margin-left: 0; 
+    margin-left: 0; 
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    -ms-transform: translate(-50%, 0%); 
+    transform: translate(-50%, 0%); 
+    z-index: 1000;
+    text-align: center;
+  }
+
+
+    
+
+
+}
