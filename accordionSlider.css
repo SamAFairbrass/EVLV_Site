@@ -416,7 +416,7 @@
     width: 100%;
     position: relative;
   }
-  @media (max-width: 600px) {
+  @media only screen and (min-width: 400px) and (max-width: 600px){
     #search {
       width: auto;
     }
@@ -887,7 +887,7 @@
     display: inline-block;
     margin-right: 1.8rem;
   }
-  @media (max-width: 767px) {
+  @media only screen and (min-width: 400px) and (max-width: 600px){
     .accordion-group {
       height: 700px;
     }
