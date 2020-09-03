@@ -416,7 +416,7 @@
     width: 100%;
     position: relative;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 600px) {
     #search {
       width: auto;
     }
