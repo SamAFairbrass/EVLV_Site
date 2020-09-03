@@ -889,7 +889,7 @@
   }
   @media (max-width: 767px) {
     .accordion-group {
-      height: 360px;
+      height: 700px;
     }
     .accordion-group li {
       display: flex;
@@ -949,4 +949,7 @@
     }
   }
   
-  
+  @media only screen and (min-width: 400px) and (max-width: 600px){
+
+
+  }

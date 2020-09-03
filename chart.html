@@ -1,668 +1,643 @@
-<!--Graph charts inspired by https://dribbble.com/shots/1876534-Stats-animation?list=following&offset=4-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EVLV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="serviceStyles.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="accordionSlider.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="subscribeIndex.css" media="screen"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js" type="text/javascript"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+  </head>
 
-
-<div class="charts-container cf">
-  <div class="chart" id="graph-1-container">
-    <h2 class="title">Overal Performance</h2>
-    <div class="chart-svg">
-      <svg class="chart-line" id="chart-1" viewBox="0 0 80 40">
-        <defs>
-          <clipPath id="clip" x="0" y="0" width="80" height="40" >
-            <rect id="clip-rect" x="-80" y="0" width="77" height="38.7"/>
-          </clipPath>
-
-        <linearGradient id="gradient-1">
-            <stop offset="0" stop-color="#00d5bd" />
-            <stop offset="100" stop-color="#24c1ed" />
-        </linearGradient>
-
-        <linearGradient id="gradient-2">
-            <stop offset="0" stop-color="#954ce9" />
-            <stop offset="0.3" stop-color="#954ce9" />
-            <stop offset="0.6" stop-color="#24c1ed" />
-            <stop offset="1" stop-color="#24c1ed" />
-        </linearGradient>
-
-
-          <linearGradient id="gradient-3" x1="0%" y1="0%" x2="0%" y2="100%">>
-            <stop offset="0" stop-color="rgba(0, 213, 189, 1)" stop-opacity="0.07"/>
-            <stop offset="0.5" stop-color="rgba(0, 213, 189, 1)" stop-opacity="0.13"/>
-            <stop offset="1" stop-color="rgba(0, 213, 189, 1)" stop-opacity="0"/>
-        </linearGradient>
-
-
-          <linearGradient id="gradient-4" x1="0%" y1="0%" x2="0%" y2="100%">>
-            <stop offset="0" stop-color="rgba(149, 76, 233, 1)" stop-opacity="0.07"/>
-            <stop offset="0.5" stop-color="rgba(149, 76, 233, 1)" stop-opacity="0.13"/>
-            <stop offset="1" stop-color="rgba(149, 76, 233, 1)" stop-opacity="0"/>
-        </linearGradient>
+  <section>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" float: right; top: 0; right: 0; font-size:50px;">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html">Contact</a>
+        <div class = "icons" style = "margin-top: 10px; display: flex; justify-content: center;">
+          <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin"></a>
+          <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
+          <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
+        </div>
+  
+      </div>
+    </div>
+  
+  
+    <script>
+  
+  
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+  
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+  
+  <ul style="color: white; opacity: 1 !important; z-index: 20; position: relative; height: 0px;  ">
+    <a href="index.html"><div class="logo" style = "margin-top: 14px;  float: left;"></div></a>
+    <div class="topnav" id="myTopnav">
+  
+      <div class="mobileNavButton">
+        <span onclick="openNav()">&#9776;</span>
+      </div>
+  
+      <div class="nav-left" style = "padding: 14px 16px; width: 60%; float: left;">
           
-    </defs>
-      </svg>
-      <h3 class="valueX">time</h3>
+        <div style = "margin-top: 10px; ">
+          <a href="index.html" class="underline">
+            <span>Home</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+          </a>
+          <a href="about.html" class="underline">
+            <span>About</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+          </a>
+          <a href="services.html" class="underline">
+            <span>Services</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+          </a>
+          <a href="articles.html" class="underline">
+            <span>Articles</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+          </a>
+        </div>
+      </div>
+  
+      <div class="nav-right" style="float: left; width: 40%;">
+        <div class = "icons" style = "margin-top: 10px;">
+          <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin" style = "padding-right: 16px !important;"></a>
+          <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
+          <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
+        </div>
+        <a href="contact.html"style = "margin-top: 3px; padding-right: 10px;"> 
+          <button class="pill-button">Contact</button>
+        </a>
+      </div>
+  
     </div>
-    <div class="chart-values">
-      <p class="h-value">1689h</p>
-      <p class="percentage-value"></p>
-      <p class="total-gain"></p>
-    </div>
-    <div class="triangle green"></div>
-  </div>
   
-  
-</div>
-
-<style>
-    @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-@font-face {
-  font-family: Lato;
-  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/176026/ProximaNova-Regular.otf);
-  font-weight: 300;
-}
-body, html {
-  font-family: Lato;
-}
-
-h1 {
-  font-size: 28px;
-  line-height: 40px;
-  margin-top: 20px;
-}
-h1 a {
-  text-decoration: none;
-  color: #48c15e;
-}
-h1 p {
-  font-size: 22px;
-}
-
-#grid {
-  -moz-transform: translate(1px, 0px);
-  -ms-transform: translate(1px, 0px);
-  -webkit-transform: translate(1px, 0px);
-  transform: translate(1px, 0px);
-}
-
-/* GRAPH - 1 */
-#graph-1 {
-  stroke: url(#gradient-1);
-  stroke-width: 1.5;
-  fill: transparent;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  -moz-animation: lineani 1.3s linear forwards;
-  -webkit-animation: lineani 1.3s linear forwards;
-  animation: lineani 1.3s linear forwards;
-}
-
-#graph-2 {
-  stroke: url(#gradient-2);
-  stroke-width: 1.5;
-  fill: transparent;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  -moz-animation: lineani 1.3s linear forwards;
-  -webkit-animation: lineani 1.3s linear forwards;
-  animation: lineani 1.3s linear forwards;
-}
-
-#poly-1 {
-  fill: url(#gradient-3);
-}
-
-#poly-2 {
-  fill: url(#gradient-4);
-}
-
-@-moz-keyframes lineani {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@-webkit-keyframes lineani {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes lineani {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-.underlay {
-  stroke-width: 5;
-  fill: transparent;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #24303a;
-}
-
-#circle-graph-1 {
-  stroke: url(#gradient-1);
-  stroke-width: 5;
-  fill: transparent;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.chart-circle {
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-#circle-graph-2 {
-  stroke: url(#gradient-2);
-  stroke-width: 5;
-  fill: transparent;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-body {
-  background-color: #24303a;
-  color: white;
-  text-align: center;
-}
-
-.charts-container {
-  padding: 20px;
-  width: 100%;
-  max-width: 1024px;
-  display: inline-block;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.chart {
-  color: #4a667a;
-  text-align: left;
-  position: relative;
-  height: auto;
-  background-color: #1e2730;
-  display: inline-block;
-  float: left;
-  position: relative;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 10px;
-  padding: 15px 20px 65px 20px;
-}
-.chart.circle {
-  padding: 15px 20px 40px 20px;
-}
-@media screen and (max-width: 700px) {
-  .chart {
-    width: calc(100% - 20px);
-  }
-}
-@media screen and (min-width: 700px) {
-  .chart {
-    width: calc(50% - 20px);
-  }
-}
-
-.title {
-  font-size: 22px;
-  margin-bottom: 12px;
-}
-
-.chart-circle {
-  display: inline-block;
-  position: relative;
-}
-
-.chart-svg {
-  position: relative;
-}
-
-.circle-percentage {
-  position: absolute;
-  color: white;
-  font-size: 48px;
-  left: 50%;
-  top: 50%;
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-@media screen and (max-width: 480px) {
-  .circle-percentage {
-    font-size: 32px;
-  }
-}
-
-.align-center {
-  text-align: center;
-}
-
-.chart-line {
-  width: 80%;
-}
-
-.valueX {
-  font-size: 14px;
-}
-
-.chart-values {
-  text-align: right;
-  font-size: 18px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 15px;
-}
-
-.h-value {
-  -moz-transition: ease-in-out 700ms;
-  -o-transition: ease-in-out 700ms;
-  -webkit-transition: ease-in-out 700ms;
-  transition: ease-in-out 700ms;
-  opacity: 0;
-}
-.h-value.visible {
-  opacity: 1;
-}
-
-.percentage-value {
-  -moz-transition: ease-in-out 700ms;
-  -o-transition: ease-in-out 700ms;
-  -webkit-transition: ease-in-out 700ms;
-  transition: ease-in-out 700ms;
-  color: #48c15e;
-  margin-top: 2px;
-  opacity: 0;
-}
-.percentage-value.negative {
-  color: #ef6670;
-}
-.percentage-value.visible {
-  opacity: 1;
-}
-
-.total-gain {
-  color: white;
-  font-size: 48px;
-}
-
-.triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 28px 0 0 28px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-.triangle.red {
-  border-color: transparent transparent transparent #ef6670;
-}
-.triangle.green {
-  border-color: transparent transparent transparent #48c15e;
-}
-
-.horizontal,
-.vertical {
-  stroke-width: 0.1;
-  stroke: #4a667a;
-}
-
-/* CLEARFIX HELPER */
-.cf:before,
-.cf:after {
-  content: " ";
-  /* 1 */
-  
-}
-
-.cf:after {
-  clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-  *zoom: 1;
-}
-
-/*IRRELEVANT CSS*/
-.followlinks {
-  position: fixed;
-  right: 35px;
-  bottom: 15px;
-  display: table;
-}
-.followlinks a {
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 10px;
-  color: white;
-}
-.followlinks a svg path {
-  fill: white;
-}
-
-.heartIt {
-  margin-top: 50px;
-  margin-bottom: 80px;
-}
-.heartIt p {
-  font-size: 24px;
-  line-height: 40px;
-}
-.heartIt img {
-  width: 64px;
-  height: auto;
-  opacity: 0.7;
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-
-.original {
-  color: #ef6670;
-  font-size: 14px;
-}
+  </ul>
+  </section>
 
 
-</style>
+  <body>
+
+      <a href ="#" onclick="smoothScroll('.servicesAnchor',750)">
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
 
 
-<script>
-    /*
-I loved Virgil's Dribble shot and decided to remake
-it with some SVG animations :) I didn't really want
-to recreate the curvy line since I believe straight
-lines are more accurate. Sorry Virgil, I might make
-them curvy one day :)! With a bit of time on my 
-hands I could make it even more detailed.
-I hope you like it and post some feedback on how to
-make this better :)!
 
-Don't forget to check out the original at
-https://goo.gl/0aKiS0
+      <section class="section" style="height: 66vh;
+      box-sizing: border-box;
+      z-index: -3;
+      font-family: arial, sans-serif;
+      font-family: Arial;
+      font-size: 17px; ">
+        <div style=" z-index: -20; background-color: black;">
+            <div class="bg-vid">
+              <video autoplay muted loop id="myVideo" style="z-index: -3; opacity: 0.5;">
+                <source src="bg-evlv.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+        </div>  
+        
+        
 
-Kudos Virgil!*/
-
-var chart_h = 40;
-var chart_w = 80;
-var stepX = 77 / 14;
-
-var chart_1_y = [
-  15, 25, 40, 30, 45, 40, 35, 55, 37, 50, 60, 45,70, 78
-];
-var chart_2_y = [
-  80, 65, 65, 40, 55, 34, 54, 50, 60, 64, 55, 27, 24, 30
-];
-
-function point(x, y) {
-    x: 0;
-    y: 0;
-}
-/* DRAW GRID */
-function drawGrid(graph) {
-    var graph = Snap(graph);
-    var g = graph.g();
-    g.attr('id', 'grid');
-    for (i = 0; i <= stepX + 2; i++) {
-        var horizontalLine = graph.path(
-            "M" + 0 + "," + stepX * i + " " +
-            "L" + 77 + "," + stepX * i);
-        horizontalLine.attr('class', 'horizontal');
-        g.add(horizontalLine);
-    };
-    for (i = 0; i <= 14; i++) {
-        var horizontalLine = graph.path(
-            "M" + stepX * i + "," + 38.7 + " " +
-            "L" + stepX * i + "," + 0)
-        horizontalLine.attr('class', 'vertical');
-        g.add(horizontalLine);
-    };
-}
-drawGrid('#chart-1');
-
-function drawLineGraph(graph, points, container, id) {
+        <div id = "indexTitle" class = "indexTitle">
+          <h4 style="font-size: 15px; padding-bottom: 1%; font-family: Montserrat, sans-serif;">ONE OF LONDON'S LEADING DIGITAL CONSULATNCIES</h4>
+          <h1 style="font-size: 65px; line-height: 1; padding-bottom: 1%; font-family: Montserrat, sans-serif;">SCALING BUSINESSES<br>SINCE 2018</h1>
+          <div class="postAboutFormatter">
+              <a href="https://calendly.com/trey-evlv/30min" target="_blank">
+                <div class="pulsate">
+                  BOOK A CALL NOW
+                </div>
+              </a>
+          </div>
+        </div>
 
 
-    var graph = Snap(graph);
+        
+      </section>
 
-
-    /*END DRAW GRID*/
-
-    /* PARSE POINTS */
-    var myPoints = [];
-    var shadowPoints = [];
-
-    function parseData(points) {
-        for (i = 0; i < points.length; i++) {
-            var p = new point();
-            var pv = points[i] / 100 * 40;
-            p.x = 83.7 / points.length * i + 1;
-            p.y = 40 - pv;
-            if (p.x > 78) {
-                p.x = 78;
-            }
-            myPoints.push(p);
-        }
-    }
-
-    var segments = [];
-
-    function createSegments(p_array) {
-        for (i = 0; i < p_array.length; i++) {
-            var seg = "L" + p_array[i].x + "," + p_array[i].y;
-            if (i === 0) {
-                seg = "M" + p_array[i].x + "," + p_array[i].y;
-            }
-            segments.push(seg);
-        }
-    }
-
-    function joinLine(segments_array, id) {
-        var line = segments_array.join(" ");
-        var line = graph.path(line);
-        line.attr('id', 'graph-' + id);
-        var lineLength = line.getTotalLength();
-
-        line.attr({
-            'stroke-dasharray': lineLength,
-                'stroke-dashoffset': lineLength
-        });
-    }
-
-    function calculatePercentage(points, graph) {
-        var initValue = points[0];
-        var endValue = points[points.length - 1];
-        var sum = endValue - initValue;
-        var prefix;
-        var percentageGain;
-        var stepCount = 1300 / sum;
-
-        function findPrefix() {
-            if (sum > 0) {
-                prefix = "+";
-            } else {
-                prefix = "";
-            }
-        }
-
-        var percentagePrefix = "";
-
-        function percentageChange() {
-            percentageGain = initValue / endValue * 100;
-            
-            if(percentageGain > 100){
-              console.log('over100');
-              percentageGain = Math.round(percentageGain * 100*10) / 100;
-            }else if(percentageGain < 100){
-              console.log('under100');
-              percentageGain = Math.round(percentageGain * 10) / 10;
-            }
-            if (initValue > endValue) {
+      <section style="margin-top: 20%; padding-bottom: 0%;">
+        <div class = "smart-section no-top services servicesAnchor" style = "padding-top: 13%;">
+          <div class="w-layout-grid smart-grid">
+            <div id="w-node-a67d279c6adb-147077fa" class="content hidden-mobile">
               
-                percentageGain = endValue/initValue*100-100;
-                percentageGain = percentageGain.toFixed(2);
+            <!-- Index End -->
+  
+            <!-- Overview Start -->
+            <div id="w-node-a67d279c6b10-147077fa" class="content">
+              <div id="service-0" class="anchor service-0"></div>
+              <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
+                <div id="w-node-a67d279c6b13-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header overviewAnchor">
+                  
+                  <h2 class="display-2 services">Overview</h2>
+                </div>
+                <div id="w-node-a67d279c6b18-147077fa" class="content">
+                  <div class="caption uppercase margin-paragraph">Designing dynamic and innovative solutions for growth</div>
+                </div>
+                <div id="w-node-a67d279c6b1b-147077fa" class="content">
+                  <h2 class="display-3 services">Every business has the opportunity to succeed, given they have a solid and proven plan. We create that plan for you.<br></h2>
+                </div>
+              </div>
+              <div class="w-layout-grid grid-6 no-gap margin-bottom">
+                <div id="w-node-a67d279c6b20-147077fa" class="content">
+                  <div class="caption uppercase margin-paragraph">Our process</div>
+                  <h2 class="display-3 indexChange services">Everyone that makes up our Team at EVLV is skilled and experienced at what they do, enabling us to offer a unique and effective strategy to aid in fulfilling our client's goals. Our step by step process allows us to offer you the best service possible.</h2>
+                </div>
+                <div id="w-node-a67d279c6b25-147077fa" class="accordion-wrapper">
+                  <div class="accordion-item" onclick="accordionTrigger('.accordion01', '.accordion01Content')">
+                    <div class="accordion-item-trigger">
+                      <div class="plus-icon accordionUp accordion01">+</div>
+                      <div class="accordion-title w-clearfix">Learning<span class="sup">1/5</span></div>
+                    </div>
+                    <div class="accordion-item-content accordionContentUp accordion01Content">
+                      <div class="accordion-text">Our first step is to understand our clients on a personal level. Whether large or small, we want to know your vision so we can best do our job. We believe that understanding your culture and desired outcome will enable us to provide results that exceed expectations.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" onclick="accordionTrigger('.accordion02', '.accordion02Content')">
+                    <div class="accordion-item-trigger">
+                      <div class="plus-icon accordionUp accordion02">+</div>
+                      <div class="accordion-title w-clearfix">Planning<span class="sup">2/5</span></div>
+                    </div>
+                    <div class="accordion-item-content accordionContentUp accordion02Content">
+                      <div class="accordion-text">Our next step is to identify and strategize according to our methodologies and results-oriented tactics. We work with you to make sure we are always aligned to the same shared goals.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" onclick="accordionTrigger('.accordion03', '.accordion03Content')">
+                    <div class="accordion-item-trigger">
+                      <div class="plus-icon accordionUp accordion03">+</div>
+                      <div class="accordion-title w-clearfix">Building<span class="sup">3/5</span></div>
+                    </div>
+                    <div class="accordion-item-content accordionContentUp accordion03Content">
+                      <div class="accordion-text">We take our plan and knowledge of your desires and implement that combination to execute services that blend with your brand. Utilizing our unique structure and communication model, our departments work in tandem to create outstanding results.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" onclick="accordionTrigger('.accordion04', '.accordion04Content')">
+                    <div class="accordion-item-trigger">
+                      <div class="plus-icon accordionUp accordion04">+</div>
+                      <div class="accordion-title w-clearfix">Testing<span class="sup">4/5</span></div>
+                    </div>
+                    <div class="accordion-item-content accordionContentUp accordion04Content">
+                      <div class="accordion-text">Before we implement any services to our client, we conduct heavy quality assurance, stress, and customized testing to ensure that top-quality is a consistent deliverable.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" onclick="accordionTrigger('.accordion05', '.accordion05Content')">
+                    <div class="accordion-item-trigger">
+                      <div class="plus-icon accordionUp accordion05">+</div>
+                      <div class="accordion-title w-clearfix">Implementing<span class="sup">5/5</span></div>
+                    </div>
+                    <div class="accordion-item-content accordionContentUp accordion05Content">
+                      <div class="accordion-text">Jungle is Massive</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Overview End -->
+  
+              <!-- Social Media Start -->
+              <div id="w-node-a67d279c6b5d-147077fa" class="content">
+                <div id="service-1" class="anchor"></div>
+                <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
+                  <div id="w-node-a67d279c6b60-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header">
+                    <h2 class="display-2 services">Social Media</h2>
+                  </div>
+                  <div id="w-node-a67d279c6b65-147077fa" class="content">
+                    <div class="caption uppercase margin-paragraph">Bringing customers to you</div>
+                  </div>
+                  <div id="w-node-a67d279c6b68-147077fa" class="content margin-half-bottom">
+                    <h2 class="display-3 indexChange services" id = "tech">SOCIAL MEDIA TITLE<br></h2>
+                  </div>
+                  <div id="w-node-a67d279c6b6c-147077fa" class="content">
+                    <div class="width-100 w-dyn-list">
+                      <div role="list" class="w-dyn-items">
+                        <div role="listitem" class="post no-left-right w-dyn-item">
+                          <div class="post-wrapper portfolio">
+                            <a href="#" class="post-image-wrapper portfolio w-inline-block">
+                              <section class="circle-chart-container">
+                                <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                                    <circle stroke="#efefef" stroke-width=".5" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                    <circle class="circleAnimation " stroke="#08abb0" stroke-width="3" stroke-dasharray="54,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  </svg>
+                                <span class="circle-chart-percentage circle-chart-one-percentage">
+                                    29.1%
+                                  </span>
+                                <svg class="circle-chart circle-chart-two" viewbox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                                    <circle stroke="#efefef" stroke-width="0" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                    <circle class="circleAnimation " stroke="#fb0" stroke-width="3" stroke-dasharray="29,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                  </svg>
+                                <span class="circle-chart-percentage circle-chart-two-percentage">
+                                    54.9%
+                                  </span>
+                              </section>
+                            </a>
+                            <div class="post-content portfolio">
+                              <div class="post-info">
+                                <a href="#" class="badge blog-badge w-inline-block">
+                                  <div>Social Media</div>
+                                </a>
+                                <div class="caption uppercase"></div>
+                                </div>
+                                <a href="/projects/monte-ventoso" class="post-link w-inline-block">
+                                  <div class="display-3 margin-paragraph services">Ads Tailored to Your Business</div>
+                                </a>
+                                <p class="post-summary services">Anyone can create an ad on Facebook, but not everyone can create an ad that will be successful, that's where we come in. Business owners have many things to manage, and creating and managing ads is not always high on their list of priorities. We can help you free up your time and help your business grow by setting up campaigns and individual ads, managing these as well as optimising, and finally reporting.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-layout-grid grid-6 no-gap margin-bottom">
+                <div id="w-node-a67d279c6b81-147077fa" class="content">
+                  <div class="caption uppercase margin-paragraph">Our TECH DEVELOPMENT SERVICES</div>
+                  <h2 class="display-3 services">We like to spend time to get to know how your business operates, the message you are trying to spread and the customers that you want to attract before we launch any ads. This is to make sure that the advertising process is efficient and gets you the best return on your investment. </h2>
+                </div>
+                <div id="w-node-a67d279c6b25-147077fa" class="accordion-wrapper">
+                  <div class="accordion-item" onclick="accordionTrigger('.accordion11', '.accordion11Content')">
+                    <div class="accordion-item-trigger">
+                      <div class="plus-icon accordionUp accordion11">+</div>
+                      <div class="accordion-title w-clearfix">Learning<span class="sup">1/5</span></div>
+                    </div>
+                    <div class="accordion-item-content accordionContentUp accordion11Content">
+                      <div class="accordion-text">Our first step is to understand our clients on a personal level. Whether large or small, we want to know your vision so we can best do our job. We believe that understanding your culture and desired outcome will enable us to provide results that exceed expectations.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" onclick="accordionTrigger('.accordion12', '.accordion12Content')">
+                    <div class="accordion-item-trigger">
+                      <div class="plus-icon accordionUp accordion12">+</div>
+                      <div class="accordion-title w-clearfix">Planning<span class="sup">2/5</span></div>
+                    </div>
+                    <div class="accordion-item-content accordionContentUp accordion12Content">
+                      <div class="accordion-text">Our next step is to identify and strategize according to our methodologies and results-oriented tactics. We work with you to make sure we are always aligned to the same shared goals.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" onclick="accordionTrigger('.accordion13', '.accordion13Content')">
+                    <div class="accordion-item-trigger">
+                      <div class="plus-icon accordionUp accordion13">+</div>
+                      <div class="accordion-title w-clearfix">Building<span class="sup">3/5</span></div>
+                    </div>
+                    <div class="accordion-item-content accordionContentUp accordion13Content">
+                      <div class="accordion-text">We take our plan and knowledge of your desires and implement that combination to execute services that blend with your brand. Utilizing our unique structure and communication model, our departments work in tandem to create outstanding results.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" onclick="accordionTrigger('.accordion14', '.accordion14Content')">
+                    <div class="accordion-item-trigger">
+                      <div class="plus-icon accordionUp accordion14">+</div>
+                      <div class="accordion-title w-clearfix">Testing<span class="sup">4/5</span></div>
+                    </div>
+                    <div class="accordion-item-content accordionContentUp accordion14Content">
+                      <div class="accordion-text">Before we implement any services to our client, we conduct heavy quality assurance, stress, and customized testing to ensure that top-quality is a consistent deliverable.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item" onclick="accordionTrigger('.accordion15', '.accordion15Content')">
+                    <div class="accordion-item-trigger">
+                      <div class="plus-icon accordionUp accordion15">+</div>
+                      <div class="accordion-title w-clearfix">Implementing<span class="sup">5/5</span></div>
+                    </div>
+                    <div class="accordion-item-content accordionContentUp accordion15Content">
+                      <div class="accordion-text">Jungle is Massive</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Social Media End -->
+  
+              <!-- SEO Start -->
+              <div id="w-node-a67d279c6b5d-147077fa" class="content">
+                <div id="service-2" class="anchor"></div>
+                <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
+                  <div id="w-node-a67d279c6b60-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header">
+                    <h2 class="display-2 services">SEO</h2>
+                  </div>
+                  <div id="w-node-a67d279c6b65-147077fa" class="content">
+                    <div class="caption uppercase margin-paragraph">BE SEEN</div>
+                  </div>
+                  <div id="w-node-a67d279c6b68-147077fa" class="content margin-half-bottom">
+                    <h2 class="display-3 indexChange services" id = "tech">SEO TITLE<br></h2>
+                  </div>
+                  <div id="w-node-a67d279c6b6c-147077fa" class="content">
+                    <div class="width-100 w-dyn-list">
+                      <div role="list" class="w-dyn-items">
+                        <div role="listitem" class="post no-left-right w-dyn-item">
+                          <div class="post-wrapper portfolio">
+                            <a href="#" class="post-image-wrapper-bar-chart portfolio w-inline-block">
+                              <section class="barAnimation bar-graph bar-graph-horizontal">
+                                <div class="bar-one">
+                                  <span class="year">2019</span>
+                                  <div class="bar" data-percentage="59.6%"></div>
+                                </div>
+                                <div class="bar-two">
+                                  <span class="year">2018</span>
+                                  <div class="bar" data-percentage="71%"></div>
+                                </div>
+                                <div class="bar-three">
+                                  <span class="year">2017</span>
+                                  <div class="bar" data-percentage="74.7%"></div>
+                                </div>
+                                <div class="bar-four">
+                                  <span class="year">2019</span>
+                                  <div class="bar" data-percentage="86.8%"></div>
+                                </div>
+                              </section>
+                            </a>
+                            <div class="post-content portfolio">
+                              <div class="post-info">
+                                <a href="#" class="badge blog-badge w-inline-block">
+                                  <div>SEO</div>
+                                </a>
+                                <div class="caption uppercase"></div>
+                                </div>
+                                <a href="/projects/monte-ventoso" class="post-link w-inline-block">
+                                  <div class="display-3 margin-paragraph services">Comprehensive Services for a Picturesque Venue</div>
+                                </a>
+                                <p class="post-summary services">If you own a website, one of the most frustrating things you'll find is how difficult it is for your site to be discovered when it is drowned out by all the other sites in your market. With SEO, we can help you build a strategic approach to organising your site and the content you fill it with, ensuring that the website is sound from a technical standpoint, integrating partnerships and link-building. For optimal results, SEO should be implemented across other channels, as it is not really a channel in its own right.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-layout-grid grid-6 no-gap margin-bottom">
+                <div id="w-node-a67d279c6b81-147077fa" class="content">
+                  <div class="caption uppercase margin-paragraph">Our SEO SERVICES</div>
+                  <h2 class="display-3 services">We at EVLV have a team with great successes in this field and will provide honest feedback on what can be done and what we can do to help.</h2>
+                </div>
+              </div>
+              <!-- SEO End -->
               
-                percentagePrefix = "";
-                $(graph).find('.percentage-value').addClass('negative');
-            } else {
-                percentagePrefix = "+";
-            }
-          if(endValue > initValue){
-              percentageGain = endValue/initValue*100;
-              percentageGain = Math.round(percentageGain);
-          }
-        };
-        percentageChange();
-        findPrefix();
+  
+              <!-- Web Dev Start-->
+              <div id="w-node-a67d279c6b5d-147077fa" class="content">
+                <div id="service-3" class="anchor"></div>
+                <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
+                  <div id="w-node-a67d279c6b60-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header">
+                    <h2 class="display-2 services">Web Development</h2>
+                  </div>
+                  <div id="w-node-a67d279c6b65-147077fa" class="content">
+                    <div class="caption uppercase margin-paragraph">we turn ideas into reality</div>
+                  </div>
+                  <div id="w-node-a67d279c6b68-147077fa" class="content margin-half-bottom">
+                    <h2 class="display-3 indexChange services" id = "tech">WEB DEV TITLE<br></h2>
+                  </div>
+                  <div id="w-node-a67d279c6b6c-147077fa" class="content">
+                    <div class="width-100 w-dyn-list">
+                      <div role="list" class="w-dyn-items">
+                        <div role="listitem" class="post no-left-right w-dyn-item">
+                          <div class="post-wrapper portfolio">
+                            <a href="#" class="post-image-wrapper portfolio w-inline-block">
+                              <div style="background-color:#f1ddcf" class="post-gradient"></div>
+                              <div style="background-image:url(&quot;https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Ffinancial-growth-icon-vector-20994521&psig=AOvVaw3GvpR-ZeHq2uFwKuURA86V&ust=1597225380009000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCY7K3ukusCFQAAAAAdAAAAABAa&quot;)" class="post-image portfolio"></div>
+                            </a>
+                            <div class="post-content portfolio">
+                              <div class="post-info">
+                                <a href="#" class="badge blog-badge w-inline-block">
+                                  <div>Web Development</div>
+                                </a>
+                                <div class="caption uppercase"></div>
+                                </div>
+                                <a href="/projects/monte-ventoso" class="post-link w-inline-block">
+                                  <div class="display-3 margin-paragraph services">First Impressions Matter</div>
+                                </a>
+                                <p class="post-summary services">A pretty face is not always going to win the attention of a person, engagement and driving conversation plays a great role in this. The same applies to your website. It is not enough anymore just to have the best-looking website, but one users can interact with and understand.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-layout-grid grid-6 no-gap margin-bottom">
+                <div id="w-node-a67d279c6b81-147077fa" class="content">
+                  <div class="caption uppercase margin-paragraph">Our Web DEVELOPMENT SERVICES</div>
+                  <h2 class="display-3 services" >Our creative team will build a strong and consistent message and brand across all communications, from web design to email, display, and print. We align all of our work with your marketing strategy to ensure anything we create helps you achieve your business objectives (rather than just looking pretty). </h2>
+                </div>
+              </div>
+              <!-- Web Dev End -->
+  
+              <!-- Consulting Start -->
+              <div id="w-node-a67d279c6b5d-147077fa" class="content">
+                <div id="service-4" class="anchor"></div>
+                <div class="w-layout-grid grid-6 no-gap margin-half-bottom">
+                  <div id="w-node-a67d279c6b60-147077fa" class="content horizontal-mobile pad-bottom-mobile services-header">
+                    <h2 class="display-2 services">Consulting</h2>
+                  </div>
+                  <div id="w-node-a67d279c6b65-147077fa" class="content">
+                    <div class="caption uppercase margin-paragraph">we turn ideas into reality</div>
+                  </div>
+                  <div id="w-node-a67d279c6b68-147077fa" class="content margin-half-bottom">
+                    <h2 class="display-3 indexChange services" id = "tech">WEB DEV TITLE<br></h2>
+                  </div>
+                  <div id="w-node-a67d279c6b6c-147077fa" class="content">
+                    <div class="width-100 w-dyn-list">
+                      <div role="list" class="w-dyn-items">
+                        <div role="listitem" class="post no-left-right w-dyn-item">
+                          <div class="post-wrapper portfolio">
+                            <a href="#" class="post-image-wrapper portfolio w-inline-block">
+                              <div style="background-color:#f1ddcf" class="post-gradient"></div>
+                              <div style="background-image:url(&quot;https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Ffinancial-growth-icon-vector-20994521&psig=AOvVaw3GvpR-ZeHq2uFwKuURA86V&ust=1597225380009000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCY7K3ukusCFQAAAAAdAAAAABAa&quot;)" class="post-image portfolio"></div>
+                            </a>
+                            <div class="post-content portfolio">
+                              <div class="post-info">
+                                <a href="#" class="badge blog-badge w-inline-block">
+                                  <div>Web Development</div>
+                                </a>
+                                <div class="caption uppercase"></div>
+                                </div>
+                                <a href="/projects/monte-ventoso" class="post-link w-inline-block">
+                                  <div class="display-3 margin-paragraph services">First Impressions Matter</div>
+                                </a>
+                                <p class="post-summary services">A pretty face is not always going to win the attention of a person, engagement and driving conversation plays a great role in this. The same applies to your website. It is not enough anymore just to have the best-looking website, but one users can interact with and understand.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-layout-grid grid-6 no-gap margin-bottom">
+                <div id="w-node-a67d279c6b81-147077fa" class="content">
+                  <div class="caption uppercase margin-paragraph">Our Web DEVELOPMENT SERVICES</div>
+                  <h2 class="display-3 services" style="padding-bottom: 250px;">Our creative team will build a strong and consistent message and brand across all communications, from web design to email, display, and print. We align all of our work with your marketing strategy to ensure anything we create helps you achieve your business objectives (rather than just looking pretty). </h2>
+                </div>
+              </div>
+              <!-- Consulting End -->
+            </div>
+          </div>
+          </div>
+  
+          <div class = "evlvFooter">
+            <a href="index.html"><div class="logo-footer" style = "margin: auto;"></div></a>
+            <div class = "icons" style="margin-top: 5%; display: flex; justify-content: center;">
+              <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook" style = "font-size: 30px;"></a>
+              <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram" style = "font-size: 30px;"></a>
+              <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin" style = "font-size: 30px;"></a>
+            </div>
+            <p style="margin-top: 5%;">Copyright &#169; 2020 EVLV Ltd. All Rights Reserved.</p>
+          </div>
+        </div>
 
-        var percentage = $(graph).find('.percentage-value');
-        var totalGain = $(graph).find('.total-gain');
-        var hVal = $(graph).find('.h-value');
+      </section>
 
-        function count(graph, sum) {
-            var totalGain = $(graph).find('.total-gain');
-            var i = 0;
-            var time = 1300;
-            var intervalTime = Math.abs(time / sum);
-            var timerID = 0;
-            if (sum > 0) {
-                var timerID = setInterval(function () {
-                    i++;
-                    totalGain.text(percentagePrefix + i);
-                    if (i === sum) clearInterval(timerID);
-                }, intervalTime);
-            } else if (sum < 0) {
-                var timerID = setInterval(function () {
-                    i--;
-                    totalGain.text(percentagePrefix + i);
-                    if (i === sum) clearInterval(timerID);
-                }, intervalTime);
-            }
-        }
-        count(graph, sum);
-
-        percentage.text(percentagePrefix + percentageGain + "%");
-        totalGain.text("0%");
-        setTimeout(function () {
-            percentage.addClass('visible');
-            hVal.addClass('visible');
-        }, 1300);
-
-    }
-
-
-    function showValues() {
-        var val1 = $(graph).find('.h-value');
-        var val2 = $(graph).find('.percentage-value');
-        val1.addClass('visible');
-        val2.addClass('visible');
-    }
-
-    function drawPolygon(segments, id) {
-        var lastel = segments[segments.length - 1];
-        var polySeg = segments.slice();
-        polySeg.push([78, 38.4], [1, 38.4]);
-        var polyLine = polySeg.join(' ').toString();
-        var replacedString = polyLine.replace(/L/g, '').replace(/M/g, "");
-
-        var poly = graph.polygon(replacedString);
-        var clip = graph.rect(-80, 0, 80, 40);
-        poly.attr({
-            'id': 'poly-' + id,
-            /*'clipPath':'url(#clip)'*/
-                'clipPath': clip
-        });
-        clip.animate({
-            transform: 't80,0'
-        }, 1300, mina.linear);
-    }
-
-      parseData(points);
       
-      createSegments(myPoints);
-      calculatePercentage(points, container);
-      joinLine(segments,id);
- 
-      drawPolygon(segments, id);
-    
+      <section style="padding-bottom: 13.5%;">
+        
+        <!-- ACCORDION ROW -->
+        <div class="row">
+            <ul class="accordion-group" id="accordion">
+              <li class = "out" style="background-image: url('https://cdn.pixabay.com/photo/2016/07/29/15/09/eye-1553789_1280.jpg'); background-position: 65% center;">
+                <div class="accordion-overlay"></div>
+                
+                  <h3>Social<br>Media</h3>
+                
+                <section class="hidden-xs">
+                  <article>
+                    <div class="sliderDiv">
+                      <p class="sliderHeading">Social Media</p>
+                      <div class="sliderIcon">
+                        <img src = "./images/social-media.svg">
+                      </div>
+                      <p class="sliderBody">With increasing sales and business conducted on social media, growth has never been easier. With an ever growing variety of  platforms, putting your business infront of your target market is just a decision away.</p>
+                      <p class="sliderBody">EVLV will give you that visibility and recognition required for sucess.</p>
+                      <div class="sliderButtonHover">
+                        <div class="sliderButton">
+                          <a href="services.html#service-1">
+                            <div class="pulsate">
+                              Learn More
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </section>
+              </li>
+              <li style="background-image: url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80');">
+                <div class="accordion-overlay"></div>
+                <h3>SEO</h3>
+                <section class="hidden-xs">
+                  <article>
+                    <div class="sliderDiv">
+                      <p class="sliderHeading">SEO</p>
+                      <div class="sliderIcon">
+                        <img src = "./images/seo.svg">
+                      </div>
+                      <p class="sliderBody">If you have a website, there is a chance you have recieved emails promising to put you on the "front page" of search engines, with a few easy tricks.</p>
+                      <p class="sliderBody">SEO is more than just a simple adjustment. It is all about optimising and adopting a strateig approach of keyword and content, as well as ensuring all other offsite links, partnerships etc. are techniacally sound.</p>
+                      <div class="sliderButtonHover">
+                        <div class="sliderButton">
+                          <a href="services.html#service-2">
+                            <div class="pulsate">
+                              Learn More
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </section>
+              </li>
+              <li style="background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80'); background-position: 25% center;">
+                <div class="accordion-overlay"></div>
+                <h3>Web Development</h3>
+                <section class="hidden-xs">
+                  <article>
+                    <div class="sliderDiv">
+                      <p class="sliderHeading">Web Development</p>
+                      <div class="sliderIcon">
+                        <img src = "./images/web-dev.svg">
+                      </div>
+                      <p class="sliderBody">With growing competition across all industries, simply having a website will no longer cut it in regards to making sales.</p>
+                      <p class="sliderBody">Your site must be designed to the highest standards, being optimised for both desktop and mobile, whilst aligning with your brand, as well as supporting your SEO to achieve top rankings and high conversion rates.</p>
+                      <p class="sliderBody">EVLV's Tech Development team can do this all for you.</p>
+                      <div class="sliderButtonHover">
+                        <div class="sliderButton">
+                          <a href="services.html#service-3">
+                            <div class="pulsate">
+                              Learn More
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </section>
+              </li>
+              <li style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'); background-position: 25% center;">
+                <div class="accordion-overlay"></div>
+                <h3>Consulting</h3>
+                <section class="hidden-xs">
+                  <article>
+                    <div class="sliderDiv">
+                      <p class="sliderHeading">Consulting</p>
+                      <div class="sliderIcon">
+                        <img src = "./images/consulting.svg">
+                      </div>
+                      <p class="sliderBody">At the core of every business lies a strategy for growth. We take great pride in working with our clients, learning about their current approcahes, and bringing them a all-new, tailor-made foundation to advance further with their business.</p>
+                      <p class="sliderBody">EVLV's own CFO and Lead Strategist has worked with both Tech Start-Ups and Hedgefunds from the ground-up, laying the foundations to a successful future.</p>
+                      <div class="sliderButtonHover">
+                        <div class="sliderButton">
+                          <a href="services.html#service-4">
+                            <div class="pulsate">
+                              Learn More
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </section>
+              </li>
+            </ul>
+        </div>
+      </section>
 
-    /*$('#poly-'+id).attr('class','show');*/
 
-    /* function drawPolygon(segments,id){
-      var polySeg = segments;
-      polySeg.push([80,40],[0,40]);
-      var polyLine = segments.join(' ').toString();
-      var replacedString = polyLine.replace(/L/g,'').replace(/M/g,"");
-      var poly = graph.polygon(replacedString);
-      poly.attr('id','poly-'+id)
-    }
-    drawPolygon(segments,id);*/
-}
-function drawCircle(container,id,progress,parent){
-  var paper = Snap(container);
-  var prog = paper.path("M5,50 A45,45,0 1 1 95,50 A45,45,0 1 1 5,50");
-  var lineL = prog.getTotalLength();
-  var oneUnit = lineL/100;
-  var toOffset = lineL - oneUnit * progress;
-  var myID = 'circle-graph-'+id;
-  prog.attr({
-    'stroke-dashoffset':lineL,
-    'stroke-dasharray':lineL,
-    'id':myID
-  });
-  
-  var animTime = 1300/*progress / 100*/
-  
-  prog.animate({
-    'stroke-dashoffset':toOffset
-  },animTime,mina.easein);
-  
-  function countCircle(animtime,parent,progress){
-    var textContainer = $(parent).find('.circle-percentage');
-    var i = 0;
-    var time = 1300;
-    var intervalTime = Math.abs(time / progress);
-    var timerID = setInterval(function () {
-      i++;
-      textContainer.text(i+"%");
-      if (i === progress) clearInterval(timerID);
-    }, intervalTime);           
-  }
-  countCircle(animTime,parent,progress);
-}
+        
 
-$(window).on('load',function(){
-    drawLineGraph('#chart-1', chart_1_y, '#graph-1-container', 1);
-});
+          
+          
+
+
+      
+
+  <div style ="margin: 0; position: absolute; padding-bottom: 50px; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);">
+    <a href="index.html"><div class="logo-footer" style = "margin: auto;"></div></a>
+    <div class = "icons" style="margin-top: 5%; display: flex; justify-content: center;">
+      <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook" style = "font-size: 30px;"></a>
+      <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram" style = "font-size: 30px;"></a>
+      <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin" style = "font-size: 30px;"></a>
+    </div>
+    <p style="margin-top: 5%; font-family: Montserrat, sans-serif; color: #fff;">Copyright &#169; 2020 EVLV Ltd. All Rights Reserved.</p>
+  </div>
+
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<script type="text/javascript">Calendly.initBadgeWidget({ url: 'https://calendly.com/trey-evlv/30min', text: 'Book a Call', color: '#08abb0', textColor: '#ffffff', branding: false });</script>
+<!-- Calendly badge widget end -->
 
 
 
+    <script src = "./external.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./query.js"></script>
+    <script src="./accordionSlider.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </body>
+</html>
