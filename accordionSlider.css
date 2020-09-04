@@ -416,11 +416,11 @@
     width: 100%;
     position: relative;
   }
-  @media only screen and (min-width: 400px) and (max-width: 600px){
+  @media only screen and (min-width: 414px) and (max-width: 736px){
 
     .sliderDiv {
       background-color: rgba(149, 149, 149, 0.79);
-      width: 230%;
+      width: 220%;
       color: #333;
       font-size: .2rem;
       letter-spacing: 0.15rem;
@@ -904,7 +904,7 @@
     display: inline-block;
     margin-right: 1.8rem;
   }
-  @media only screen and (min-width: 400px) and (max-width: 600px){
+  @media only screen and (min-width: 414px) and (max-width: 736px){
     .accordion-group {
       height: 700px;
     }
@@ -966,7 +966,7 @@
     }
   }
   
-  @media only screen and (min-width: 400px) and (max-width: 600px){
+  @media only screen and (min-width: 414px) and (max-width: 736px){
 
 
   }
