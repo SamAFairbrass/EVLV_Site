@@ -260,7 +260,7 @@ figcaption {
 
 @media only screen and (min-width: 414px) and (max-width: 736px){
 
-  .articleBigTitle{ font-size: 1.5rem; color: white;}
+  .articleBigTitle{ font-size: 1.3rem; color: white;}
 
   .evlvFooterArticles{
     margin: 0; 
