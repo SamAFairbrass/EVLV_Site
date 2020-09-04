@@ -190,6 +190,13 @@ color: black;
   position: absolute;
 }
 
+.indexTitleH1 {
+  font-size: 65px; 
+  line-height: 1; 
+  padding-bottom: 1%; 
+  font-family: Montserrat, sans-serif;
+}
+
 .pulsate {
   -webkit-animation: pulsate 1.5s ease-out;
   -webkit-animation-iteration-count: infinite;
@@ -227,6 +234,10 @@ color: black;
   display: inline-block;
   padding: 1%;
   text-decoration: none;
+}
+
+.indexTitle a:hover {
+  border: 2px solid #08abb0;
 }
 
 @media screen and (max-width: 1000px){
@@ -1075,11 +1086,10 @@ figcaption {
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
-    margin-right: 10rem;
   }
 
   .gridElement {
-    width: 73%;
+    width: 440px;
     height: 300px;
   }
 
@@ -1192,9 +1202,76 @@ figcaption {
   }
   
   .subscribeContainer {
-    width: 73%;
+    width: 100%;
     position: absolute;
     margin-top: 16%;
+    }
+
+    .indexTitleH1 {
+      font-size: 55px; 
+      line-height: 1; 
+      padding-bottom: 1%; 
+      font-family: Montserrat, sans-serif;
+    }
+
+    .sliderHeading {
+      color: white;
+      padding-top: 3%;
+      padding-left: 5%;
+      font-weight: 900;
+      font-size: 20px;
+      margin-bottom: 5%;
+    }
+    
+    .sliderBody {
+      color: white;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-bottom: 10%;
+      font-size: 16px;
+    }
+
+    .sliderIcon {
+      width: 15%;
+      height: auto;
+      margin-bottom: 10%;
+      margin-top: 10%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .sliderButton {
+      border-radius: 8px;
+      width: 90%;
+      height: auto;
+      font-size: 20px;
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      left: 55%;
+      bottom: 0;
+      margin-bottom: 10%;
+      
+    }
+    
+    .sliderButton a{
+      border-radius: 10px;
+      border: 2px solid white;
+      color: white;
+      display: inline-block;
+      padding: 2% 5%;
+      text-decoration: none;
+      
+    }
+    
+    .sliderButtonHover a:hover{
+      background-color: #08abb0;
+      border: 2px solid #08abb0;
+      color: white;
+      
     }
 
 }

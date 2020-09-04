@@ -417,9 +417,26 @@
     position: relative;
   }
   @media only screen and (min-width: 400px) and (max-width: 600px){
+
+    .sliderDiv {
+      background-color: rgba(149, 149, 149, 0.79);
+      width: 197%;
+      color: #333;
+      font-size: .2rem;
+      letter-spacing: 0.15rem;
+      height: 100%;
+    }
+
+
     #search {
       width: auto;
     }
+
+
+    .accordion-group li.out section article {
+      right: 6;
+      right: 60%;
+      }
   }
   #search input {
     -webkit-box-sizing: border-box;
