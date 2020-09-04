@@ -1089,7 +1089,7 @@ figcaption {
   }
 
   .gridElement {
-    width: 400px;
+    width: 380px;;
     height: 300px;
   }
 
@@ -1202,7 +1202,7 @@ figcaption {
   }
   
   .subscribeContainer {
-    width: 100%;
+    width: 380px;
     position: absolute;
     margin-top: 16%;
     }
