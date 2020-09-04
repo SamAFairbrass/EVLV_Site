@@ -1089,7 +1089,7 @@ figcaption {
   }
 
   .gridElement {
-    width: 380px;;
+    width: 340px;;
     height: 300px;
   }
 
@@ -1202,13 +1202,13 @@ figcaption {
   }
   
   .subscribeContainer {
-    width: 380px;
+    width: 340px;
     position: absolute;
     margin-top: 16%;
     }
 
     .indexTitleH1 {
-      font-size: 55px; 
+      font-size: 45px; 
       line-height: 1; 
       padding-bottom: 1%; 
       font-family: Montserrat, sans-serif;
@@ -1219,7 +1219,7 @@ figcaption {
       padding-top: 3%;
       padding-left: 5%;
       font-weight: 900;
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 5%;
     }
     
@@ -1228,7 +1228,7 @@ figcaption {
       padding-left: 5%;
       padding-right: 5%;
       margin-bottom: 10%;
-      font-size: 16px;
+      font-size: 14px;
     }
 
     .sliderIcon {
