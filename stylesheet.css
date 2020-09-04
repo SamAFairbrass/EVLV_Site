@@ -1057,8 +1057,36 @@ figcaption {
   padding-bottom: 13.5%;
 } 
 
+.splashText{
+  margin-bottom: 4%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10%;
+}
 
 @media only screen and (min-width: 414px) and (max-width: 736px){
+
+  .splashText {
+    margin-bottom: 4%;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+  figure {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    width: 380px;
+    margin-bottom: 10%;
+  }
+
   .accordionSection {
     padding-bottom: 55%;
     padding-top: 80%;
@@ -1145,12 +1173,7 @@ figcaption {
             justify-content: center;
   }
   
-  figure {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    width: 600px;
-  }
+  
   figure:hover {
     cursor: pointer;
   }
