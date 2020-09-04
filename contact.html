@@ -91,18 +91,10 @@ function closeNav() {
 
 
 
-
       .bg-smile{
-        top: 0; left: 0; right: 0; bottom: 0;
-        position: fixed;
-        z-index: -10000;
-        opacity: 0.35;
-        background-image: url('./images/desk-customer-bw.png');
-        background-size: cover;
-        height: 100%;
+              display: none !important;
       }
-
-
+      
 
       body {
         height: 100%;
@@ -202,18 +194,7 @@ function closeNav() {
       
           
           h2{width: 100% ; font-size: 1.2rem}
-          .bg-smile{
-            height: 100%;
-            background-position: right;
-            background-attachment: fixed;
-            position: fixed;
-             -moz-transform: scaleX(-1);
-             -o-transform: scaleX(-1);
-             -webkit-transform: scaleX(-1);
-             transform: scaleX(-1);
-             filter: FlipH;
-             -ms-filter: "FlipH";
-          }
+          
           .avi_button{
             margin-bottom: 18%;
             margin-top: 6%;
@@ -223,8 +204,8 @@ function closeNav() {
             font-size: 20px;
           }
           .mobspacers{
-            padding-top: 4%;
-            padding-bottom: 4%;
+            padding-top: 1%;
+            padding-bottom: 1%;
 
           }
           h2{ text-align: center;}
@@ -243,8 +224,32 @@ function closeNav() {
               font-size: 1.5rem;
 
             }
+            .bg-smile{
+              top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important;
+              position: fixed !important;
+              z-index: -10000 !important;
+              opacity: 0.35 !important;
+              background-image: url('./images/desk-customer-bw.png') !important;
+              background-size: cover !important;
+              height: 100% !important;
+              display: block !important;
+            }
+            .bg-smile{
+              height: 100% !important;
+              background-position: right !important;
+              background-attachment: fixed !important;
+              position: fixed !important;
+              -moz-transform: scaleX(-1) !important;
+              -o-transform: scaleX(-1) !important;
+              -webkit-transform: scaleX(-1) !important;
+              transform: scaleX(-1) !important;
+              filter: FlipH !important;
+              -ms-filter: "FlipH" !important;
+            }
           }
       
+         
+
     </style>
 
     <section>
@@ -280,13 +285,13 @@ function closeNav() {
                   book a meeting
                 </div>
                 <div class="aviName">
-                  <a href="https://www.facebook.com/evlv.co.uk" target="_blank"  style="font-size: 5rem; color: white;" class="fa fa-phone" id = "facebook"></a>
+                  <a href="https://calendly.com/trey-evlv/30min?" target="_blank"  style="font-size: 5rem; color: white;" class="fa fa-phone" id = "facebook"></a>
                 </div>
                 <div class="aviDescription" style="margin-top: 25%">
                   Rather just speak to us? Feel free to book a meeting by clicking the button below to book your <b>free</b> 30 minute call with us to discuss what we can do.
                 </div>
                 <div class="avi_button" >
-                  <a href="./">BOOK</a>
+                  <a href="https://calendly.com/trey-evlv/30min?">BOOK</a>
                 </div>
               </div>
             </div>
