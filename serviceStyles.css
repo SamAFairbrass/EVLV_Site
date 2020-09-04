@@ -1329,6 +1329,9 @@
     text-align: center;
   }
 
+
+
+  /* Multiply Original Bar Chart Values by .75 for Mobile */
   @-webkit-keyframes show-bar-one {
     0% {
       width: 0;
