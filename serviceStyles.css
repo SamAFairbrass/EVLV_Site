@@ -1310,10 +1310,10 @@
     top: 0px;
     right: 0px;
     bottom: 0px;
-    width: 100%;
+    width: 90%;
     height: 100%;
     min-height: 100%;
-    min-width: 100%;
+    min-width: 90%;
   }
 
   .evlvFooter{
