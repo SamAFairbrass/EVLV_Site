@@ -114,7 +114,12 @@
         margin: auto;
         width: 80%;
       }
-     
+      .hplace {
+        margin-top: 20% !important;
+      }
+      .postAboutFormatter{
+        padding: 0% !important;
+      }
     }
     @media only screen and (min-width: 1000px) {
       .aviBox{padding: 0% 1%;}
