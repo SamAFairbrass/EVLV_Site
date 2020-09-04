@@ -1274,4 +1274,20 @@ figcaption {
       
     }
 
+    #indexTitle {
+      margin-top: 50%  !important;
+      display: inline-block;
+      left: 2%;
+      margin: 1px;
+      color: white;
+      text-align: left;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: 0.5s;
+      letter-spacing: 4.2px;
+      overflow: hidden;
+      width: 80%;
+      position: absolute;
+      }
+
 }
