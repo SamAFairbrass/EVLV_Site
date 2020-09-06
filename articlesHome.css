@@ -29,6 +29,12 @@
       cursor: pointer !important;
     }
 
+    .articleFilterLinks :focus {
+      
+      color: #08abb0 !important;
+      cursor: pointer !important;
+    }
+
 
 .preview-container {
   display: -webkit-box;

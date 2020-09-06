@@ -267,9 +267,7 @@
       -ms-grid-rows: auto auto auto auto auto auto auto auto auto;
       grid-template-rows: auto auto auto auto auto auto auto auto auto;
     }
-    .no-top {
-      padding-top: 0rem;
-    }
+    
 
     .smart-section.no-top {
       padding-top: 0rem;
@@ -1328,9 +1326,15 @@ img {
     display: none;
   }
 
-  
+  .servicesPaddingTop{
+    padding-top: 13%;
+  }
 
 @media only screen and (min-width: 414px) and (max-width: 736px){
+
+  .servicesPaddingTop{
+    padding-top: 0%;
+  }
 
   .servicesdropdownmenu {
     display: block;
