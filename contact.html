@@ -3,6 +3,8 @@
 <head>
   <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
   <link rel="stylesheet" type="text/css" href="stylesheet_about.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="stylesheet_contact.css" media="screen"/>
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -10,11 +12,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact EVLV Today</title>
 
-<div id="myNav" class="overlay" style ="z-index: 1000000">
+<div id="myNav" class="overlay">
 
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style=" float: right; top: 0; right: 0; font-size:50px;">&times;</a>
   <div class="overlay-content">
-    <a href="index.html" >Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="articles.html">Articles</a>
@@ -31,7 +33,6 @@
 
 <script>
 
-
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
@@ -42,44 +43,42 @@ function closeNav() {
 </script>
 
 <ul style="color: white; opacity: 1 !important; z-index: 20; position: relative; height: 0px;  ">
-<a href="index.html"><div class="logo" style = "margin-top: 14px;  float: left;"></div></a>
-<div class="topnav" id="myTopnav">
+  <a href="index.html"><div class="logo" style = "margin-top: 14px; margin-left: 16px; float: left;"></div></a>
+  <div class="topnav" id="myTopnav">
 
-  <div class="mobileNavButton">
-    <span onclick="openNav()">&#9776;</span>
-  </div>
+    <div class="mobileNavButton">
+      <span onclick="openNav()">&#9776;</span>
+    </div>
 
-  <div class="nav-left" style = "padding: 14px 16px; width: 60%; float: left;">
-      
-    <div style = "margin-top: 10px; ">
-      <a href="index.html" class="underline">
-        <span>Home</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
-      </a>
-      <a href="about.html" class="underline">
-        <span>About</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
-      </a>
-      <a href="services.html" class="underline">
-        <span>Services</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
-      </a>
-      <a href="articles.html" class="underline">
-        <span>Articles</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+    <div class="nav-left" style = "padding: 14px 16px; width: 60%; float: left;">
+
+      <div style = "margin-top: 10px; ">
+        <a href="index.html" class="underline">
+          <span>Home</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+        <a href="about.html" class="underline">
+          <span>About</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+        <a href="services.html" class="underline">
+          <span>Services</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+        <a href="articles.html" class="underline">
+          <span>Articles</span><svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="nav-right" style="float: left; width: 40%;">
+      <div class = "icons" style = "margin-top: 10px;">
+        <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin" style = "padding-right: 16px !important;"></a>
+        <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
+        <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
+      </div>
+      <a href="contact.html"style = "margin-top: 3px; padding-right: 10px;">
+        <button class="pill-button">Contact</button>
       </a>
     </div>
   </div>
-
-  <div class="nav-right" style="float: left; width: 40%;">
-    <div class = "icons" style = "margin-top: 10px;">
-      <a href="https://www.linkedin.com/company/evlv/" target="_blank" class="fa fa-linkedin" id = "linkedin" style = "padding-right: 16px !important;"></a>
-      <a href="https://www.instagram.com/evlv.co.uk/" target="_blank" class="fa fa-instagram" id = "instagram"></a>
-      <a href="https://www.facebook.com/evlv.co.uk" target="_blank" class="fa fa-facebook" id = "facebook"></a>
-    </div>
-    <a href="contact.html"style = "margin-top: 3px; padding-right: 10px;"> 
-      <button class="pill-button">Contact</button>
-    </a>
-  </div>
-
-</div>
-
 </ul>
 
 <div class="bg-smile">
@@ -89,171 +88,6 @@ function closeNav() {
 </div>
 
   <body style="position: absolute">
-
-    <style>
-
-
-
-      .bg-smile{
-              display: none !important;
-      }
-      
-
-      body {
-        height: 100%;
-      }
-
-      #bg {
-        transition: background 2s ease;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: 100%;
-        z-index: -1;
-        background: #16161d;
-      }
-
-      #neon:hover ~ #bg {
-        background: #aaa;
-      }
-
-
-      h2{
-        color:white; margin: 0 auto; margin-bottom: 10% auto;  display:flex; align: center; justify-content: center; margin-top: 4%; width: 80%;
-        padding:0 8%; text-align-last: center; font-size: 1.5rem;
-      }
-
-      form { max-width:420px; margin:50px auto;   margin-top: 3%;
-      }
-
-      .feedback-input {
-        padding-right: 8%;
-        color:white;
-        margin-top: 1%;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight:500;
-        font-size: 18px;
-        border-radius: 5px;
-        line-height: 22px;
-        background-color: transparent;
-        border:2px solid #08abb0;
-        transition: all 0.3s;
-        padding: 13px;
-        margin-bottom: 15px;
-        width:100%;
-        box-sizing: border-box;
-        outline:0;
-      }
-
-      .feedback-input:focus { border:2px solid #08abb0; }
-
-      textarea {
-        height: 150px;
-        line-height: 150%;e, Helvetica, sans-serif;
-        width: 100%;
-        background:#08abb0;
-        border: solid 2px #08abb0;
-        border-radius:5px;
-        cursor:pointer;
-        color:white;
-        font-size:24px;
-        padding-top:10px;
-        padding-bottom:10px;
-        transition: all 0.3s;
-        margin-top:-4px;
-        font-weight:700;
-      }
-      [type="submit"]:hover { color: #08abb0; background-color: white; border: solid 2px #08abb0}
-
-
-      .contactColumn {
-        margin: auto; /* Should be removed. Only for demonstration */
-      }
-
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      .avi_button{
-        margin-top: 20%;
-      }
-      .avi_button a{
-        padding: 1% 3%;
-        text-decoration: none;
-        color: white;
-        border: 2px solid white;
-        border-radius: 5px;
-        min-width: 100px;
-        font-size: 30px;
-
-
-      }
-
-      
-          
-          h2{width: 100% ; font-size: 1.2rem}
-          
-          .avi_button{
-            margin-bottom: 18%;
-            margin-top: 6%;
-
-          }
-          .avi_button a{
-            font-size: 20px;
-          }
-          .mobspacers{
-            padding-top: 1%;
-            padding-bottom: 1%;
-
-          }
-          h2{ text-align: center;}
-          h1{
-            margin-top: 100px !important;
-            width: 90%;
-          }
-          @media screen and (min-width: 1000px) {
-            h1{
-              /* For some reason this is the browser version*/
-            margin-top: 100px  !important;
-            width: 90%;
-            font-size: 2rem;
-            }
-            h2 {
-              font-size: 1.5rem;
-
-            }
-            .bg-smile{
-              top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important;
-              position: fixed !important;
-              z-index: -10000 !important;
-              opacity: 0.35 !important;
-              background-image: url('./images/desk-customer-bw.png') !important;
-              background-size: cover !important;
-              height: 100% !important;
-              display: block !important;
-            }
-            .bg-smile{
-              height: 100% !important;
-              background-position: right !important;
-              background-attachment: fixed !important;
-              position: fixed !important;
-              -moz-transform: scaleX(-1) !important;
-              -o-transform: scaleX(-1) !important;
-              -webkit-transform: scaleX(-1) !important;
-              transform: scaleX(-1) !important;
-              filter: FlipH !important;
-              -ms-filter: "FlipH" !important;
-            }
-          }
-      
-         
-
-    </style>
 
     <section>
       <h1 style="color:white; margin: 0 auto; display:flex; text-align: center; justify-content: center; "> GET IN TOUCH AND CONTACT US </h1>
@@ -265,17 +99,17 @@ function closeNav() {
           <div class="aviGridBox">
             <div class="aviCardContainer" style="border: none; height: auto">
               <div class="aviCard">
-                <div class="aviTitle" style="font-size: 1.6rem">
+                <div class="aviTitleFixed" style="font-size: 1.6rem">
                   send us an email
                 </div>
                 <div class="aviName">
-                  <a href="https://www.facebook.com/evlv.co.uk" target="_blank"  style="font-size: 5rem; color: white; " class="fa fa-envelope" id = "facebook"></a>
+                  <a href="mailto:harry@evlv.co.uk" target="_blank"  style="font-size: 5rem; color: white; " class="fa fa-envelope" id = "facebook"></a>
                 </div>
                 <div class="aviDescription" style="margin-top: 25%">
                   Not sure what to do next to expand? Question about pricing structure? Let us know your problem and we can guide in the best direction.
                 </div>
                 <div class="avi_button" >
-                  <a href="./">SEND</a>
+                  <a href="mailto:harry@evlv.co.uk">SEND</a>
                 </div>
               </div>
             </div>
@@ -284,7 +118,7 @@ function closeNav() {
           <div class="aviGridBox">
             <div class="aviCardContainer" style="border: none; height: auto">
               <div class="aviCard" style="height: auto">
-                <div class="aviTitle" style="font-size: 1.6rem">
+                <div class="aviTitleFixed" style="font-size: 1.6rem">
                   book a meeting
                 </div>
                 <div class="aviName">
@@ -303,7 +137,7 @@ function closeNav() {
           <div class="aviGridBox">
             <div class="aviCardContainer" style="border: none; height: auto">
               <div class="aviCard" style="height: auto">
-                <div class="aviTitle" style="font-size: 1.6rem">
+                <div class="aviTitleFixed" style="font-size: 1.6rem">
                   give us feedback
                 </div>
                 <div class="aviName">
@@ -313,7 +147,7 @@ function closeNav() {
                   Did you like our website? Have you seeen something which we can improve on? Please let us know by giving us a review on the button below!
                 </div>
                 <div class="avi_button" >
-                  <a href="./">TELL</a>
+                  <a href="./">REVIEW</a>
                 </div>
               </div>
             </div>
