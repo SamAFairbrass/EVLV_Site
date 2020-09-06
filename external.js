@@ -73,10 +73,42 @@ function accordionDown(element, contentElement){
   contentElement.classList.remove("accordionContentUp");
   contentElement.classList.add("accordionContentDown");
   
-}var topRange = 100,  // measure from the top of the viewport to X pixels down
-edgeMargin = 50,   // margin above the top or margin from the end of the page
+}
+
+function dropdownTrigger(id, content){
+  var el = document.querySelector(id);
+  var contentEl = document.querySelector(content)
+  if(el.classList.contains("dropdownUp")){
+      dropdownDown(el, contentEl);
+  }
+  else{
+    dropdownUp(el, contentEl)
+  }
+}
+
+
+function dropdownUp(element, contentElement){
+  element.classList.remove("dropdownDown");
+  element.classList.add("dropdownUp");
+  contentElement.classList.remove("dropdownContentDown");
+  contentElement.classList.add("dropdownContentUp");
+  
+
+}
+
+function dropdownDown(element, contentElement){
+  element.classList.remove("dropdownUp");
+  element.classList.add("dropdownDown");
+  contentElement.classList.remove("dropdownContentUp");
+  contentElement.classList.add("dropdownContentDown");
+  
+}
+
+var topRange = 100,  // measure from the top of the viewport to X pixels down
+edgeMargin = 400,   // margin above the top or margin from the end of the page
 animationTime = 1200, // time in milliseconds
 contentTop = [];
+contentTopDropdown = [];
 
 $(document).ready(function(){ 
 
@@ -110,6 +142,34 @@ $(document).ready(function(){
   $.each( contentTop, function(i,loc){
    if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
     $('#sidemenu li')
+     .removeClass('selected')
+     .eq(i).addClass('selected');
+   }
+  })
+ })
+
+ $('#dropdownmenu').find('a').each(function(){
+  contentTopDropdown.push( $( $(this).attr('href') ).offset().top );
+ })
+
+ // Animate menu scroll to content
+  $('#dropdownmenu').find('a').click(function(){
+   var sel = this,
+       newTop = Math.min( contentTopDropdown[ $('#dropdownmenu a').index( $(this) ) ], $(document).height() - $(window).height() ); // get content top or top position if at the document bottom
+   $('html,body').stop().animate({ 'scrollTop' : newTop }, animationTime, function(){
+    window.location.hash = $(sel).attr('href');
+   });
+   return false;
+ })
+ 
+ // adjust side menu
+ $(window).scroll(function(){
+  var winTop = $(window).scrollTop(),
+      bodyHt = $(document).height(),
+      vpHt = $(window).height() + edgeMargin;  // viewport height + margin
+  $.each( contentTopDropdown, function(i,loc){
+   if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
+    $('#dropdownmenu li')
      .removeClass('selected')
      .eq(i).addClass('selected');
    }

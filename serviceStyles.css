@@ -422,6 +422,12 @@
       line-height: 2;
     }
 
+    .dropdown-arrow {
+      position: absolute;
+      right: 2rem;
+      width: 1rem;
+      }
+
     .accordion-title {
       display: block;
       margin-left: 24px;
@@ -441,6 +447,27 @@
       font-size: 1.25rem;
       line-height: 2;
       text-align: left;
+    }
+
+    .dropdown-title {
+      display: block;
+      margin: auto;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      font-size: 1.25rem;
+      line-height: 2;
+      text-align: center;
     }
 
     .w-clearfix:before, .w-clearfix:after {
@@ -475,6 +502,12 @@
     }
 
     .accordion-item-content {
+      overflow: hidden;
+      padding-left: 6rem;
+      border-bottom: 1px solid #fff;
+    }
+
+    .dropdown-item-content {
       overflow: hidden;
       padding-left: 6rem;
       border-bottom: 1px solid #fff;
@@ -757,6 +790,22 @@
 	    transition: all .5s;
     }
 
+    .dropdownUp{
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      -webkit-transition: all .5s;
+	    -moz-transition: all .5s;
+	    transition: all .5s;
+    }
+
+    .dropdownDown{
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(180deg) skew(0deg, 0deg);
+      transform-style: preserve-3d;
+      -webkit-transition: all .5s;
+	    -moz-transition: all .5s;
+	    transition: all .5s;
+    }
+
     .accordionContentUp{
       max-height: 0px;
       transition: max-height 0.5s ease-in;
@@ -769,6 +818,23 @@
 
 
       max-height: 100px;
+      transition: max-height 0.5s ease-in;
+      -webkit-transition: max-height .5s ease-in;
+	    -moz-transition: max-height .5s ease-in;
+    }
+
+    .dropdownContentUp{
+      max-height: 0px;
+      transition: max-height 0.5s ease-in;
+      -webkit-transition: max-height .5s ease-in;
+	    -moz-transition: max-height .5s ease-in;
+
+    }
+
+    .dropdownContentDown{
+
+
+      max-height: 200px;
       transition: max-height 0.5s ease-in;
       -webkit-transition: max-height .5s ease-in;
 	    -moz-transition: max-height .5s ease-in;
@@ -842,6 +908,75 @@
         opacity: 1;
       }
       .touch .toc li a {
+        color: white;
+        opacity: 1;
+      }
+
+      .toc2 {
+        
+        font-family: sans-serif;
+        font-size: 14px;
+        line-height: 14px;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        /* touch device overrides */
+      }
+      .toc2 ul {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .toc2 ul:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 7px;
+        background-color: transparent;
+        width: 1px;
+        height: 100%;
+      }
+      .toc2 li:not(:last-child) a {
+        margin-bottom: 14px;
+      }
+      .toc2 li a {
+        display: block;
+        position: relative;
+        left: 28px;
+        color: #fff;
+        opacity: 0.5;
+        text-decoration: none;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+      }
+      .toc2 li a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        opacity: 0.5;
+        left: -28px;
+        height: 14px;
+        width: 14px;
+        background-color: transparent;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 1px white;
+      }
+      .toc2 li a:hover {
+        color: white;
+        opacity: 1;
+      }
+      .toc2 li a:hover:before {
+        box-shadow: 0 0 0 2px white;
+        opacity: 1;
+      }
+      .toc2 li.selected a {
+        opacity: 1;
+      }
+      .toc2 li.selected a:before {
+        background-color: white;
+        opacity: 1;
+      }
+      .touch .toc2 li a {
         color: white;
         opacity: 1;
       }
@@ -1223,8 +1358,27 @@ img {
     font-size: 1rem;
   }
 
+  .servicesdropdownmenu {
+    display: none;
+  }
+
+  
 
 @media only screen and (min-width: 414px) and (max-width: 736px){
+
+  .servicesdropdownmenu {
+    display: block;
+  }
+
+  .services-list {
+    margin-bottom: 10px !important;
+    margin-top: 15px !important;
+    padding-left: 20% !important;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    list-style-type: none;
+  }
 
   /* Drop Down */
 
@@ -1264,6 +1418,7 @@ img {
     position: absolute;
     right: 2rem;
     width: 1rem;
+    bottom: 2rem;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
