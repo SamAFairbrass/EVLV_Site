@@ -104,6 +104,35 @@ function dropdownDown(element, contentElement){
   
 }
 
+function filterTrigger(id, content){
+  var el = document.querySelector(id);
+  var contentEl = document.querySelector(content)
+  if(el.classList.contains("filterUp")){
+    filterDown(el, contentEl);
+  }
+  else{
+    filterUp(el, contentEl)
+  }
+}
+
+
+function filterUp(element, contentElement){
+  element.classList.remove("filterDown");
+  element.classList.add("filterUp");
+  contentElement.classList.remove("filterContentDown");
+  contentElement.classList.add("filterContentUp");
+  
+
+}
+
+function filterDown(element, contentElement){
+  element.classList.remove("filterUp");
+  element.classList.add("filterDown");
+  contentElement.classList.remove("filterContentUp");
+  contentElement.classList.add("filterContentDown");
+  
+}
+
 var topRange = 100,  // measure from the top of the viewport to X pixels down
 edgeMargin = 400,   // margin above the top or margin from the end of the page
 animationTime = 1200, // time in milliseconds
