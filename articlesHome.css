@@ -264,6 +264,28 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
+@media only screen and (min-width: 737px) and (max-width: 834px){
+  .filterBar{
+    display: none;
+  }
+  .articleTopBar {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 835px) and (max-width: 1112px){
+
+  .servicesdropdownmenu{
+    display: none !important;
+  }
+  .noDropdownFilter {
+    display: none !important;
+  }
+  
+  .articleTopBar {
+    font-size: 14px;
+  }
+}
 
 @media only screen and (min-width: 300px) and (max-width: 736px){
 
