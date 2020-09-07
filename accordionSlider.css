@@ -441,10 +441,21 @@ a:hover {
     right: 60%;
     }
 }
-@media only screen and (min-width: 340px) and (max-width: 414px){
+@media only screen and (min-width: 340px) and (max-width: 413px){
 
   .sliderDiv {
     width: 242% !important;
+    
+  }
+  .sliderBody{
+    font-size: 12px
+  }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 736px){
+
+  .sliderDiv {
+    width: 220% !important;
     
   }
   .sliderBody{
