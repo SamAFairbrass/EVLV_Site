@@ -20,6 +20,8 @@
     -ms-animation: fadeIn ease 3s;
   }
 
+  
+
   .opacityGradTop {
     background-color: transparent;
     background-image: -webkit-linear-gradient(#16161d, rgba(22, 22, 29, 0.01));
@@ -1079,6 +1081,10 @@
 
   @media only screen and (min-width: 200px) and (max-width: 600px){
 
+    .mobileScroll {
+      margin-top: 10%
+    }
+
     .bar-graph-horizontal .bar {
       height: 50px;
      
@@ -1341,6 +1347,10 @@ img {
   }
 
 @media only screen and (min-width: 200px) and (max-width: 736px){
+
+  .mobileScroll {
+    margin-top: 10%
+  }
 
   .accordion-item-content{
     padding-left: 0px;
@@ -1759,6 +1769,8 @@ img {
 
 @media only screen and (min-width: 835px) and (max-width: 1112px) {
 
+  
+
   .post-image-wrapper-bar-chart {
     position: relative;
     left: 0px;
@@ -1820,6 +1832,10 @@ img {
 
 
 @media only screen and (min-width: 737px) and (max-width: 834px) {
+
+  .mobileScroll {
+    margin-top: 10%
+  }
 
   .bar-graph-horizontal{
     max-width: 1000px !important;

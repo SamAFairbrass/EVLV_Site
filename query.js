@@ -60,6 +60,7 @@ $(document).ready(function () {
         .animate({ scrollTop: newTop }, animationTime, function () {
           window.location.hash = $(sel).attr("href");
         });
+        dropdownTrigger('.dropdown01', '.dropdown01Content')
       return false;
     });
 
