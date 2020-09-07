@@ -42,24 +42,24 @@ $(document).ready(function () {
     });
 
   // adjust side menu
-  $(window).scroll(function () {
-    var winTop = $(window).scrollTop(),
-      bodyHt = $(document).height(),
-      vpHt = $(window).height() + edgeMargin; // viewport height + margin
-    $.each(contentTop, function (i, loc) {
-      if (
-        loc > winTop - edgeMargin &&
-        (loc < winTop + topRange || winTop + vpHt >= bodyHt)
-      ) {
-        $("#sidemenu li").removeClass("selected").eq(i).addClass("selected");
-        
-      }
-    });
+    $(window).scroll(function () {
+      var winTop = $(window).scrollTop(),
+        bodyHt = $(document).height(),
+        vpHt = $(window).height() + edgeMargin; // viewport height + margin
+      $.each(contentTop, function (i, loc) {
+        if (
+          loc > winTop - edgeMargin &&
+          (loc < winTop + topRange || winTop + vpHt >= bodyHt)
+        ) {
+          $("#sidemenu li").removeClass("selected").eq(i).addClass("selected");
+          $("#dropdownmenu li").removeClass("selected").eq(i).addClass("selected");
+        }
+      });
 
-    
-    
-    
-  });
+      
+      
+      
+    });
 
 
   var scroll = window.requestAnimationFrame ||
