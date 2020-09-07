@@ -1074,6 +1074,14 @@
     position: relative;
     width: 0;
   }
+
+  @media only screen and (min-width: 200px) and (max-width: 600px){
+
+    .bar-graph-horizontal .bar {
+      height: 50px;
+     
+    }
+  }
   
   .bar-graph-one .bar::after {
     -webkit-animation: fade-in-text 2.2s 0.1s forwards;
@@ -1330,7 +1338,14 @@ img {
     padding-top: 13%;
   }
 
-@media only screen and (min-width: 414px) and (max-width: 736px){
+@media only screen and (min-width: 200px) and (max-width: 736px){
+
+  .accordion-item-content{
+    padding-left: 0px;
+  }
+  .accordionContentDown{
+    padding-left: 0px;
+  }
 
   .servicesPaddingTop{
     padding-top: 0%;

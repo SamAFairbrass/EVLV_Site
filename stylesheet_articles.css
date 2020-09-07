@@ -85,10 +85,10 @@ linear-gradient(0deg, #16161d, rgba(22, 22, 29, 0.25)) !important
   .articleContainer p { color: #444}
 
   .articleHistory{ width: 100% !important ; color: red; margin-left: 2%; flex-wrap: nowrap;}
-  imageContainer
+  
   .articleImageContainer{height: 100px;
     width: 80px;
-    overflow: hidden; background-size: cover; background-image: url('images/article-images/5-facebook-marketing-mistakes.jpg'); z-index: 10;}
+    overflow: hidden; background-size: cover; background-position:center; url('images/article-images/5-facebook-marketing-mistakes.jpg'); z-index: 10;}
 
     .imgimg{
       /*.pageContainer{*/
@@ -101,6 +101,7 @@ linear-gradient(0deg, #16161d, rgba(22, 22, 29, 0.25)) !important
       background-image: url('images/article-images/5-facebook-marketing-mistakes.png');
       height: 400px;
       background-size: cover;
+      background-position: center;
     }
 
     .checkOtherPosts{ display: flex; justify-content: center; text-decoration: none;}
@@ -122,8 +123,8 @@ linear-gradient(0deg, #16161d, rgba(22, 22, 29, 0.25)) !important
     .bgHeader{
       text-align: center; letter-spacing: -0.015em; text-shadow: black 1px 1px; font-weight: 900;
                 color: white; align-items: center; display: flex; justify-content: center; 
-                position: absolute; top: 30%;
-                font-size: 3rem; width: 75%
+                position: absolute; top: 30%;75
+                font-size: 3rem; width: 80%
     }
 
     .bgAuthor{
@@ -133,6 +134,7 @@ linear-gradient(0deg, #16161d, rgba(22, 22, 29, 0.25)) !important
               display: flex; justify-content: center;
               position: absolute; top: 50%; font-size: 1.5rem; width: 75%
     }
+    
 
     @media only screen and (max-width: 400px) and (min-width: 101px){
       .bgAuthor{top: 400% ; font-size: 1rem; }
@@ -140,28 +142,27 @@ linear-gradient(0deg, #16161d, rgba(22, 22, 29, 0.25)) !important
     }
 
     @media only screen and (max-width: 600px) and (min-width: 401px){
-      .bgAuthor{top: 55% ; font-size: 1.2rem; }
-      .bgHeader{top: 18% ; font-size: 2.7rem;}
+      .bgAuthor{top: 53% ; font-size: 1.2rem; }
+      .bgHeader{top: 8% ; font-size: 2.2rem;}
       .articleContainerTop{margin-top: 120% !important;}
 
     }
 
     @media only screen and (max-width: 800px) and (min-width: 601px){
-      .bgAuthor{top: 45% ; font-size: 1.2rem; }
-      .bgHeader{top: 20% ; font-size: 2.7rem;}
+      .bgAuthor{top: 55% ; font-size: 1.2rem; }
+      .bgHeader{top: 10% ; font-size: 2.4rem;}
       .articleContainerTop{margin-top: 80% !important;}
     }
 
     @media only screen and (max-width: 1100px) and (min-width: 801px){
-      .bgAuthor{top: 45% ; font-size: 1.4rem; }
-      .bgHeader{top: 20% ; font-size: 2.7rem;}
+      .bgAuthor{top: 50% ; font-size: 1.4rem; }
+      .bgHeader{top: 15% ; font-size: 2.5rem;}
       .articleContainerTop{margin-top: 60% !important;}
     }
-
-    @media only screen and (max-width: 1300px) and (min-width: 1101px){
-      .bgAuthor{top: 50% ; font-size: 1.4rem; }
-      .bgHeader{top: 20% ; font-size: 2.9rem;}
-      .articleContainerTop{margin-top: 45% !important;}
+    @media only screen and (max-width: 3000px) and (min-width: 1101px){
+      .bgAuthor{top: 65% ; font-size: 1.4rem; }
+      .bgHeader{top: 20% ; font-size: 2.7rem;}
+      .articleContainerTop{margin-top: 60% !important;}
     }
 
     .blog-category-link {
