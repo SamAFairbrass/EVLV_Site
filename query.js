@@ -2,7 +2,7 @@ var topRange = 100, // measure from the top of the viewport to X pixels down
   edgeMargin = 400, // margin above the top or margin from the end of the page
   animationTime = 1200, // time in milliseconds
   contentTop = [];
-  contentTopDropdown = [];
+  
   
 var graphToShow = document.querySelector(".graphAnimation")
 
@@ -55,46 +55,10 @@ $(document).ready(function () {
         
       }
     });
-  });
 
-
-  $("#dropdownmenu")
-    .find("a")
-    .each(function () {
-      contentTopDropdown.push($($(this).attr("href")).offset().top);
-    });
-
-  // Animate menu scroll to content
-  $("#dropdownmenu")
-    .find("a")
-    .click(function () {
-      var sel = this,
-        newTop = Math.min(
-          contentTopDropdown[$("#dropdownmenu a").index($(this))],
-          $(document).height() - $(window).height()
-        ); // get content top or top position if at the document bottom
-      $("html,body")
-        .stop()
-        .animate({ scrollTop: newTop }, animationTime, function () {
-          window.location.hash = $(sel).attr("href");
-        });
-      return false;
-    });
-
-  // adjust side menu
-  $(window).scroll(function () {
-    var winTop = $(window).scrollTop(),
-      bodyHt = $(document).height(),
-      vpHt = $(window).height() + edgeMargin; // viewport height + margin
-    $.each(contentTopDropdown, function (i, loc) {
-      if (
-        loc > winTop - edgeMargin &&
-        (loc < winTop + topRange || winTop + vpHt >= bodyHt)
-      ) {
-        $("#dropdownmenu li").removeClass("selected").eq(i).addClass("selected");
-        
-      }
-    });
+    
+    
+    
   });
 
 
