@@ -139,65 +139,6 @@ animationTime = 1200, // time in milliseconds
 contentTop = [];
 contentTopDrop = [];
 
-$(document).ready(function(){ 
-
- // Stop animated scroll if the user does something
- $('html,body').bind('scroll mousedown DOMMouseScroll mousewheel keyup', function(e){
- if ( e.which > 0 || e.type == 'mousedown' || e.type == 'mousewheel' ){
-  $('html,body').stop();
- }
-})
-
- // Set up content an array of locations
- $('#sidemenu').find('a').each(function(){
-  contentTop.push( $( $(this).attr('href') ).offset().top );
- })
- $('#dropdownmenu').find('a').each(function(){
-  contentTopDrop.push( $( $(this).attr('href') ).offset().top );
- })
-
- // Animate menu scroll to content
-  $('#sidemenu').find('a').click(function(){
-   var sel = this,
-       newTop = Math.min( contentTop[ $('#sidemenu a').index( $(this) ) ], $(document).height() - $(window).height() ); // get content top or top position if at the document bottom
-   $('html,body').stop().animate({ 'scrollTop' : newTop }, animationTime, function(){
-    window.location.hash = $(sel).attr('href');
-   });
-   return false;
- })
-
- $('#dropdownmenu').find('a').click(function(){
-  var sel = this,
-      newTop = Math.min( contentTopDrop[ $('#dropdownmenu a').index( $(this) ) ], $(document).height() - $(window).height() ); // get content top or top position if at the document bottom
-  $('html,body').stop().animate({ 'scrollTop' : newTop }, animationTime, function(){
-   window.location.hash = $(sel).attr('href');
-  });
-  return false;
-})
- 
- // adjust side menu
- $(window).scroll(function(){
-  var winTop = $(window).scrollTop(),
-      bodyHt = $(document).height(),
-      vpHt = $(window).height() + edgeMargin;  // viewport height + margin
-  $.each( contentTop, function(i,loc){
-   if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
-    $('#sidemenu li')
-     .removeClass('selected')
-     .eq(i).addClass('selected');
-   }
-  })
-  $.each( contentTopDrop, function(i,loc){
-    if ( ( loc > winTop - edgeMargin && ( loc < winTop + topRange || ( winTop + vpHt ) >= bodyHt ) ) ){
-     $('#dropdownmenu li')
-      .removeClass('selected')
-      .eq(i).addClass('selected');
-    }
-   })
- })
-
-  
-})
 
 
 // Footer
