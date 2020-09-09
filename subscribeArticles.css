@@ -14,6 +14,21 @@
     font-weight: 100;
     color: black;
   }
+
+  .articlesFooter {
+    display: block;
+  }
+
+  .articlesSocial {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .articlesSub{
+    width: 100%; 
+   
+  }
+
   
   .formButtonArticle {
     font-family: Montserrat, sans-serif;
@@ -61,6 +76,8 @@
   :-ms-input-placeholder {  
      color: black;  
   }
+
+  
   
           
   
