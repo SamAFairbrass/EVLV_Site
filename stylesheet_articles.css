@@ -155,6 +155,7 @@ body
          height: 100%;
          overflow: hidden;
          background-color: #663399;
+         background-position: center;
          position: relative;
        }
        .oneText {
@@ -216,7 +217,7 @@ body
          font-size: 14px;
          margin-left: 12px;
          color: #00000000;
-         opacity: 0;
+         opacity: 1;
          transition: color 0.4s ease;
        }
 
@@ -358,7 +359,7 @@ linear-gradient(0deg, #16161d, rgba(22, 22, 29, 0.25)) !important
     .bgHeader{
       text-align: center; letter-spacing: -0.015em; text-shadow: black 1px 1px; font-weight: 900;
                 color: white; align-items: center; display: flex; justify-content: center; 
-                position: absolute; top: 30%;75
+                position: absolute; top: 30%;
                 font-size: 3rem; width: 80%
     }
 
@@ -369,36 +370,52 @@ linear-gradient(0deg, #16161d, rgba(22, 22, 29, 0.25)) !important
               display: flex; justify-content: center;
               position: absolute; top: 50%; font-size: 1.5rem; width: 75%
     }
+
+  .articleContainer p { color: #444}
+
+  .articleContainer ul { color: #444; padding-left: 25px; }
+
+  .articleContainer li { color: #444; padding-bottom: 2px;}
     
 
     @media only screen and (max-width: 400px) and (min-width: 101px){
-      .bgAuthor{top: 400% ; font-size: 1rem; }
-      .bgHeader{top: 800% ; font-size: 2rem;}
+      .bgAuthor{top: 40% ; font-size: 1rem; }
+      .bgHeader{top: 10% ; font-size: 1.4rem; width: 90% !important}
+      .articleContainerTop{margin-top: 115% !important;}
+
     }
 
     @media only screen and (max-width: 600px) and (min-width: 401px){
       .bgAuthor{top: 53% ; font-size: 1.2rem; }
-      .bgHeader{top: 8% ; font-size: 2.2rem;}
-      .articleContainerTop{margin-top: 120% !important;}
+      .bgHeader{top: 9% ; font-size: 2.1rem;}
+      .articleContainerTop{margin-top: 115% !important;}
 
     }
 
     @media only screen and (max-width: 800px) and (min-width: 601px){
-      .bgAuthor{top: 55% ; font-size: 1.2rem; }
-      .bgHeader{top: 10% ; font-size: 2.4rem;}
+      .bgAuthor{top: 56% ; font-size: 1.2rem; }
+      .bgHeader{top: 14% ; font-size: 2.4rem; width: 90% !important}
       .articleContainerTop{margin-top: 80% !important;}
     }
 
     @media only screen and (max-width: 1100px) and (min-width: 801px){
       .bgAuthor{top: 50% ; font-size: 1.4rem; }
-      .bgHeader{top: 15% ; font-size: 2.5rem;}
+      .bgHeader{top: 15% ; font-size: 2.4rem;}
       .articleContainerTop{margin-top: 60% !important;}
     }
-    @media only screen and (max-width: 3000px) and (min-width: 1101px){
-      .bgAuthor{top: 65% ; font-size: 1.4rem; }
-      .bgHeader{top: 20% ; font-size: 2.7rem;}
-      .articleContainerTop{margin-top: 60% !important;}
+    @media only screen and (min-width: 1101px){
+      .bgAuthor{top: 52% ; font-size: 1.4rem; }
+      .bgHeader{top: 20% ; font-size: 2.5rem; width: 90%}
+      .articleContainerTop{margin-top: 40% !important;}
+
     }
+    @media only screen and (min-width: 2000px){
+      .bgAuthor{top: 55% ; font-size: 1.4rem; }
+      .bgHeader{top: 20% ; font-size: 2.5rem; width: 90%}
+      .articleContainerTop{margin-top: 300px !important;}
+
+    }
+
 
     .blog-category-link {
       display: -webkit-box;
