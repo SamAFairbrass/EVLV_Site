@@ -34,6 +34,17 @@
     background-image: linear-gradient(360deg, #16161d, rgba(22, 22, 29, 0.1));
   }
 
+  @media only screen and (max-width: 400px) {
+    .opacityGradBottom {
+      top: 100% !important;
+
+    }
+    .radialGrad {
+      height: 120% !important;
+    }
+  
+  }
+
   .radialGrad {
     
     height: 100%;
