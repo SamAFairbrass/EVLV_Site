@@ -252,6 +252,7 @@ a:hover {
   margin: 6.5rem 0 0;
   min-width: 25%;
   max-width: 25%;
+  font-size: 16px;
 }
 .accordion-group li .accordion-overlay {
   position: absolute;
@@ -951,6 +952,7 @@ a:hover {
     width: 2.5rem;
     padding: 0;
     margin: 10rem 0;
+    font-size: 20px ;
   }
 }
 @-webkit-keyframes rotate {

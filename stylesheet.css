@@ -1332,7 +1332,7 @@ figcaption {
     margin: 0;
     background-color: #16161d;
     font-family: Arial;
-    font-size: 10px;
+    font-size: 17px;
   }
 
   .indexPaddingTop{
@@ -1595,7 +1595,7 @@ width: 100%;
     margin: 0;
     background-color: #16161d;
     font-family: Arial;
-    font-size: 10px;
+    font-size: 17px !important;
   }
 
   .accordion-overlay {
