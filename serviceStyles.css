@@ -39,7 +39,7 @@
     .animated-title{
       color: white;
       font-family: Roboto, Arial, sans-serif;
-      font-size:22px;
+      font-size:22px !important;
       height: 100%;
       left: 50%;
       position: absolute;
