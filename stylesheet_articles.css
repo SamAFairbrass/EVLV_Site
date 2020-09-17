@@ -137,13 +137,13 @@ body
        }
 
        .articleContainer{color: #0000; transition: background-color 1.5s ease;  }
-       .articleContainer a {color: white; transition: background-color 1.5s ease;}
+       .articleContainer a {color: #0047ee; transition: background-color 1.5s ease;}
 
 
        .articleContainer:hover {color: black; z-index: 5; }
 
-       .articleContainer:hover .articleTitle {background-color: #0008; color: white}
-       .articleContainer:hover a {color: #0ee}
+       .articleContainer:hover .articleTitle {background-color: #0008; color: black}
+       .articleContainer:hover a {color: #0047ee}
 
        .gridFeaturedElement{width: 650px; height: 400px; margin-top: 2%; margin-bottom: 2%; padding: 0 1%;}
 
