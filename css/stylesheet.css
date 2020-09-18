@@ -489,7 +489,7 @@ display: inline-block;
 .logo {
   width:77px; /*width of your image*/
   height:35px; /*height of your image*/
-  content:url("EVLV_Logo.png");
+  content:url("../images/EVLV_Logo.png");
   line-height: 60px;
   margin-left: 10px;
 }
@@ -497,7 +497,7 @@ display: inline-block;
 .logo-footer {
   width:154px; /*width of your image*/
   height:70px; /*height of your image*/
-  content:url("EVLV_Logo.png");
+  content:url("../images/EVLV_Logo.png");
 }
 
 .fa {
