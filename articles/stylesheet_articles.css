@@ -1,0 +1,447 @@
+/* article css here */
+/* individual article css at line 235 */
+
+
+.column {
+  float: left;
+  width: 50%;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+.column p{
+  padding-right: 10%
+}
+
+
+
+
+.filterDiv {
+  height: auto;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn:active {
+  background-color: #666;
+  color: white;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+h2 {color: white}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.mobileNavButton{
+  padding: 2%; padding-top: 2%; float: right; font-size:40px; cursor:pointer; display: none;
+}
+
+body
+  {
+    margin: 0;
+    padding: 0;
+    /* make it look decent enough */
+    background: #16161d;
+    color: #cdcdcd;
+   }
+
+
+   .cardGrid{display:flex; padding: 2%; justify-content: center; height: 100% ; flex-wrap: wrap; }
+   .cardGrid1{display:flex; justify-content: center; height: 100% ; flex-wrap: wrap; }
+
+
+   .articleCard{background-colorap-reverse
+     in: #ffffff; margin-left: 2%; margin-right: 2%; width: 25%; height: 300px; }
+
+     .articleImage{background-color: #444; height: 300px; width: 100%;  }
+
+     .articleImage:hover   {background-color: #03f; transition: background-color 1.5s ease; }
+
+     .articleTitle{transition: transform 1.5s ease; bottom: 40px; margin-bottom: 10px; background-color: #0000; transition: background-color 0.8s ease ; transition: margin-bottom 0.8s ease;}
+     .articleTextSmall{opacity: 1; transition: opacity 1.5s ease;}
+
+
+     .articleTextSmall:hover {opacity: 1; z-index: -2;}
+
+     .articleTitle:hover{ transform:translate(0px, -60px) ; background-color: #0000;}
+
+     .articleTitle:hover .imgSpacer {      height: 220px;}
+
+     .imgSpacer{
+       height: 280px;
+       transition: height 0.8s ease;
+       transition: color #00000000 ease;
+       }
+
+       .imgSpacer:hover {
+         height: 220px;
+       }
+
+       .articleContainer{color: #0000; transition: background-color 1.5s ease;  }
+       .articleContainer a {color: #0047ee; transition: background-color 1.5s ease;}
+
+
+       .articleContainer:hover {color: black; z-index: 5; }
+
+       .articleContainer:hover .articleTitle {background-color: #0008; color: black}
+       .articleContainer:hover a {color: #0047ee}
+
+       .gridFeaturedElement{width: 650px; height: 400px; margin-top: 2%; margin-bottom: 2%; padding: 0 1%;}
+
+
+       .gridElement{width: 100%; height: 300px}
+       .one {
+         cursor: pointer;
+         text-shadow: 1px 1px #000000;
+         height: 100%;
+         overflow: hidden;
+         background-color: #663399;
+         background-position: center;
+         position: relative;
+       }
+       .oneText {
+         text-shadow: 1px 1px #000000;
+         height: 100%;
+         overflow: hidden;
+         position: relative;
+         color: white;
+       }
+       .one1 {
+         cursor: pointer;
+         text-shadow: 1px 1px #000000;
+         height: 100%;
+         overflow: hidden;
+         background-color: #663399;
+         position: relative;
+       }
+       .one1 a { padding-left: 12px; color: white; transition: color 0.3s ease; font-size: 20px; display: flex; padding-right: 4px;}
+
+       .one a { padding-left: 12px; color: white; transition: color 0.3s ease; font-size: 20px; display: flex; padding-right: 4px;}
+       .one p { top: 0; font-size: 15; padding-top: 12px; padding-left: 12px; padding-right: 4px;}
+       .two {
+         cursor: pointer;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0, 0, 0, 0.8);
+         position: absolute;
+         top: 83%;
+         transition: top .5s ease;
+         color: white !important;
+         display: block !important;
+       }
+       .one:hover .two {
+         top: 50%;
+       }
+       .one:hover a {
+         color: #08abb0;
+       }
+       .one p{ color: #0000}
+       .one:hover p {
+         color: #fff;
+       }
+       .one:hover .articleDate {
+         opacity: 1;
+         color: #fff;
+       }
+       p {
+         margin: 0;
+         padding: 2px;
+         color: #ffffff;
+         ;
+       }
+       .column p{ margin-top: 10px;}
+
+       h2 {
+         padding: 2px;
+       }
+
+       .articleDate{
+         font-size: 14px;
+         margin-left: 12px;
+         color: #00000000;
+         opacity: 1;
+         transition: color 0.4s ease;
+       }
+
+       .pair{
+         display: flex;
+       }
+
+
+
+
+
+
+
+/* INDIVIDUAL ARTICLE PAGE CSS */
+/* ########################### */
+
+.pageContainer{
+
+  background-image:linear-gradient(180deg, transparent 0%, #00000066 15%, #00000088 25%, #000000aa 60%, #000d 100%);
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,3f3f3f+35,000000+100 */
+  /*background: #feffff; /* Old browsers */
+  /*background-image: -moz-linear-gradient(top, #feffff 0%, #3f3f3f 35%, #000000 100%); /* FF3.6-15 */
+  /*background-image: -webkit-linear-gradient(top, #feffff 0%,#3f3f3f 35%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+  /*background-image: linear-gradient(to bottom, #feffff 0%,#3f3f3f 35%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  z-index: 100;
+}
+.bgImageContainer{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url('images/article-images/5-facebook-marketing-mistakes.png');
+  height: 400px;
+  background-size: cover;
+
+}
+.bgImageOverlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+}
+
+.darkOverlay{
+  background-color: #0006;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+}
+
+/*.pageContainer{*/
+/*background-image: linear-gradient(10deg, #47479b, rgba(21, 21, 21, 0.25)) !important;*/
+/*background-image: linear-gradient(0deg, #02021a, rgb(0, 228, 228)) !important;
+z-index: -3;
+linear-gradient(0deg, #16161d, rgba(22, 22, 29, 0.25)) !important
+}*/
+#fb_share{
+  color: #09f;
+}
+
+.articleDate{
+  width: 90%; color:black; margin: 0 auto; display:flex; align: center; justify-content: center; margin-top: 10px
+}
+
+.linkRow{
+  width: 30%;
+}
+
+.columnSplit{
+  display:flex; padding: 3%; padding-top: 0%; justify-content: center; height: 100% ; line-height: 1.3;
+}
+
+.articleContainerTop{
+  width: 70.5%; justify-content: center; margin: auto; background-color: #fff;  
+  text-align: center;
+
+  margin-top: 40% !important;
+}
+@media only screen and (max-width: 600px) {
+  .articleContainerTop{width: 84.6%; margin-top: 80% !important;}
+}
+
+
+
+.articleContainer{ padding: 3%; padding-top: 1%; width: 75%; color: white !important; background-color: #fff; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;}
+@media only screen and (max-width: 600px) {
+  .articleContainer{width: 90%}
+}
+
+
+.articleContainer *{ color: #000; text-align: justify;
+  text-justify: inter-word;  }
+
+  .articleContainer p { color: #444}
+
+  .articleHistory{ width: 100% !important ; color: red; margin-left: 2%; flex-wrap: nowrap;}
+  
+  .articleImageContainer{height: 100px;
+    width: 80px;
+    overflow: hidden; background-size: cover; background-position:center; url('images/article-images/5-facebook-marketing-mistakes.jpg'); z-index: 10;}
+
+    .imgimg{
+      /*.pageContainer{*/
+      /*background-image: linear-gradient(10deg, #47479b, rgba(21, 21, 21, 0.25)) !important;*/
+      /*background-image: linear-gradient(0deg, #02021a, rgb(0, 228, 228)) !important;
+      z-index: -3;
+
+      }*/
+      /*margin-top: 2.5%;*/
+      background-image: url('images/article-images/5-facebook-marketing-mistakes.png');
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .checkOtherPosts{ display: flex; justify-content: center; text-decoration: none;}
+    .checkOtherPostsBtn{  background-color: #0000; color: white; padding: 3%; text-decoration: none; border: 3px solid white; border-radius: 10px}
+    .checkOtherPosts a{text-decoration: none;}
+    .checkOtherPostsBtn:hover{
+      background-color: white; color: black
+    }
+
+    .ex{
+      width: 100%; display: flex; margin: auto; justify-content: center
+    }
+    .socialLinks{
+      width: 90%; color:white; margin: 0 auto; display:flex; align: center; justify-content: center; margin-top: 1%
+    }
+
+
+
+    .bgHeader{
+      text-align: center; letter-spacing: -0.015em; text-shadow: black 1px 1px; font-weight: 900;
+                color: white; align-items: center; display: flex; justify-content: center; 
+                position: absolute; top: 30%;
+                font-size: 3rem; width: 80%
+    }
+
+    .bgAuthor{
+
+      font-variant: small-caps; text-align: center; letter-spacing: -0.015em;
+              text-shadow: black 1px 1px; color: white; align-items: center; 
+              display: flex; justify-content: center;
+              position: absolute; top: 50%; font-size: 1.5rem; width: 75%
+    }
+
+  .articleContainer p { color: #444}
+
+  .articleContainer ul { color: #444; padding-left: 25px; }
+
+  .articleContainer li { color: #444; padding-bottom: 2px;}
+    
+
+    @media only screen and (max-width: 400px) and (min-width: 101px){
+      .bgAuthor{top: 40% ; font-size: 1rem; }
+      .bgHeader{top: 10% ; font-size: 1.4rem; width: 90% !important}
+      .articleContainerTop{margin-top: 115% !important;}
+
+    }
+
+    @media only screen and (max-width: 600px) and (min-width: 401px){
+      .bgAuthor{top: 53% ; font-size: 1.2rem; }
+      .bgHeader{top: 9% ; font-size: 2.1rem;}
+      .articleContainerTop{margin-top: 115% !important;}
+
+    }
+
+    @media only screen and (max-width: 800px) and (min-width: 601px){
+      .bgAuthor{top: 56% ; font-size: 1.2rem; }
+      .bgHeader{top: 14% ; font-size: 2.4rem; width: 90% !important}
+      .articleContainerTop{margin-top: 80% !important;}
+    }
+
+    @media only screen and (max-width: 1100px) and (min-width: 801px){
+      .bgAuthor{top: 50% ; font-size: 1.4rem; }
+      .bgHeader{top: 15% ; font-size: 2.4rem;}
+      .articleContainerTop{margin-top: 60% !important;}
+    }
+    @media only screen and (min-width: 1101px){
+      .bgAuthor{top: 52% ; font-size: 1.4rem; }
+      .bgHeader{top: 20% ; font-size: 2.5rem; width: 90%}
+      .articleContainerTop{margin-top: 40% !important;}
+
+    }
+    @media only screen and (min-width: 2000px){
+      .bgAuthor{top: 55% ; font-size: 1.4rem; }
+      .bgHeader{top: 20% ; font-size: 2.5rem; width: 90%}
+      .articleContainerTop{margin-top: 300px !important;}
+
+    }
+
+
+    .blog-category-link {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-right: 2rem;
+      margin-left: 0px;
+      padding: 1rem 0px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: transparent;
+      -webkit-transition: all 600ms ease;
+      transition: all 600ms ease;
+      color: #fff;
+      font-size: 1rem;
+      }
+
+      .blog-category-link :hover {
+        cursor: pointer;
+        color: #08abb0;;
+      }
