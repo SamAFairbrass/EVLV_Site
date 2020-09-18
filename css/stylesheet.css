@@ -996,7 +996,7 @@ figure:hover .img-overlay {
   padding-top: 150px;
 }
 figure:hover .overlay-txt {
-  bottom: 250px;
+  bottom: 200px;
   font-size: 2rem;
 }
 figure:hover figcaption {
@@ -1036,8 +1036,9 @@ figcaption {
   bottom: 80%;
   left: 0;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 20px;
+  margin-top: 35px;
   text-align: center;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -1046,7 +1047,7 @@ figcaption {
 .overlay-txt {
   position: absolute;
   width: 100%;
-  bottom: 175px;
+  bottom: 110px;
   padding: 10px;
   margin: -5px 0 0;
   text-align: center;
