@@ -388,14 +388,14 @@ linear-gradient(0deg, #16161d, rgba(22, 22, 29, 0.25)) !important
 
     @media only screen and (max-width: 600px) and (min-width: 401px){
       .bgAuthor{top: 53% ; font-size: 1.2rem; }
-      .bgHeader{top: 9% ; font-size: 2.1rem;}
+      .bgHeader{top: 9% ; font-size: 1.7rem;}
       .articleContainerTop{margin-top: 115% !important;}
 
     }
 
     @media only screen and (max-width: 800px) and (min-width: 601px){
       .bgAuthor{top: 56% ; font-size: 1.2rem; }
-      .bgHeader{top: 14% ; font-size: 2.4rem; width: 90% !important}
+      .bgHeader{top: 14% ; font-size: 1.7rem; width: 90% !important}
       .articleContainerTop{margin-top: 80% !important;}
     }
 
