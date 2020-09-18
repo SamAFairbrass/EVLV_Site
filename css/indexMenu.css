@@ -1,0 +1,80 @@
+.toc {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  backface-visibility: hidden;
+  /* touch device overrides */ }
+  .toc ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .toc ul:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 7px;
+      background-color: transparent;
+      width: 1px;
+      height: 100%; }
+  .toc li:not(:last-child) a {
+    margin-bottom: 14px; }
+  .toc li a {
+    display: block;
+    position: relative;
+    left: 28px;
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+    transition: 0.2s ease-in-out; }
+    .toc li a:before {
+      content: "";
+      display: block;
+      position: absolute;
+      opacity: 0.5;
+      left: -28px;
+      height: 14px;
+      width: 14px;
+      background-color: transparent;
+      border-radius: 50%;
+      box-shadow: 0px 0px 0px 1px white; }
+    .toc li a:hover {
+      color: white;
+      opacity: 1; }
+      .toc li a:hover:before {
+        box-shadow: 0 0 0 2px white;
+        opacity: 1; }
+  .toc li.selected a {
+    opacity: 1; }
+  .toc li.selected a:before {
+    background-color: white;
+    opacity: 1; }
+  .touch .toc li a {
+    color: white;
+    opacity: 1; }
+
+/* content */
+.main {
+  width: calc(100% - 275px);
+  margin-left: 280px; }
+  .main h1, .main h2, .main h3, .main h4, .main h5, .main h6, .main p {
+    font-family: sans-serif;
+    color: white; }
+  .main img.feature {
+    margin-left: -280px;
+    width: 880px; }
+
+.content-block {
+  width: 600px;
+  margin-bottom: 50px; }
+
+.comments,
+footer {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+/*# sourceMappingURL=indexMenu.css.map */
