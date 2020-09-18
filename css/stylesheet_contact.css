@@ -150,7 +150,7 @@ font-size: 30px;
       position: fixed !important;
       z-index: -10000 !important;
       opacity: 0.35 !important;
-      background-image: url('./images/desk-customer-bw.png') !important;
+      background-image: url('../images/desk-customer-bw.png') !important;
       background-size: cover !important;
       height: 100% !important;
       display: block !important;
