@@ -452,7 +452,7 @@ figure {
 
 
 figure:hover .overlay-txt {
-  bottom: 170px;
+  bottom: 90px;
   font-size: 1.5rem;
 }
 
@@ -474,7 +474,7 @@ figure:hover .img-overlay {
   opacity: 0.7;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  padding-top: 80px;
+  padding-top: 1000px;
 }
 
 .img-overlay {
