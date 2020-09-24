@@ -383,7 +383,7 @@ width: 100%;
   right: 0;
   top: 0;
   z-index: -3;
-  background-image: url('./images/evlv_london_bg_shard.png');
+  background-image: url('/images/evlv_london_bg_shard.png');
   background-position: center;
   background-size: cover;
 }
