@@ -13,44 +13,24 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://evlv.co.uk/index.html</loc>
+  <loc>https://evlv.co.uk/about</loc>
   <lastmod>2020-09-18T11:40:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://evlv.co.uk/about.html</loc>
+  <loc>https://evlv.co.uk/services</loc>
   <lastmod>2020-09-18T11:40:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://evlv.co.uk/services.html</loc>
+  <loc>https://evlv.co.uk/articles</loc>
   <lastmod>2020-09-18T11:40:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://evlv.co.uk/articles.html</loc>
+  <loc>https://evlv.co.uk/contact</loc>
   <lastmod>2020-09-18T11:40:47+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evlv.co.uk/contact.html</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evlv.co.uk/covid-coronavirus-may-help-business.html</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://evlv.co.uk/articles/covid-coronavirus-may-help-business.html</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://evlv.co.uk/articles/running-ads-campaign-do-this-first.html</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://evlv.co.uk/articles/customers-not-willing-to-review-your-business-do-this-instead</loc>
@@ -73,22 +53,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://evlv.co.uk/articles/social-media-influencers-help-grow-your-business.html</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://evlv.co.uk/articles/things-must-scale-ecom-business</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://evlv.co.uk/articles/things-must-scale-ecom-business.html</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://evlv.co.uk/articles/silly-mistakes-ecommerce-need-fix-today.html</loc>
   <lastmod>2020-09-18T11:40:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -98,17 +63,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://evlv.co.uk/articles/best-type-facebook-ad-ecommerce-businesses.html</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://evlv.co.uk/articles/grow-your-business-instagram-stories</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://evlv.co.uk/articles/grow-your-business-instagram-stories.html</loc>
   <lastmod>2020-09-18T11:40:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -118,17 +73,7 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://evlv.co.uk/articles/good-ads-but-great-ads.html</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://evlv.co.uk/articles/facebook-marketing-mistakes</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://evlv.co.uk/articles/facebook-marketing-mistakes.html</loc>
   <lastmod>2020-09-18T11:40:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -137,11 +82,7 @@
   <lastmod>2020-09-18T11:40:47+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-<url>
-  <loc>https://evlv.co.uk/articles/know-about-facebook-ads.html</loc>
-  <lastmod>2020-09-18T11:40:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+
 
 
 </urlset>
